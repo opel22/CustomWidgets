@@ -18,10 +18,8 @@
         constructor() {
             super();
             this._shadowRoot = this.attachShadow({mode: "open"});
-            this._shadowRoot.appendChild(template.content.cloneNode(true));
-            
-this._shadowRoot.getElementById("form").addEventListener("submit", 
-this._submit.bind(this));
+            this._shadowRoot.appendChild(template.content.cloneNode(true));        
+            this._shadowRoot.getElementById("form").addEventListener("submit", this._submit.bind(this));
         }
         _submit(e) {
             e.preventDefault();
@@ -40,5 +38,5 @@ this._submit.bind(this));
             return this._shadowRoot.getElementById("styling_color").value;
         }
     }
-customElements.define("com-sap-sample-coloredbox-styling", 
-ColoredBoxStylingPanel);
+    customElements.define("com-sap-sample-coloredbox-styling", ColoredBoxStylingPanel);
+   })();
