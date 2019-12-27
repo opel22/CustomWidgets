@@ -32,7 +32,6 @@
             if ("opacity" in changedProperties) {
                 this.style["opacity"] = changedProperties["opacity"];
             }
-            
         }
     }
     customElements.define("com-sap-sample-coloredbox", ColoredBox);
