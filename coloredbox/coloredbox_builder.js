@@ -1,6 +1,6 @@
 (function()  {
     let template = document.createElement("template");
-    template.innerHTML = `
+    template.innerHTML = '
         <form id="form">
             <fieldset>
                 <legend>Colored Box Properties</legend>
@@ -19,7 +19,7 @@
             padding: 1em 1em 1em 1em;
         }
         </style>
-    `;
+    ';
     class ColoredBoxBuilderPanel extends HTMLElement {
         constructor() {
             super();

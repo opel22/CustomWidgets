@@ -1,6 +1,6 @@
 (function() { 
     let template = document.createElement("template");
-    template.innerHTML = `
+    template.innerHTML = '
         <style>
         :host {
             border-radius: 25px;
@@ -10,7 +10,7 @@
             display: block;
         } 
         </style> 
-    `;
+    ';
     class ColoredBox extends HTMLElement {
         constructor() {
             super(); 
