@@ -1,6 +1,6 @@
 (function()  {
     let template = document.createElement("template");
-    template.innerHTML = '
+    template.innerHTML = `
         <form id="form">
             <fieldset>
                 <legend>Colored Box Properties</legend>
@@ -13,7 +13,7 @@
                 <input type="submit" style="display:none;">
             </fieldset>
         </form>
-    ';
+    `;
     class ColoredBoxStylingPanel extends HTMLElement {
         constructor() {
             super();
