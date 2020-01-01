@@ -20,6 +20,10 @@
                 var event = new Event("onClick");
                 this.dispatchEvent(event);
             });
+            this.addEventListener("mouseover", event => {
+                var event = new Event("onHover");
+                this.dispatchEvent(event);
+            });
             this._props = {};
         }
         onCustomWidgetBeforeUpdate(changedProperties) {
