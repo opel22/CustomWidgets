@@ -28,7 +28,7 @@
                 var event = new Event("onEnter");
                 this.dispatchEvent(event);
             })
-            this.addEventListener("mouseout", event => {
+            this.addEventListener("mouseleave", event => {
                 var event = new Event("onOut");
                 this.dispatchEvent(event);
             })
