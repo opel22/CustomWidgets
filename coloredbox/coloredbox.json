@@ -14,21 +14,21 @@
             "tag": "com-sap-sample-coloredbox",
             "url": "https://opel22.github.io/CustomWidgets/coloredbox/coloredbox.js",
             "integrity": "sha256-/HF47ayRHxc4HpYWVmrNoetT6xaC2u5fwbXgUxrDkI8=",
-            "ignoreIntegrity": false
+            "ignoreIntegrity": true
         },
         {
             "kind": "styling",
             "tag": "com-sap-sample-coloredbox-styling",
             "url": "https://opel22.github.io/CustomWidgets/coloredbox/coloredbox_styling.js",
             "integrity": "sha256-ZaL3I1pzF4UUYyTypz5ZempT4mKH47dneb/Dj94Et8Q=",
-            "ignoreIntegrity": false
+            "ignoreIntegrity": true
         },
         {
             "kind": "builder",
             "tag": "com-sap-sample-coloredbox-builder",
             "url": "https://opel22.github.io/CustomWidgets/coloredbox/coloredbox_builder.js",
             "integrity": "sha256-vkAAfA5e87NR7P0VbFO0VMercCYYgE/LyTi8bN+8vJs=",
-            "ignoreIntegrity": false
+            "ignoreIntegrity": true
         }
     ],
     "properties": {
@@ -75,6 +75,12 @@
         },
         "onHover": {
             "description": "Called when the user hovers the Colored Box."
+        },
+        "onEnter": {
+            "description": "Called when the user enters the area of the Colored Box."
+        },
+        "onOut": {
+            "description": "Called wehn the user left the area of the Colored Box."
         }
     }
 }            

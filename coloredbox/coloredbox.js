@@ -24,6 +24,13 @@
                 var event = new Event("onHover");
                 this.dispatchEvent(event);
             });
+            this.addEventListener("mouseenter", event => {
+                var event = new Event("onEnter");
+                this.dispatchEvent(envent);
+            })
+            this.addEventListener("mouseout", event => {
+                var event = new Event("onOut");
+            })
             this._props = {};
         }
         onCustomWidgetBeforeUpdate(changedProperties) {
