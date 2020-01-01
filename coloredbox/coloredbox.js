@@ -26,10 +26,11 @@
             });
             this.addEventListener("mouseenter", event => {
                 var event = new Event("onEnter");
-                this.dispatchEvent(envent);
+                this.dispatchEvent(event);
             })
             this.addEventListener("mouseout", event => {
                 var event = new Event("onOut");
+                this.dispatchEvent(event);
             })
             this._props = {};
         }
