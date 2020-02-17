@@ -82,5 +82,6 @@
         "onOut": {
             "description": "Called wehn the user left the area of the Colored Box."
         }
-    }
+    },
+    "imports": ["datasource"]
 }            
