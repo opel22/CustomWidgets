@@ -1,7 +1,6 @@
 (function() { 
     let template = document.createElement("template");
     template.innerHTML = `
-        <script src="https://momentjs.com/downloads/moment.min.js</script>
         <style>
         :host {
             border-radius: 25px;
