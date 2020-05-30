@@ -37,6 +37,9 @@
             "default": 400
         }
     },
-
+    "methods": {
+    },
+    "events": {
+    },
     "imports": ["datasource"]
 }            
