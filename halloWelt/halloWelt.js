@@ -8,7 +8,7 @@
     let template = document.createElement('template');
     template.innerHTML = `
         <body class="sapUiBody" id="content">
-        <p>TEST</p>
+            <p>Test</p>
         </body>
     `;
 
@@ -24,8 +24,8 @@
 
         constructor() {
             super(); 
-            let shadowRoot = this.attachShadow({mode: "open"});
-            shadowRoot.appendChild(template.content.cloneNode(true));
+            this._shadowRoot = this.attachShadow({mode: "open"});
+            this._shadowRoot.appendChild(template.content.cloneNode(true));
 
         }
     });
