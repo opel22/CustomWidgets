@@ -7,9 +7,11 @@
 
     let template = document.createElement('template');
     template.innerHTML = `
-        <body class="sapUiBody" id="content">
-            <p>Test</p>
-        </body>
+    <style>
+    :host {
+       text: "Test";
+    }
+    </style>
     `;
 
     ui5Script.onload = () =>
