@@ -7,9 +7,7 @@
     let ui5Button = document.createElement('script');
     ui5Button.innerHTML = `
         new sap.m.Button({
-            text:"Hello world",
-            press: function(){
-                alert("hello SapUI5!");
+            text:"Hello world"
             }
         }).placeAt("content");
     `;
