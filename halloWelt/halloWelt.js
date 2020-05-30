@@ -7,18 +7,19 @@
 
     let template = document.createElement('template');
     template.innerHTML = `
-    <body class="sapUiBody" id="content"></body>
-    <style>
-    :host {
-        border-radius: 25px;
-        border-width: 4px;
-        border-color: black;
-        border-style: solid;
-        display: block;
-    } 
-    </style> 
+    <script>
+    new sap.m.Button({
+        text:"Hello world",
+        press: function(){
+            alert("hello SapUI5!");
+        }
+    }).placeAt("content");
+    </script>
+    <body class="sapUiBody" id="content"></body> 
     `;
-    class HalloWelt extends HTMLElement {
+    
+    ui5Script.onload = () => 
+    customElements.define("com-sap-sample-hallowelt", class HalloWelt extends HTMLElement {
         constructor() {
             super(); 
             let shadowRoot = this.attachShadow({mode: "open"});
@@ -26,8 +27,6 @@
 
         }
 
-    }
-    
+    });
 
-    customElements.define("com-sap-sample-hallowelt", HalloWelt);
 })();
