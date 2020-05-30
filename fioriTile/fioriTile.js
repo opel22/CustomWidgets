@@ -46,5 +46,5 @@
             }
         }
     }
-    customElements.define("com-sap-sample-fioriTile", FioriTile);
+    customElements.define("com-sap-sample-fioritile", FioriTile);
 })();

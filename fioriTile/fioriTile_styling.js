@@ -38,5 +38,5 @@
             return this._shadowRoot.getElementById("styling_color").value;
         }
     }
-    customElements.define("com-sap-sample-fioriTile-styling", FioriTileStylingPanel);
+    customElements.define("com-sap-sample-fioritile-styling", FioriTileStylingPanel);
    })();

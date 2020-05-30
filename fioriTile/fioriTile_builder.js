@@ -45,6 +45,6 @@ this._submit.bind(this));
         get opacity() {
             return this._shadowRoot.getElementById("builder_opacity").value;        }
     }
-    customElements.define("com-sap-sample-fioriTile-builder", 
+    customElements.define("com-sap-sample-fioritile-builder", 
 FioriTileBuilderPanel);
 })();
