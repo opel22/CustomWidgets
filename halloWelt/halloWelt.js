@@ -17,7 +17,7 @@
     } 
     </style> 
     `;
-    class ColoredBox extends HTMLElement {
+    class HalloWelt extends HTMLElement {
         constructor() {
             super(); 
             let shadowRoot = this.attachShadow({mode: "open"});
