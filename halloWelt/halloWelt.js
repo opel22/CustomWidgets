@@ -15,7 +15,7 @@
     ui5Script.onload = () =>
 
     customElements.define("com-sap-sample-hallowelt", class HalloWelt extends HTMLElement {
-        disconnectedCallback() {
+        disconnectedCallback () {
             try{
                 document.head.removeChild(ui5Script);
             }
