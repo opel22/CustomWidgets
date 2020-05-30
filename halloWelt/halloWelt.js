@@ -1,34 +1,24 @@
 (function() { 
-    let ui5Script = document.createElement('script');
+/*    let ui5Script = document.createElement('script');
     ui5Script.src = 'https://sapui5.hana.ondemand.com/resources/sap-ui-core.js';
     ui5Script.async = false;
     document.head.appendChild(ui5Script);
-
+*/
 
     let template = document.createElement('template');
     template.innerHTML = `
-    <style>
-    :host {
-       text: "Test";
-    }
-    </style>
+    <p>Test</p> 
     `;
-
-    ui5Script.onload = () =>
-
-    customElements.define("com-sap-sample-hallowelt", class HalloWelt extends HTMLElement {
-        disconnectedCallback () {
-            try{
-                document.head.removeChild(ui5Script);
-            }
-            catch{}
-        }
-
+    class ColoredBox extends HTMLElement {
         constructor() {
             super(); 
-            this._shadowRoot = this.attachShadow({mode: "open"});
-            this._shadowRoot.appendChild(template.content.cloneNode(true));
+            let shadowRoot = this.attachShadow({mode: "open"});
+            shadowRoot.appendChild(template.content.cloneNode(true));
 
         }
-    });
+
+    }
+    
+
+    customElements.define("com-sap-sample-hallowelt", HalloWelt);
 })();
