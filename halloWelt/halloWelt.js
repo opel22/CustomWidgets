@@ -4,17 +4,11 @@
     ui5Script.async = false;
     document.head.appendChild(ui5Script);
 
-    let ui5Button = document.createElement('script');
-    ui5Button.innerHTML = `
-        new sap.m.Button({
-            text:"Hello world"
-            }
-        }).placeAt("content");
-    `;
 
     let template = document.createElement('template');
     template.innerHTML = `
         <body class="sapUiBody" id="content">
+        <p>TEST</p>
         </body>
     `;
     class HalloWelt extends HTMLElement {
