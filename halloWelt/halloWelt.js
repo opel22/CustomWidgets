@@ -7,6 +7,7 @@
 
     let template = document.createElement('template');
     template.innerHTML = `
+    <p>Test</p>
     <style>
     :host {
         border-radius: 25px;
