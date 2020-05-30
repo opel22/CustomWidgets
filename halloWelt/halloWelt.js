@@ -11,13 +11,15 @@
         <p>TEST</p>
         </body>
     `;
-    class HalloWelt extends HTMLElement {
+
+    ui5Script.onload = () =>
+
+    customElements.define("com-sap-sample-hallowelt", HalloWelt {
         constructor() {
             super(); 
             let shadowRoot = this.attachShadow({mode: "open"});
             shadowRoot.appendChild(template.content.cloneNode(true));
 
         }
-    }
-    customElements.define("com-sap-sample-hallowelt", HalloWelt);
+    });
 })();
