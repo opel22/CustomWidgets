@@ -14,7 +14,14 @@
 
     ui5Script.onload = () =>
 
-    customElements.define("com-sap-sample-hallowelt", HalloWelt {
+    customElements.define("com-sap-sample-hallowelt", class HalloWelt extends HTMLElement {
+        disconnectedCallback() {
+            try{
+                document.head.removeChild(ui5Script);
+            }
+            catch{}
+        }
+
         constructor() {
             super(); 
             let shadowRoot = this.attachShadow({mode: "open"});
