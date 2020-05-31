@@ -44,7 +44,7 @@ function loadthis(that) {
     that_._exportButton = new sap.m.Label({
         id: "scan",
         text: "Scan",
-        icon: "sap-icon://bar-code",
+        icon: "https://opel22.github.io/CustomWidgets/halloWelt/halloWelt.png",
         visible: true,
         tooltip: "Scan Barcode"
     });
