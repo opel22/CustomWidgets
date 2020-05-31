@@ -23,11 +23,15 @@
     class HalloWelt extends HTMLElement {
         constructor() {
             super(); 
-            this._shadowRoot = this.attachShadow({mode: "open"});
-            this._shadowRoot.appendChild(template.content.cloneNode(true));
-
+            let shadowRoot = this.attachShadow({mode: "open"});
+            shadowRoot.appendChild(template.content.cloneNode(true));
+            this.addEventListener("click", event => {
+                var event = new Event("onClick");
+                this.dispatchEvent(event);
+            });
+            this._props = {};
         }
 
-    });
-    customElements.define("com-sap-sample-hallowelt",  HalloWelt)
+    };
+    customElements.define("com-sap-sample-hallowelt",  HalloWelt);
 })();
