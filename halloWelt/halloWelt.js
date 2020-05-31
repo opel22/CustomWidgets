@@ -1,37 +1,71 @@
 (function() { 
-    let ui5Script = document.createElement('script');
-    ui5Script.type = 'text/javascript';
-    ui5Script.src = 'https://sapui5.hana.ondemand.com/resources/sap-ui-core.js';
-    ui5Script.addEventListener(load, callback);
-    shadowRoot.appendChild(ui5Script);
-    //document.head.appendChild(ui5Script);
-
-
+    let _shadowRoot;
     let template = document.createElement('template');
     template.innerHTML = `
-    <script>
-    new sap.m.Button({
-        text:"Hello world",
-        press: function(){
-            alert("hello SapUI5!");
-        }
-    }).placeAt("content");
-    </script>
-    <body class="sapUiBody" id="content"></body> 
+    <style>
+        canvas.drawingBuffer {
+            z-index : 11;
+            position: absolute;
+            width   : 100%;
+            height  : 100%;
+            top     : 50px;
+            bottom  : 0;
+            left    : 50px;
+            right   : 0
+        }   
+    </style>
+    <div id="export_div" name="export_div">
+        <slot name="export_button"></slot>
+    </div>
     `;
     
     class HalloWelt extends HTMLElement {
         constructor() {
             super(); 
-            let shadowRoot = this.attachShadow({mode: "open"});
-            shadowRoot.appendChild(template.content.cloneNode(true));
-            this.addEventListener("click", event => {
-                var event = new Event("onClick");
-                this.dispatchEvent(event);
-            });
-            this._props = {};
+            _shadowRoot = this.attachShadow({mode: "open"});
+            _shadowRoot.appendChild(template.content.cloneNode(true));
         }
-
+        onCustomWidgetAfterUpdate(changedProperties) {
+            var that = this;
+            loadthis(that);
+        }
     };
     customElements.define("com-sap-sample-hallowelt",  HalloWelt);
 })();
+
+// Functions
+function loadthis(that) {
+    var that_ = that;
+
+    let buttonSlot = document.createElement('div');
+    buttonSlot.slot = "export_button";
+    that_.appendChild(buttonSlot);
+
+    that_._exportButton = new sap.m.Label({
+        id: "scan",
+        text: "Scan",
+        icon: "sap-icon://bar-code",
+        visible: true,
+        tooltip: "Scan Barcode"
+    });
+
+    that_._simpleForm = new sap.ui.layout.form.SimpleForm({
+        labelSpanL: 3,
+        labelSpanM: 3,
+        emptySpanL: 3,
+        emptySpanM: 3,
+        columnsL: 1,
+        columnsM: 1,
+        editable: true,
+        content: [
+            that_._exportButton
+        ]
+    })
+
+    that_._simpleForm.placeAt(buttonSlot);
+
+    if (that_._designMode) {
+        sap.ui.getCore().byId("scan").setEnabled(false);
+        sap.ui.getCore().byId("scannedValue").setEditable(false);
+    }
+}
