@@ -24,9 +24,6 @@
             super(); 
             _shadowRoot = this.attachShadow({mode: "open"});
             _shadowRoot.appendChild(template.content.cloneNode(true));
-        }
-        onCustomWidgetAfterUpdate(changedProperties) {
-            var that = this;
             loadthis(that);
         }
     };
@@ -44,28 +41,8 @@ function loadthis(that) {
     that_._exportButton = new sap.m.Label({
         id: "scan",
         text: "Scan",
-        icon: "https://opel22.github.io/CustomWidgets/halloWelt/halloWelt.png",
         visible: true,
         tooltip: "Scan Barcode"
     });
 
-    that_._simpleForm = new sap.ui.layout.form.SimpleForm({
-        labelSpanL: 3,
-        labelSpanM: 3,
-        emptySpanL: 3,
-        emptySpanM: 3,
-        columnsL: 1,
-        columnsM: 1,
-        editable: true,
-        content: [
-            that_._exportButton
-        ]
-    })
-
-    that_._simpleForm.placeAt(buttonSlot);
-
-    if (that_._designMode) {
-        sap.ui.getCore().byId("scan").setEnabled(false);
-        sap.ui.getCore().byId("scannedValue").setEditable(false);
-    }
-}
+};
