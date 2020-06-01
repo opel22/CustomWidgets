@@ -14,7 +14,7 @@
     <p>Test</p>
 
     `;
-    
+    console.log("Test");
     class HalloWelt extends HTMLElement {
         constructor() {
             super(); 
