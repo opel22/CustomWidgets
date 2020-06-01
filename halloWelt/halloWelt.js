@@ -3,20 +3,16 @@
     let template = document.createElement('template');
     template.innerHTML = `
     <style>
-        canvas.drawingBuffer {
-            z-index : 11;
-            position: absolute;
-            width   : 100%;
-            height  : 100%;
-            top     : 50px;
-            bottom  : 0;
-            left    : 50px;
-            right   : 0
-        }   
-    </style>
-    <div id="export_div" name="export_div">
-        <slot name="export_button"></slot>
-    </div>
+    :host {
+        border-radius: 25px;
+        border-width: 4px;
+        border-color: black;
+        border-style: solid;
+        display: block;
+    } 
+    </style> 
+    <p>Test</p>
+
     `;
     
     class HalloWelt extends HTMLElement {
