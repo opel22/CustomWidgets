@@ -18,19 +18,24 @@
 	xmlns:core="sap.ui.core"
 	height="100%"
 	controllerName="myView.Template">
+    <FlexBox
+        height="100px"
+        alignItems="Center"
+        justifyContent="Start">
+        <items>
 
 
+            <Button type="Accept"
+                    text="Accept"
+                    press="onPress"
+                    ariaDescribedBy="acceptButtonDescription genericButtonDescription">
+                <layoutData>
+                    <FlexItemData growFactor="1" />
+                </layoutData>
+            </Button>
 
-				<Button type="Accept"
-						text="Accept"
-						press="onPress"
-						ariaDescribedBy="acceptButtonDescription genericButtonDescription">
-					<layoutData>
-						<FlexItemData growFactor="1" />
-					</layoutData>
-				</Button>
-
-
+        </items>
+    </FlexBox>
 
 
 </mvc:View>
