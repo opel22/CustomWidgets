@@ -19,7 +19,7 @@
 	height="100%"
 	controllerName="myView.Template">
     <FlexBox
-        height="100px"
+        height="10px"
         alignItems="Center"
         justifyContent="Start">
         <items>
