@@ -10,6 +10,7 @@
             display: block;
         } 
         </style> 
+        <p id="myButton"></>
     `;
 
     class HalloWelt extends HTMLElement {
@@ -20,9 +21,7 @@
 
         }
         connectedCallback() {
-            let ui5Button = new sap.m.Button(this.createId("helloButton"), {
-                text : "Click me"
-            }); 
+            var oButton = new sap.ui.commons.Button(this.createId("myButton"), {text:"Hello JS View"}); 
         }
     }
     customElements.define("com-sap-sample-hallowelt",  HalloWelt);
