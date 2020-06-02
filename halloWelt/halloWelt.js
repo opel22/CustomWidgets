@@ -32,16 +32,6 @@
 			</Toolbar>
 
 		</customHeader>
-		<subHeader>
-			<Toolbar>
-				<ToolbarSpacer/>
-				<Button text="Default" press="onPress" />
-				<Button type="Reject" text="Reject" press="onPress" />
-				<Button icon="sap-icon://action" type="Transparent" press="onPress" ariaLabelledBy="actionButtonLabel"/>
-				<ToolbarSpacer/>
-			</Toolbar>
-
-		</subHeader>
 		<content>
 			<HBox>
 				<Button text="Default"
