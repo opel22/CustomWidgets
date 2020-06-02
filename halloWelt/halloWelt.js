@@ -209,7 +209,7 @@
 
                         this.settings = {};
                         this.settings.password = "";
-
+                        console.log("im Controller.extend()");
                         that.dispatchEvent(new CustomEvent("onClick", {
                             detail: {
                                 settings: this.settings
