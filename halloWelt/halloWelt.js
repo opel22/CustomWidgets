@@ -20,7 +20,10 @@
 
         }
         connectedCallback() {
-            var oButton = new sap.ui.commons.Button(this.createId("myButton"), {text:"Hello JS View"}); 
+            var oButton1 = new sap.m.Button({
+                text : "Content Button",
+                type : sap.m.ButtonType.Reject     
+                });
             this.shadowRoot.appendChild(oButton);
         }
     }
