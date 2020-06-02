@@ -216,7 +216,7 @@
                         this.settings = {};
                         this.settings.password = "";
 
-                        that.dispatchEvent(new CustomEvent("onStart", {
+                        that.dispatchEvent(new CustomEvent("onClick", {
                             detail: {
                                 settings: this.settings
                             }
