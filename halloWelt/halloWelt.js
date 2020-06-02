@@ -69,14 +69,6 @@
 			<core:InvisibleText id="editButtonLabel" text="Edit Button Label"/>
 			<core:InvisibleText id="actionButtonLabel" text="Action Button Label"/>
 		</content>
-		<footer>
-			<Toolbar>
-				<ToolbarSpacer/>
-				<Button type="Emphasized" text="Emphasized" press="onPress" />
-				<Button text="Default" press="onPress" />
-				<Button icon="sap-icon://action" type="Transparent" press="onPress" />
-			</Toolbar>
-		</footer>
 	</Page>
 </mvc:View>
 
