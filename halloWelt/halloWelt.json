@@ -49,8 +49,8 @@
         }
       },
       "events": {
-          "onStart": {
-          "description": "onStart events trigger"
+          "onClick": {
+          "description": "onClick events trigger"
         }
       }
     }      
