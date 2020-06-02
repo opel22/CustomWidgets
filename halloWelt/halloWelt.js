@@ -15,7 +15,7 @@
         <mvc:View
             controllerName="myView.Template"
             xmlns="sap.m"
-            xmlns:l="sap.ui.layout"            
+            <!-- xmlns:l="sap.ui.layout" -->
             xmlns:mvc="sap.ui.core.mvc"
             xmlns:core="sap.ui.core">
  
