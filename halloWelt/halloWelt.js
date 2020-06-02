@@ -19,7 +19,7 @@
 	height="100%"
 	controllerName="myView.Template">
 
-			<HBox>
+
 
 				<Button type="Accept"
 						text="Accept"
@@ -30,7 +30,7 @@
 					</layoutData>
 				</Button>
 
-			</HBox>
+
 
 
 </mvc:View>
