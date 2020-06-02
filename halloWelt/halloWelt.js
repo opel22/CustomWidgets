@@ -20,11 +20,12 @@
 
         }
         connectedCallback() {
-            var oButton = new sap.m.Button({
+            var z = document.createElement('div');
+            z.innerHTML = new sap.m.Button({
                 text : "Content Button",
                 type : sap.m.ButtonType.Reject     
                 });
-            this.shadowRoot.appendChild(oButton);
+            shadowRoot.appendChild(z);
         }
     }
     customElements.define("com-sap-sample-hallowelt",  HalloWelt);
