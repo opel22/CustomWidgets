@@ -16,7 +16,6 @@
   <div id="export_div" name="export_div">
      <slot name="export_button"></slot>
   </div>
-  <p>Test</p>
     `;
 
     class HalloWelt extends HTMLElement {
