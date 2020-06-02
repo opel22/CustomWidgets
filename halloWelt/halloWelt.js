@@ -55,7 +55,8 @@
             this._export_settings.password = "";
 
             this.addEventListener("click", event => {
-                console.log('click');
+                var event = new Event("onClick");
+                this.dispatchEvent(event);
             });
         }
 
