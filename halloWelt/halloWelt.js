@@ -25,7 +25,7 @@
                 text : "Content Button",
                 type : sap.m.ButtonType.Reject     
                 });
-            shadowRoot.appendChild(z);
+            this.appendChild(z);
         }
     }
     customElements.define("com-sap-sample-hallowelt",  HalloWelt);
