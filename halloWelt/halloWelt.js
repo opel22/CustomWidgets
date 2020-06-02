@@ -20,7 +20,7 @@
 
         }
         connectedCallback() {
-            var oButton1 = new sap.m.Button({
+            var oButton = new sap.m.Button({
                 text : "Content Button",
                 type : sap.m.ButtonType.Reject     
                 });
