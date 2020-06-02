@@ -18,26 +18,14 @@
 	xmlns:core="sap.ui.core"
 	height="100%"
 	controllerName="myView.Template">
-    <FlexBox
-        height="10px"
-        alignItems="Center"
-        justifyContent="Start">
-        <items>
-
-
-            <Button type="Accept"
-                    text="Accept"
-                    press="onPress"
-                    ariaDescribedBy="acceptButtonDescription genericButtonDescription">
-                <layoutData>
-                    <FlexItemData growFactor="1" />
-                </layoutData>
-            </Button>
-
-        </items>
-    </FlexBox>
-
-
+        <Button type="Accept"
+            text="Accept"
+            press="onPress"
+            ariaDescribedBy="acceptButtonDescription genericButtonDescription">
+            <layoutData>
+                <FlexItemData growFactor="1" />
+            </layoutData>
+        </Button>
 </mvc:View>
 
     </script>
@@ -61,6 +49,7 @@
 
             this.addEventListener("click", event => {
                 var event = new Event("onClick");
+                console.log("im constructor");
                 this.dispatchEvent(event);
             });
         }
