@@ -1,6 +1,6 @@
 {
     "id": "com.sap.sample.hallowelt",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "name": "Hallo Welt",
     "description": "My first Fiori Tile",
     "newInstancePrefix": "HalloWelt",
