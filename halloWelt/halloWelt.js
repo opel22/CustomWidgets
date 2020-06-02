@@ -1,6 +1,10 @@
 (function() { 
-    let template = document.createElement("template");
-    template.innerHTML = `
+    let _shadowRoot;
+    let _id;
+    let _password;
+
+    let tmpl = document.createElement("template");
+    tmpl.innerHTML = `
     <style>
  
     </style>
