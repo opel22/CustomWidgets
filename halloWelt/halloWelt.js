@@ -19,7 +19,6 @@
 	height="100%"
 	controllerName="myView.Template">
 
-		<content>
 			<HBox>
 				<Button text="Default"
 						press="onPress"
@@ -55,17 +54,6 @@
 
 			</HBox>
 
-			<!-- Collection of labels (some of which are invisible) used to provide ARIA descriptions for the buttons -->
-			<Label id="genericButtonDescription" text="Note: The buttons in this sample display MessageToast when pressed."/>
-
-			<core:InvisibleText id="defaultButtonDescription" text="Description of default button goes here."/>
-			<core:InvisibleText id="acceptButtonDescription" text="Description of accept button goes here."/>
-			<core:InvisibleText id="rejectButtonDescription" text="Description of reject button goes here."/>
-			<core:InvisibleText id="comingSoonButtonDescription" text="This feature is not active just now."/>
-			<!-- These labels exist only to provide targets for the ARIA label on the Edit and Action buttons -->
-			<core:InvisibleText id="editButtonLabel" text="Edit Button Label"/>
-			<core:InvisibleText id="actionButtonLabel" text="Action Button Label"/>
-		</content>
 
 </mvc:View>
 
