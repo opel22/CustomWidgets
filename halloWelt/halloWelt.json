@@ -28,10 +28,29 @@
           "description": "password",
           "default": ""
         }
-    },
-    "methods": {
-    },
-    "events": {
-    },
-    "imports": []
-}            
+      },
+      "methods": {
+        "getPassword": {
+          "returnType": "string",
+          "description": "Get password",
+          "parameters": [],
+          "body": "return this.password;"
+        },
+        "setPassword": {
+          "description": "Set password",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "string",
+              "description": "The new password"
+            }
+          ],
+          "body": "this.password = value;"
+        }
+      },
+      "events": {
+          "onStart": {
+          "description": "onStart events trigger"
+        }
+      }
+    }      
