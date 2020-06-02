@@ -20,33 +20,11 @@
 	controllerName="myView.Template">
 
 			<HBox>
-				<Button text="Default"
-						press="onPress"
-						ariaDescribedBy="defaultButtonDescription genericButtonDescription">
-					<layoutData>
-						<FlexItemData growFactor="1" />
-					</layoutData>
-				</Button>
+
 				<Button type="Accept"
 						text="Accept"
 						press="onPress"
 						ariaDescribedBy="acceptButtonDescription genericButtonDescription">
-					<layoutData>
-						<FlexItemData growFactor="1" />
-					</layoutData>
-				</Button>
-				<Button type="Reject"
-						text="Reject"
-						press="onPress"
-						ariaDescribedBy="rejectButtonDescription genericButtonDescription">
-					<layoutData>
-						<FlexItemData growFactor="1" />
-					</layoutData>
-				</Button>
-				<Button text="Coming Soon"
-						press="onPress"
-						ariaDescribedBy="comingSoonButtonDescription genericButtonDescription"
-						enabled="false">
 					<layoutData>
 						<FlexItemData growFactor="1" />
 					</layoutData>
