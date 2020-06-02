@@ -19,9 +19,6 @@
 	height="100%"
 	controllerName="myView.Template">
 
-	<Page
-		title="Page"
-		class="sapUiContentPadding" >
 		<content>
 			<HBox>
 				<Button text="Default"
@@ -69,7 +66,7 @@
 			<core:InvisibleText id="editButtonLabel" text="Edit Button Label"/>
 			<core:InvisibleText id="actionButtonLabel" text="Action Button Label"/>
 		</content>
-	</Page>
+
 </mvc:View>
 
     </script>
