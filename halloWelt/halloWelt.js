@@ -19,6 +19,11 @@
             shadowRoot.appendChild(template.content.cloneNode(true));
 
         }
+        connectedCallback() {
+            let ui5Button = new sap.m.Button(this.createId("helloButton"), {
+                text : "Click me"
+            }); 
+        }
     }
     customElements.define("com-sap-sample-hallowelt",  HalloWelt);
 
