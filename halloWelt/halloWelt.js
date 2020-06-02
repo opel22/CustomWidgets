@@ -20,14 +20,29 @@
 
         }
         connectedCallback() {
-            var z = document.createElement('div');
-            z.innerHTML = new sap.m.Button({
-                text : "Content Button",
-                type : sap.m.ButtonType.Reject     
-                });
-            this.appendChild(z);
+            var that = this;
+            loadthis(that);
         }
     }
     customElements.define("com-sap-sample-hallowelt",  HalloWelt);
+
+    function loadthis(that) {
+        var that_ = that;
+
+        let buttonSlot = document.createElement('div');
+        buttonSlot.slot = "export_button";
+        that_.appendChild(buttonSlot);
+
+        that_._exportButton = new sap.m.Button({
+            id: "scan",
+            text: "Scan",
+            icon: "sap-icon://bar-code",
+            visible: true,
+            tooltip: "Scan Barcode",
+            press: function() {
+                startScan();
+            }
+        });
+    }
 
 })();
