@@ -22,16 +22,6 @@
 	<Page
 		title="Page"
 		class="sapUiContentPadding" >
-		<customHeader>
-			<Toolbar>
-				<Button type="Back" press="onPress" />
-				<ToolbarSpacer/>
-				<Title text="Title" level="H2"/>
-				<ToolbarSpacer/>
-				<Button icon="sap-icon://edit" type="Transparent" press="onPress" ariaLabelledBy="editButtonLabel"/>
-			</Toolbar>
-
-		</customHeader>
 		<content>
 			<HBox>
 				<Button text="Default"
