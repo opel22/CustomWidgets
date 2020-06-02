@@ -2,29 +2,55 @@
     let template = document.createElement("template");
     template.innerHTML = `
     <style>
-    canvas.drawingBuffer {
-        z-index : 11;
-        position: absolute;
-        width   : 100%;
-        height  : 100%;
-        top     : 50px;
-        bottom  : 0;
-        left    : 50px;
-        right   : 0
-    }   
-  </style>
-  <div id="export_div" name="export_div">
-     <slot name="export_button"></slot>
-  </div>
+ 
+    </style>
+    <div id="ui5_content" name="ui5_content">
+    <slot name="content"></slot>
+   </div>
+   <script id="oView" name="oView" type="ui5_content">
+        <mvc:View
+            controllerName="myView.Template"
+            xmlns="sap.m"
+            xmlns:l="sap.ui.layout"            
+            xmlns:mvc="sap.ui.core.mvc"
+            xmlns:core="sap.ui.core">
+ 
+                <content>
+                    <HBox>
+                        <Button type="Accept"
+                                text="Accept"
+                                press="onPress">
+                            <layoutData>
+                                <FlexItemData growFactor="1" />
+                            </layoutData>
+                        </Button>
+                    </HBox>
+                </content>
+        </mvc:View>
+    </script>
     `;
 
     class HalloWelt extends HTMLElement {
         constructor() {
-            super(); 
-            let shadowRoot = this.attachShadow({mode: "open"});
-            shadowRoot.appendChild(template.content.cloneNode(true));
+            super();
 
+            _shadowRoot = this.attachShadow({
+                mode: "open"
+            });
+            _shadowRoot.appendChild(tmpl.content.cloneNode(true));
+
+            _id = createGuid();
+
+            _shadowRoot.querySelector("#oView").id = _id + "_oView";
+
+            this._export_settings = {};
+            this._export_settings.password = "";
+
+            this.addEventListener("click", event => {
+                console.log('click');
+            });
         }
+
         connectedCallback() {
             try {
                 if (window.commonApp) {
@@ -71,7 +97,7 @@
                                         }
                                     }
                                 }));
-                            }                            
+                            }
                         };
 
                         let subscribeReactStore = store => {
@@ -96,14 +122,14 @@
 
                                 oldRenderReactComponent.call(outlineContainer, e);
                             }
-                        }                        
+                        }
                     }
                 }
             } catch (e) {}
         }
 
         disconnectedCallback() {
-            if (this._subscription) { // react store subscription
+            if (this._subscription) { 
                 this._subscription();
                 this._subscription = null;
             }
@@ -116,80 +142,98 @@
         }
 
         onCustomWidgetAfterUpdate(changedProperties) {
-            var that = this;
-            if (this._firstConnection === 0) {
-                this._firstConnection = 1;
-                async function LoadLibs() {
-                    try {
-                        //await loadScript(quaggaminjs, _shadowRoot);
-                    } catch (e) {
-                        alert(e);
-                    } finally {
-                        loadthis(that);
+            loadthis(this);
+        }
+
+        _firePropertiesChanged() {
+            this.password = "";
+            this.dispatchEvent(new CustomEvent("propertiesChanged", {
+                detail: {
+                    properties: {
+                        password: this.password
                     }
                 }
-                LoadLibs();
+            }));
+        }
+
+        // SETTINGS
+        get password() {
+            return this._export_settings.password;
+        }
+        set password(value) {
+            value = _password;
+            this._export_settings.password = value;
+        }
+
+        static get observedAttributes() {
+            return [
+                "password"
+            ];
+        }
+
+        attributeChangedCallback(name, oldValue, newValue) {
+            if (oldValue != newValue) {
+                this[name] = newValue;
             }
         }
 
-        _renderExportButton() {
-            let components = this.metadata ? JSON.parse(this.metadata)["components"] : {};
-            console.log("_renderExportButton-components");
-            console.log(components);
-            console.log("end");
-        }
     }
     customElements.define("com-sap-sample-hallowelt",  HalloWelt);
 
+    // UTILS
     function loadthis(that) {
         var that_ = that;
+      
+        let content = document.createElement('div');
+        content.slot = "content";
+        that_.appendChild(content);
 
-        let buttonSlot = document.createElement('div');
-        buttonSlot.slot = "export_button";
-        that_.appendChild(buttonSlot);
+        sap.ui.getCore().attachInit(function() {
+            "use strict";
 
-        that_._Label = new sap.m.Label({
-            required: false,
-            text: "Barcode value",
-            design: "Bold"
+            //### Controller ###
+            sap.ui.define([
+                "jquery.sap.global",
+                "sap/ui/core/mvc/Controller"
+            ], function(jQuery, Controller) {
+                "use strict";
+
+                return Controller.extend("myView.Template", {
+                    onButtonPress: function(oEvent) {
+                        _password = oView.byId("passwordInput").getValue();
+                        that._firePropertiesChanged();
+                        console.log(_password);
+
+                        this.settings = {};
+                        this.settings.password = "";
+
+                        that.dispatchEvent(new CustomEvent("onStart", {
+                            detail: {
+                                settings: this.settings
+                            }
+                        }));
+                    } 
+                });
+            });
+
+            //### THE APP: place the XMLView somewhere into DOM ###
+            var oView  = sap.ui.xmlview({
+                viewContent: jQuery(_shadowRoot.getElementById(_id + "_oView")).html(),
+            });
+            oView.placeAt(content);
+
+
+            if (that_._designMode) {
+                oView.byId("passwordInput").setEnabled(false);
+            }
         });
-
-        that_._exportButton = new sap.m.Button({
-            id: "scan",
-            text: "Scan",
-            icon: "sap-icon://bar-code",
-            visible: true,
-            tooltip: "Scan Barcode"
-        });
-
-        that_._Input = new sap.m.Input({
-            id: "scannedValue",
-            type: sap.m.InputType.Text,
-            placeholder: ''
-        });
-
-        that_._simpleForm = new sap.ui.layout.form.SimpleForm({
-            labelSpanL: 3,
-            labelSpanM: 3,
-            emptySpanL: 3,
-            emptySpanM: 3,
-            columnsL: 1,
-            columnsM: 1,
-            editable: true,
-            content: [
-                that_._Label,
-                that_._Input,
-                that_._exportButton
-            ]
-        })
-
-        that_._simpleForm.placeAt(buttonSlot);
-        that_._renderExportButton();
-
-        if (that_._designMode) {
-            sap.ui.getCore().byId("scan").setEnabled(false);
-            sap.ui.getCore().byId("scannedValue").setEditable(false);
-        }
     }
 
+    function createGuid() {
+        return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, c => {
+            let r = Math.random() * 16 | 0,
+                v = c === "x" ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+        });
+    }  
 })();
