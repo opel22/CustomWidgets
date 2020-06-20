@@ -54,5 +54,5 @@
         }
         
     }
-    customElements.define("com-sap-sample-sacKpiTile", SacKpiTile);
+    customElements.define("com-sap-sample-sackpitile", SacKpiTile);
 })();
