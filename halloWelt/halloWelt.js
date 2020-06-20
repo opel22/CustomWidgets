@@ -5,29 +5,25 @@
 
     let tmpl = document.createElement("template");
     tmpl.innerHTML = `
-    <style>
- 
-    </style>
     <div id="ui5_content" name="ui5_content">
-    <slot name="content"></slot>
-   </div>
-   <script id="oView" name="oView" type="ui5_content">
-    <mvc:View
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:core="sap.ui.core"
-	height="100%"
-	controllerName="myView.Template">
-        <Button type="Accept"
-            text="Accept"
-            press="onPress"
-            ariaDescribedBy="acceptButtonDescription genericButtonDescription">
-            <layoutData>
-                <FlexItemData growFactor="1" />
-            </layoutData>
-        </Button>
-</mvc:View>
-
+        <slot name="content"></slot>
+    </div>
+    <script id="oView" name="oView" type="ui5_content">
+        <mvc:View
+                xmlns="sap.m"
+                xmlns:mvc="sap.ui.core.mvc"
+                xmlns:core="sap.ui.core"
+                height="100%"
+                controllerName="myView.Template">
+            <Button type="Accept"
+                    text="Accept"
+                    press="onPress"
+                    ariaDescribedBy="acceptButtonDescription genericButtonDescription">
+                <layoutData>
+                    <FlexItemData growFactor="1" />
+                </layoutData>
+            </Button>
+        </mvc:View>
     </script>
     `;
 
