@@ -1,33 +1,49 @@
-(function() { 
-    let template = document.createElement("template");
-    template.innerHTML = `
-    <script id="oView" name="oView" type="sapui5/xmlview">     
+(function() {
+    let _shadowRoot;
+    let _id;
+
+    let tmpl = document.createElement("template");
+    tmpl.innerHTML = `
+    <div id="ui5_content" name="ui5_content">
+        <slot name="content"></slot>
+    </div>
+    <script id="oView" name="oView" type="ui5_content"    
         <mvc:View
-            controllerName="sap.m.sample.NumericContentDifColors.Page"
-            xmlns="sap.m"
-            xmlns:mvc="sap.ui.core.mvc">
-            <GenericTile
-                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+                controllerName="sap.m.sample.NumericContentDifColors.Page"
+                xmlns="sap.m"
+                xmlns:mvc="sap.ui.core.mvc">
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
                     size="L"
-                    header="Country-Specific Profit Margin" 
-                    subheader="Expenses" press="press">
-                        <TileContent unit="EUR"
-                            footer="Current Quarter">
-                                <NumericContent scale="M"
-                                    value="1.96"
-                                    valueColor="Error"
-                                    indicator="Up"
-                                    withMargin="false" />
-                        </TileContent>
+                    header="Country-Specific Profit Margin"
+                    subheader="Expenses"
+                    press="press">
+                <TileContent
+                        unit="EUR"
+                        footer="Current Quarter">
+                    <NumericContent
+                            scale="M"
+                            value="1.96"
+                            valueColor="Error"
+                            indicator="Up"
+                            withMargin="false" />
+                </TileContent>
             </GenericTile>
         </mvc:View>
-    </script>          
     `;
+
     class FioriTile extends HTMLElement {
         constructor() {
-            super(); 
-            let shadowRoot = this.attachShadow({mode: "open"});
-            shadowRoot.appendChild(template.content.cloneNode(true));
+            super();
+
+            _shadowRoot = this.attachShadow({
+                mode: "open"
+            });
+            _shadowRoot.appendChild(tmpl.content.cloneNode(true));
+
+            _id = createGuid();
+
+            _shadowRoot.querySelector("#oView").id = _id + "_oView";
+
             this.addEventListener("click", event => {
                 var event = new Event("onClick");
                 this.dispatchEvent(event);
@@ -37,8 +53,44 @@
             //this._props = { ...this._props, ...changedProperties };
         }
         onCustomWidgetAfterUpdate(changedProperties) {
-            
+            loadthis(this);
         }
     }
     customElements.define("com-sap-sample-fioritile", FioriTile);
+
+    function loadthis(that) {
+        var that_ = that;
+
+        let content = document.createElement('div');
+        content.slot = "content";
+        that_.appendChild(content);
+
+        sap.ui.getCore().attachInit(function(){
+            "use strict";
+
+            sap.ui.define([
+                "jquery.sap.global",
+                "sap/ui/core/mvc/Controller"
+            ], function(jQuery, Controller) {
+                "use strict";
+
+                return Controller.extend("myView.Template", {
+
+                });
+            });
+
+            var oView  = sap.ui.xmlview({
+                viewContent: jQuery(_shadowRoot.getElementById(_id + "_oView")).html(),
+            });
+            oView.placeAt(content);
+        });
+    }
+
+    function createGuid() {
+        return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, c => {
+            let r = Math.random() * 16 | 0,
+                v = c === "x" ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+        });
+    }     
 })();
