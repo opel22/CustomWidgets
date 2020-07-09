@@ -1,15 +1,25 @@
 (function() { 
     let template = document.createElement("template");
     template.innerHTML = `
-        <style>
-        :host {
-            border-radius: 25px;
-            border-width: 4px;
-            border-color: black;
-            border-style: solid;
-            display: block;
-        } 
-        </style> 
+        <mvc:View
+        controllerName="sap.m.sample.NumericContentDifColors.Page"
+        xmlns="sap.m"
+        xmlns:mvc="sap.ui.core.mvc">
+        <GenericTile
+                class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+                size="L"
+                header="Country-Specific Profit Margin" 
+                subheader="Expenses" press="press">
+                    <TileContent unit="EUR"
+                        footer="Current Quarter">
+                            <NumericContent scale="M"
+                                value="1.96"
+                                valueColor="Error"
+                                indicator="Up"
+                                withMargin="false" />
+		            </TileContent>
+        </GenericTile>
+    </mvc:View>
     `;
     class FioriTile extends HTMLElement {
         constructor() {
@@ -20,30 +30,14 @@
                 var event = new Event("onClick");
                 this.dispatchEvent(event);
             });
-            this.addEventListener("mouseover", event => {
-                var event = new Event("onHover");
-                this.dispatchEvent(event);
-            });
-            this.addEventListener("mouseenter", event => {
-                var event = new Event("onEnter");
-                this.dispatchEvent(event);
-            })
-            this.addEventListener("mouseleave", event => {
-                var event = new Event("onOut");
-                this.dispatchEvent(event);
-            })
+
             this._props = {};
         }
         onCustomWidgetBeforeUpdate(changedProperties) {
             this._props = { ...this._props, ...changedProperties };
         }
         onCustomWidgetAfterUpdate(changedProperties) {
-            if ("color" in changedProperties) {
-                this.style["background-color"] = changedProperties["color"];
-            }
-            if ("opacity" in changedProperties) {
-                this.style["opacity"] = changedProperties["opacity"];
-            }
+            
         }
     }
     customElements.define("com-sap-sample-fioritile", FioriTile);
