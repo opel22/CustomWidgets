@@ -7,7 +7,7 @@
     <div id="ui5_content" name="ui5_content">
         <slot name="content"></slot>
     </div>
-    <script id="oView" name="oView" type="ui5_content"    
+    <script id="oView" name="oView" type="ui5_content">    
         <mvc:View
                 controllerName="sap.m.sample.NumericContentDifColors.Page"
                 xmlns="sap.m"
@@ -29,6 +29,7 @@
                 </TileContent>
             </GenericTile>
         </mvc:View>
+    </script>        
     `;
 
     class FioriTile extends HTMLElement {
