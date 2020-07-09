@@ -2,6 +2,3 @@ specVersion: '2.1'
 metadata:
   name: kpiTile
 type: application
-framework:
-  name: SAPUI5
-  version: "1.78.2"
