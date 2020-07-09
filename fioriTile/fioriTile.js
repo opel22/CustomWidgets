@@ -40,10 +40,6 @@
             });
             _shadowRoot.appendChild(tmpl.content.cloneNode(true));
 
-            _id = createGuid();
-
-            _shadowRoot.querySelector("#oView").id = _id + "_oView";
-
             this.addEventListener("click", event => {
                 var event = new Event("onClick");
                 this.dispatchEvent(event);
@@ -80,17 +76,9 @@
             });
 
             var oView  = sap.ui.xmlview({
-                viewContent: jQuery(_shadowRoot.getElementById(_id + "_oView")).html(),
+                viewContent: jQuery(_shadowRoot.getElementById("_oView")).html(),
             });
             oView.placeAt(content);
         });
-    }
-
-    function createGuid() {
-        return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, c => {
-            let r = Math.random() * 16 | 0,
-                v = c === "x" ? r : (r & 0x3 | 0x8);
-            return v.toString(16);
-        });
-    }     
+    }  
 })();
