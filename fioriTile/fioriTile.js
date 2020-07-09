@@ -1,25 +1,27 @@
 (function() { 
     let template = document.createElement("template");
     template.innerHTML = `
+    <script id="oView" name="oView" type="sapui5/xmlview">     
         <mvc:View
-        controllerName="sap.m.sample.NumericContentDifColors.Page"
-        xmlns="sap.m"
-        xmlns:mvc="sap.ui.core.mvc">
-        <GenericTile
-                class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
-                size="L"
-                header="Country-Specific Profit Margin" 
-                subheader="Expenses" press="press">
-                    <TileContent unit="EUR"
-                        footer="Current Quarter">
-                            <NumericContent scale="M"
-                                value="1.96"
-                                valueColor="Error"
-                                indicator="Up"
-                                withMargin="false" />
-		            </TileContent>
-        </GenericTile>
-    </mvc:View>
+            controllerName="sap.m.sample.NumericContentDifColors.Page"
+            xmlns="sap.m"
+            xmlns:mvc="sap.ui.core.mvc">
+            <GenericTile
+                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+                    size="L"
+                    header="Country-Specific Profit Margin" 
+                    subheader="Expenses" press="press">
+                        <TileContent unit="EUR"
+                            footer="Current Quarter">
+                                <NumericContent scale="M"
+                                    value="1.96"
+                                    valueColor="Error"
+                                    indicator="Up"
+                                    withMargin="false" />
+                        </TileContent>
+            </GenericTile>
+        </mvc:View>
+    </script>          
     `;
     class FioriTile extends HTMLElement {
         constructor() {
@@ -30,11 +32,9 @@
                 var event = new Event("onClick");
                 this.dispatchEvent(event);
             });
-
-            this._props = {};
         }
         onCustomWidgetBeforeUpdate(changedProperties) {
-            this._props = { ...this._props, ...changedProperties };
+            //this._props = { ...this._props, ...changedProperties };
         }
         onCustomWidgetAfterUpdate(changedProperties) {
             
