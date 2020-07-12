@@ -1,4 +1,6 @@
 (function() { 
+    let _shadowRoot;
+
     let template = document.createElement("template");
     template.innerHTML = `
     <script id="sap-ui-bootstrap"
@@ -36,10 +38,10 @@
     class Picker extends HTMLElement {
         constructor() {
             super(); 
-            let shadowRoot = this.attachShadow({mode: "open"});
-            shadowRoot.appendChild(template.content.cloneNode(true));
+            _shadowRoot = this.attachShadow({mode: "open"});
+            _shadowRoot.appendChild(template.content.cloneNode(true));
 
-            shadowRoot.querySelector("#oView").id = _id + "_oView";
+            _shadowRoot.querySelector("#oView").id = _id + "_oView";
 
             this.addEventListener("click", event => {
                 var event = new Event("onClick");
