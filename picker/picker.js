@@ -54,8 +54,8 @@
             this._props = { ...this._props, ...changedProperties };
         }
         onCustomWidgetAfterUpdate(changedProperties) {
-            
-        }
+            loadthis(this);
+        }        
     }
     customElements.define("com-sap-sample-picker", Picker);
 
