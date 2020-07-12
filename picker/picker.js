@@ -58,4 +58,21 @@
         }
     }
     customElements.define("com-sap-sample-picker", Picker);
+
+    // UTILS
+    function loadthis(that) {
+        var that_ = that;
+      
+        let content = document.createElement('div');
+        content.slot = "content";
+        that_.appendChild(content);
+
+        sap.ui.getCore().attachInit(function() {
+            "use strict";
+            var oDatePicker = new sap.m.DatePicker();
+            oDatePicker.placeAt("content");            
+        });
+    }
+
+
 })();
