@@ -4,37 +4,32 @@
     <script id="sap-ui-bootstrap"
         src="https://sapui5.hana.ondemand.com/sdk/resources/sap-ui-core.js"
         data-sap-ui-theme="sap_belize"
-        data-sap-ui-resourceroots='{
-            "sap.m.sample.DatePicker": "./",
-            "sap.ui.demo.mock": "mockdata"
-        }'
         data-sap-ui-compatVersion="edge"
         data-sap-ui-async="true"
-        data-sap-ui-frameOptions="trusted"
-        data-sap-ui-oninit="module:sap/ui/core/ComponentSupport">
+        data-sap-ui-frameOptions="trusted">
     </script>
 
-    <div class="sapUiBody sapUiSizeCozy" id="content"
-        data-sap-ui-component
-        data-name="sap.m.sample.DatePicker"
-        data-height="100%"
-        data-id="container"
-        data-settings='{"id" : "sap.m.sample.DatePicker"}'
-        style="height: 100%">
+    <div id="ui5_content" name="ui5_content">
+        <slot name="content"></slot>
     </div>
 
-    <script id="oView" name="oView" type="ui5_content">    
+    <script id="oView" name="oView" type="sapui5/xmlview">  
         <mvc:View
-            controllerName="sap.m.sample.DatePicker.Group"
+            controllerName="myView.Template"
             xmlns:mvc="sap.ui.core.mvc"
             xmlns:l="sap.ui.layout"
             xmlns="sap.m">
-            <Label text='DatePicker with display format for months and years' labelFor="DP1"/>
-            <DatePicker
-                    id="DP1"
-                    displayFormat="MM-y"
-                    change="handleChange"
-                    class="sapUiSmallMarginBottom"/>
+            <l:VerticalLayout
+					class="sapUiContentPadding"
+                    width="100%">
+            <l:content>                    
+                <DatePicker
+                        id="DP1"
+                        displayFormat="MM-y"
+                        change="handleChange"
+                        class="sapUiSmallMarginBottom"/>
+            </l:content>
+            </l:VerticalLayout>                        
         </mvc:View>
     </script>        
     `;
@@ -43,6 +38,9 @@
             super(); 
             let shadowRoot = this.attachShadow({mode: "open"});
             shadowRoot.appendChild(template.content.cloneNode(true));
+
+            shadowRoot.querySelector("#oView").id = _id + "_oView";
+
             this.addEventListener("click", event => {
                 var event = new Event("onClick");
                 this.dispatchEvent(event);
@@ -67,10 +65,76 @@
         content.slot = "content";
         that_.appendChild(content);
 
-        sap.ui.getCore().attachInit(function() {
+        sap.ui.define([
+            'sap/ui/core/mvc/Controller',
+            'sap/ui/model/json/JSONModel',
+            "sap/ui/core/Core",
+            "sap/ui/core/library",
+            "sap/ui/unified/library",
+            "sap/ui/unified/DateTypeRange"
+        ], function(Controller, JSONModel, Core, CoreLibrary, UnifiedLibrary, DateTypeRange) {
             "use strict";
-            var oDatePicker = new sap.m.DatePicker();
-            oDatePicker.placeAt("content");            
+            var CalendarDayType = UnifiedLibrary.CalendarDayType,
+                ValueState = CoreLibrary.ValueState;
+        
+            return Controller.extend("sap.m.sample.DatePicker.Group", {
+        
+                onInit: function () {
+                    // create model
+                    var oModel = new JSONModel();
+                    oModel.setData({
+                        dateValue: new Date()
+                    });
+                    this.getView().setModel(oModel);
+        
+                    this.byId("DP1").setDateValue(new Date());
+                    
+                    this._iEvent = 0;
+        
+                    // for the data binding example do not use the change event for check but the data binding parsing events
+                    Core.attachParseError(
+                            function(oEvent) {
+                                var oElement = oEvent.getParameter("element");
+        
+                                if (oElement.setValueState) {
+                                    oElement.setValueState(ValueState.Error);
+                                }
+                            });
+        
+                    Core.attachValidationSuccess(
+                            function(oEvent) {
+                                var oElement = oEvent.getParameter("element");
+        
+                                if (oElement.setValueState) {
+                                    oElement.setValueState(ValueState.None);
+                                }
+                            });
+                },
+        
+                handleChange: function (oEvent) {
+                    var oText = this.byId("textResult"),
+                        oDP = oEvent.getSource(),
+                        sValue = oEvent.getParameter("value"),
+                        bValid = oEvent.getParameter("valid");
+        
+                    this._iEvent++;
+                    oText.setText("Change - Event " + this._iEvent + ": DatePicker " + oDP.getId() + ":" + sValue);
+        
+                    if (bValid) {
+                        oDP.setValueState(ValueState.None);
+                    } else {
+                        oDP.setValueState(ValueState.Error);
+                    }
+                },
+        
+                handleBtnPress: function (oEvent) {
+                    var oText = this.byId("textResult2"),
+                        oDP = this.byId("DP9");
+        
+                    oText.setText("Value is: " + ((oDP.isValidValue()) ? "valid" : "not valid"));
+                }
+            });
+        
         });
     }
 
