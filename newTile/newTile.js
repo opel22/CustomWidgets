@@ -29,6 +29,7 @@
             _shadowRoot.appendChild(template.content.cloneNode(true));
             
             this._props = {};
+            loadthis(this);  
         }
         onCustomWidgetBeforeUpdate(changedProperties) {
             if ("designMode" in changedProperties) {
@@ -36,7 +37,7 @@
             }
         }
         onCustomWidgetAfterUpdate(changedProperties) {
-            loadthis(this);            
+          
         }
         set value(newValue) {
             debugger;
