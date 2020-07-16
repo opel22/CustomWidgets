@@ -15,7 +15,7 @@
             xmlns:mvc="sap.ui.core.mvc">
             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" size="L" header="Country-Specific Profit Margin" subheader="Expenses" press="press">
                 <TileContent unit="EUR" footer="Current Quarter">
-                    <NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false" />
+                    <NumericContent id="tile" scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false" />
                 </TileContent>
             </GenericTile>
             </mvc:View>
@@ -40,7 +40,7 @@
         }
         set value(newValue) {
             debugger;
-            //this._shadowRoot.getElementById("styling_color").value = newValue;
+            this._shadowRoot.getElementById("tile").value = newValue;
         }
     }
     customElements.define("com-sap-sample-newtile", NewTile);
