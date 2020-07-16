@@ -34,7 +34,7 @@
             loadthis(this);            
         }
     }
-    customElements.define("com-sap-sample-newTile", newTile);
+    customElements.define("com-sap-sample-newtile", newTile);
 
     function loadthis(that) {
         var that_ = that;
