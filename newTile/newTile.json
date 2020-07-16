@@ -39,7 +39,7 @@
                 {
                     "name": "newValue",
                     "type": "string",
-                    "description": "The new value"
+                    "description": "The new Value"
                 }
             ],
             "body": "this.value = newValue;"
