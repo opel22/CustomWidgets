@@ -39,9 +39,8 @@
             loadthis(this);            
         }
         set value(newValue) {
-            debugger;
-            //this._shadowRoot.getElementById("__tile0").value = newValue;
-            this.getTileContent()[0].getContent()[0].setValue(newValue);
+            //debugger;
+            sap.ui.getCore().byId("__tile0").getTileContent()[0].getContent().setValue(newValue);
         }
     }
     customElements.define("com-sap-sample-newtile", NewTile);
