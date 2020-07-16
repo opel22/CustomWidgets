@@ -32,6 +32,7 @@
         }
         onCustomWidgetBeforeUpdate(changedProperties) {
             console.log(changedProperties);
+            this._name = changedProperties["widgetName"];
             if ("designMode" in changedProperties) {
                 this._designMode = changedProperties["designMode"];
             }
@@ -42,11 +43,6 @@
         set value(newValue) {
             if (sap.ui.getCore().byId("__tile0")) {
                 sap.ui.getCore().byId("__tile0").getTileContent()[0].getContent().setValue(newValue);
-            }
-        }
-        set name(newName) {
-            if (sap.ui.getCore().byId("__tile0")) {
-                sap.ui.getCore().byId("__tile0").getTileContent()[0].getContent().setValue(newName);
             }
         }
     }
