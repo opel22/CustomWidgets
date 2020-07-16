@@ -28,7 +28,8 @@
             _shadowRoot.appendChild(template.content.cloneNode(true));
             
             this._props = {};
-            loadthis(this);  
+            loadthis(this);
+            
         }
         onCustomWidgetBeforeUpdate(changedProperties) {
             console.log(changedProperties);
@@ -41,8 +42,9 @@
           debugger;
         }
         set value(newValue) {
-            if (sap.ui.getCore().byId("__tile0")) {
-                sap.ui.getCore().byId("__tile0").getTileContent()[0].getContent().setValue(newValue);
+            if (sap.ui.getCore().byId("tile")) {
+                //sap.ui.getCore().byId("__tile0").getTileContent()[0].getContent().setValue(newValue);
+                this.value = newValue;
             }
         }
     }
