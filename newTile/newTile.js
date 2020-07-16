@@ -14,7 +14,7 @@
             xmlns:mvc="sap.ui.core.mvc">
             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" size="L" header="Country-Specific Profit Margin" subheader="Expenses" press="press">
                 <TileContent unit="EUR" footer="Current Quarter">
-                    <NumericContent id="tile" scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false" />
+                    <NumericContent id="tile" scale="M" valueColor="Error" indicator="Up" withMargin="false" />
                 </TileContent>
             </GenericTile>
             </mvc:View>
