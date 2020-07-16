@@ -26,10 +26,6 @@
             _shadowRoot = this.attachShadow({mode: "open"});
 
             _shadowRoot.appendChild(template.content.cloneNode(true));
-
-            this._id = createGuid();
-
-            _shadowRoot.querySelector("#oView").id = this._id + "_oView";
             
             this._props = {};
             loadthis(this);  
@@ -46,6 +42,11 @@
         set value(newValue) {
             if (sap.ui.getCore().byId("__tile0")) {
                 sap.ui.getCore().byId("__tile0").getTileContent()[0].getContent().setValue(newValue);
+            }
+        }
+        set name(newName) {
+            if (sap.ui.getCore().byId("__tile0")) {
+                sap.ui.getCore().byId("__tile0").getTileContent()[0].getContent().setValue(newName);
             }
         }
     }
@@ -74,7 +75,7 @@
 
             //### THE APP: place the XMLView somewhere into DOM ###
             var oView  = sap.ui.xmlview({
-                viewContent: jQuery(_shadowRoot.getElementById(_id + "_oView")).html(),
+                viewContent: jQuery(_shadowRoot.getElementById("oView")).html(),
             });
             oView.placeAt(content);
 
@@ -84,12 +85,5 @@
             }
         });
     }
-    function createGuid() {
-        return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, c => {
-            let r = Math.random() * 16 | 0,
-                v = c === "x" ? r : (r & 0x3 | 0x8);
-            return v.toString(16);
-        });
-    }    
 
 })();
