@@ -1,5 +1,6 @@
 (function() { 
     let _shadowRoot;
+    let _id;
 
     let template = document.createElement("template");
     template.innerHTML = `
