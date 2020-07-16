@@ -25,15 +25,20 @@
         constructor() {
             super(); 
             _shadowRoot = this.attachShadow({mode: "open"});
-            
+
             _shadowRoot.appendChild(template.content.cloneNode(true));
 
-            _shadowRoot.querySelector("#oView").id = _id + "_oView";
+            //let _id = 1;
+
+            //_shadowRoot.querySelector("#oView").id = _id + "_oView";
+            _shadowRoot.querySelector("#oView") = "oView";
             
             this._props = {};
         }
         onCustomWidgetBeforeUpdate(changedProperties) {
-            this._props = { ...this._props, ...changedProperties };
+            if ("designMode" in changedProperties) {
+                this._designMode = changedProperties["designMode"];
+            }
         }
         onCustomWidgetAfterUpdate(changedProperties) {
             loadthis(this);            
@@ -64,7 +69,8 @@
 
             //### THE APP: place the XMLView somewhere into DOM ###
             var oView  = sap.ui.xmlview({
-                viewContent: jQuery(_shadowRoot.getElementById(_id + "_oView")).html(),
+                //viewContent: jQuery(_shadowRoot.getElementById(_id + "_oView")).html(),
+                viewContent: jQuery(_shadowRoot.getElementById("oView")).html(),
             });
             oView.placeAt(content);
 
