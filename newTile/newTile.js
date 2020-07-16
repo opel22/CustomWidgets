@@ -38,7 +38,7 @@
             }
         }
         onCustomWidgetAfterUpdate(changedProperties) {
-          
+          debugger;
         }
         set value(newValue) {
             if (sap.ui.getCore().byId("__tile0")) {
