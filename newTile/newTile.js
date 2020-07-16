@@ -40,7 +40,6 @@
           
         }
         set value(newValue) {
-            debugger;
             if (sap.ui.getCore().byId("__tile0")) {
                 sap.ui.getCore().byId("__tile0").getTileContent()[0].getContent().setValue(newValue);
             }
