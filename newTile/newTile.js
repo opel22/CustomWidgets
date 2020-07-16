@@ -40,7 +40,7 @@
         }
         set value(newValue) {
             debugger;
-            this._shadowRoot.getElementById("styling_color").value = newValue;
+            //this._shadowRoot.getElementById("styling_color").value = newValue;
         }
     }
     customElements.define("com-sap-sample-newtile", NewTile);
