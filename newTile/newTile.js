@@ -40,7 +40,8 @@
         }
         set value(newValue) {
             debugger;
-            this._shadowRoot.getElementById("__tile0").value = newValue;
+            //this._shadowRoot.getElementById("__tile0").value = newValue;
+            this.getTileContent()[0].getContent()[0].setValue(newValue);
         }
     }
     customElements.define("com-sap-sample-newtile", NewTile);
