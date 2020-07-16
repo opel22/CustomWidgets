@@ -39,14 +39,17 @@
             }
         }
         onCustomWidgetAfterUpdate(changedProperties) {
-          debugger;
+            debugger;
+            if ("value" in changedProperties) {
+                this.value = changedProperties["value"];
+            }   
         }
-        set value(newValue) {
+        /*set value(newValue) {
             if (sap.ui.getCore().byId("tile")) {
                 //sap.ui.getCore().byId("__tile0").getTileContent()[0].getContent().setValue(newValue);
                 this.value = newValue;
             }
-        }
+        }*/
     }
     customElements.define("com-sap-sample-newtile", NewTile);
 
