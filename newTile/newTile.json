@@ -20,14 +20,30 @@
     "properties": {
         "width": {
             "type": "integer",
-            "default": 176
+            "default": 192
         },
         "height": {
             "type": "integer",
-            "default": 176
+            "default": 192
+        },
+        "value": {
+            "type": "string",
+            "description": "Tile Value",
+            "default": "0.00"
         }
     },
     "methods": {
+        "setValue": {
+            "description": "Sets the value.",
+            "parameters": [
+                {
+                    "name": "newValue",
+                    "type": "string",
+                    "description": "The new value"
+                }
+            ],
+            "body": "this.value = newValue;"
+        }        
     },
     "events": {
     },
