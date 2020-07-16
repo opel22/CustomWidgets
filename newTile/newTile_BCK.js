@@ -30,7 +30,6 @@
             loadthis(this);  
         }
         onCustomWidgetBeforeUpdate(changedProperties) {
-            console.log(changedProperties);
             if ("designMode" in changedProperties) {
                 this._designMode = changedProperties["designMode"];
             }
