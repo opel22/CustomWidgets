@@ -39,7 +39,7 @@
             loadthis(this);            
         }
         set value(newValue) {
-            //debugger;
+            debugger;
             //sap.ui.getCore().byId("__tile0").getTileContent()[0].getContent().setValue(newValue);
         }
     }
