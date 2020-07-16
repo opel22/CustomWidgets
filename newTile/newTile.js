@@ -41,7 +41,9 @@
         onCustomWidgetAfterUpdate(changedProperties) {
             debugger;
             if ("value" in changedProperties) {
-                this.getElementsByClassName("WithoutMargin sapMNCValueScr").item(0).innerText  = changedProperties["value"];
+                if(changedProperties["value"]) {
+                    this.getElementsByClassName("WithoutMargin sapMNCValueScr").item(0).innerText  = changedProperties["value"];
+                }
             }   
         }
         /*set value(newValue) {
