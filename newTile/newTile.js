@@ -31,7 +31,7 @@
             //let _id = 1;
 
             //_shadowRoot.querySelector("#oView").id = _id + "_oView";
-            _shadowRoot.querySelector("#oView") = "oView";
+            _shadowRoot.querySelector("oView") = "oView";
             
             this._props = {};
         }
