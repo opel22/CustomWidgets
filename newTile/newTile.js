@@ -3,8 +3,6 @@
 
     let template = document.createElement("template");
     template.innerHTML = `
-        <style>
-        </style>
         <div id="ui5_content" name="ui5_content">
             <slot name="content"></slot>
         </div>
