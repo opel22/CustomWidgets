@@ -64,7 +64,7 @@
             }
             oView.byId("genTile").setHeader(newHeader);
         }
-        set subHeader(newSubHeader) {
+        set subheader(newSubHeader) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 
             if(!oView){
