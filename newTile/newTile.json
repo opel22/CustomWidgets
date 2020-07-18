@@ -36,6 +36,11 @@
             "description": "Tile Unit",
             "default": "CHF"
         },
+        "header": {
+            "type": "string",
+            "description": "Tile Header",
+            "default": "Tile Header"
+        },
         "name": {
             "type": "string",
             "description": "Tile name"
@@ -63,6 +68,17 @@
                 }
             ],
             "body": "this.unit = newUnit;"
+        },
+        "setHeader": {
+            "description": "Sets the header.",
+            "parameters": [
+                {
+                    "name": "newHeader",
+                    "type": "string",
+                    "description": "The new header"
+                }
+            ],
+            "body": "this.header = newHeader;"
         }        
     },
     "events": {
