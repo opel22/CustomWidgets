@@ -41,6 +41,11 @@
             "description": "Tile Header",
             "default": "Tile Header"
         },
+        "subHeader": {
+            "type": "string",
+            "description": "Tile Subheader",
+            "default": "Tile Subheader"
+        },
         "name": {
             "type": "string",
             "description": "Tile name"
@@ -79,6 +84,17 @@
                 }
             ],
             "body": "this.header = newHeader;"
+        },
+        "setSubHeader": {
+            "description": "Sets the subheader.",
+            "parameters": [
+                {
+                    "name": "newSubHeader",
+                    "type": "string",
+                    "description": "The new subheader"
+                }
+            ],
+            "body": "this.subHeader = newSubHeader;"
         }        
     },
     "events": {

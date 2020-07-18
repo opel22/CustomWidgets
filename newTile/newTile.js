@@ -64,6 +64,14 @@
             }
             oView.byId("genTile").setHeader(newHeader);
         }
+        set subHeader(newSubHeader) {
+            let sViewId = this.firstChild.getAttribute("sapui5viewid");
+            var oView = sap.ui.getCore().byId(sViewId); 
+            if(!oView){
+                return; 
+            }
+            oView.byId("genTile").setSubHeader(newSubHeader);
+        }
     }
     customElements.define("com-sap-sample-newtile", NewTile);
 
