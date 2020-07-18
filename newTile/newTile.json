@@ -94,7 +94,7 @@
                     "description": "The new subheader"
                 }
             ],
-            "body": "this.subHeader = newSubHeader;"
+            "body": "this.subheader = newSubHeader;"
         }        
     },
     "events": {
