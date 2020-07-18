@@ -47,7 +47,18 @@
                 }
             ],
             "body": "this.value = newValue;"
-        }      
+        },
+        "newUnit": {
+            "description": "Sets the unit.",
+            "parameters": [
+                {
+                    "name": "newUnit",
+                    "type": "string",
+                    "description": "The new unit"
+                }
+            ],
+            "body": "this.unit = newUnit;"
+        }        
     },
     "events": {
     },
