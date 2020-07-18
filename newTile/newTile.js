@@ -12,8 +12,8 @@
             controllerName="myView.Template"
             xmlns="sap.m"
             xmlns:mvc="sap.ui.core.mvc">
-            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" size="L" header="Country-Specific Profit Margin" subheader="Expenses" press="press">
-                <TileContent unit="EUR" footer="Current Quarter">
+            <GenericTile id="genTile" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" size="L" header="Country-Specific Profit Margin" subheader="Expenses" press="press">
+                <TileContent id="tileCont" unit="EUR" footer="Current Quarter">
                     <NumericContent id="tile" value="2.22" scale="M" valueColor="Error" indicator="Up" withMargin="false" />
                 </TileContent>
             </GenericTile>
@@ -54,7 +54,7 @@
             if(!oView){
                 return; 
             }
-            oView.byId("tile").setUnit(newUnit);
+            oView.byId("tileCont").setUnit(newUnit);
         }
     }
     customElements.define("com-sap-sample-newtile", NewTile);
