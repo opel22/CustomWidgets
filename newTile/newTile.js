@@ -62,7 +62,7 @@
             if(!oView){
                 return; 
             }
-            oView.byId("genTile").setUnit(newHeader);
+            oView.byId("genTile").setHeader(newHeader);
         }
     }
     customElements.define("com-sap-sample-newtile", NewTile);
