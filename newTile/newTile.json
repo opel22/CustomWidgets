@@ -34,7 +34,8 @@
         "unit": {
             "type": "string",
             "description": "Tile Unit",
-            "default": "CHF",
+            "default": "CHF"
+        },
         "name": {
             "type": "string",
             "description": "Tile name"
