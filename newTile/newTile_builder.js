@@ -4,21 +4,10 @@
         <form id="submitForm">
                 <legend class="no">Process Partner Generic Tile properties</legend>
                     <div class="abra-prop">
-                        <div class="abra-title">Earliest allowed value</div>
+                        <div class="abra-title">Header text</div>
                         <div><input id="builder_header" class="abra-input" type="text" size="8"></div>				
                     </div>
-                    <div class="abra-prop">
-                        <div class="abra-title">Preferred picker position</div>
-                        <div>
-                            <select id="builder_prefPickerPos" class="abra-input" style="width:190px;">
-                                <option value="top left">Above, left-aligned</option>
-                                <option value="top right">Above, right-aligned</option>
-                                <option value="bottom left">Below, left-aligned</option>
-                                <option value="bottom right">Below, right-aligned</option>
-                            </select>
-                        </div>
-                    </div>
-                <input type="submit" style="display: none;">
+                    
         </form>
 		`;
     class NewTileBuilderPanel extends HTMLElement {
