@@ -73,11 +73,12 @@
             });
 
             //### THE APP: place the XMLView somewhere into DOM ###
-            var oView  = sap.ui.xmlview({
+            _oView  = sap.ui.xmlview({
                 viewContent: jQuery(_shadowRoot.getElementById("oView")).html(),
             });
-            oView.placeAt(content);
             
+            _oView.placeAt(content);
+
             content.setAttribute("sapUi5ViewId",_oView.getId());
 
         });
