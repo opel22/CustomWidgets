@@ -85,16 +85,16 @@
             ],
             "body": "this.header = newHeader;"
         },
-        "setSubHeader": {
+        "setSubheader": {
             "description": "Sets the subheader.",
             "parameters": [
                 {
-                    "name": "newSubHeader",
+                    "name": "newSubheader",
                     "type": "string",
                     "description": "The new subheader"
                 }
             ],
-            "body": "this.subheader = newSubHeader;"
+            "body": "this.subheader = newSubheader;"
         }        
     },
     "events": {
