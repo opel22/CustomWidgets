@@ -53,7 +53,7 @@
             ],
             "body": "this.value = newValue;"
         },
-        "newUnit": {
+        "setUnit": {
             "description": "Sets the unit.",
             "parameters": [
                 {
