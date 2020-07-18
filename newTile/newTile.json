@@ -31,6 +31,10 @@
             "description": "Tile Value",
             "default": "0.00"
         },
+        "unit": {
+            "type": "string",
+            "description": "Tile Unit",
+            "default": "CHF",
         "name": {
             "type": "string",
             "description": "Tile name"
