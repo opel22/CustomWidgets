@@ -41,7 +41,7 @@
             "description": "Tile Header",
             "default": "Tile Header"
         },
-        "subHeader": {
+        "subheader": {
             "type": "string",
             "description": "Tile Subheader",
             "default": "Tile Subheader"
