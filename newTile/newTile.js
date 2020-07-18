@@ -54,7 +54,7 @@
             if(!oView){
                 return; 
             }
-            oView.byId("tile").setValue(newUnit);
+            oView.byId("tile").setUnit(newUnit);
         }
     }
     customElements.define("com-sap-sample-newtile", NewTile);
