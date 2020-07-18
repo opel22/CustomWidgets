@@ -1,6 +1,6 @@
 (function() { 
     let _shadowRoot;
-    let _id;
+    let _oView;
 
     let template = document.createElement("template");
     template.innerHTML = `
@@ -32,26 +32,22 @@
             
         }
         onCustomWidgetBeforeUpdate(changedProperties) {
-            console.log(changedProperties);
-            this._name = changedProperties["widgetName"];
             if ("designMode" in changedProperties) {
                 this._designMode = changedProperties["designMode"];
             }
         }
         onCustomWidgetAfterUpdate(changedProperties) {
-            debugger;
-            if ("value" in changedProperties) {
-                if(changedProperties["value"]) {
-                    this.getElementsByClassName("WithoutMargin sapMNCValueScr").item(0).innerText  = changedProperties["value"];
-                }
-            }   
+            //
         }
-        /*set value(newValue) {
-            if (sap.ui.getCore().byId("tile")) {
-                //sap.ui.getCore().byId("__tile0").getTileContent()[0].getContent().setValue(newValue);
-                this.value = newValue;
+
+        set value(newValue) {
+            let sViewId = this.firstChild.getAttribute("sapui5viewid");
+            var oView = sap.ui.getCore().byId(sViewId); 
+            if(!oView){
+                return; 
             }
-        }*/
+            oView.byId("tile").setValue(newValue);
+        }
     }
     customElements.define("com-sap-sample-newtile", NewTile);
 
@@ -81,11 +77,9 @@
                 viewContent: jQuery(_shadowRoot.getElementById("oView")).html(),
             });
             oView.placeAt(content);
+            
+            content.setAttribute("sapUi5ViewId",_oView.getId());
 
-
-            if (that_._designMode) {
-                //oView.byId("passwordInput").setEnabled(false);
-            }
         });
     }
 
