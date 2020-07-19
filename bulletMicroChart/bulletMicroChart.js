@@ -19,7 +19,7 @@
                             <BulletMicroChart scale="M" targetValue="100"
                                 forecastValue="110" showValueMarker="true" size="Responsive">
                                 <actual>
-                                    <BulletMicroChartData id="actualValue" value="120" color="Good" />
+                                    <BulletMicroChartData value="120" color="Good" />
                                 </actual>
                                 <thresholds>
                                     <BulletMicroChartData value="0" color="Error" />
