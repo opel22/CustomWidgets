@@ -11,15 +11,15 @@
         <mvc:View 
         controllerName="myView.Template"
             xmlns="sap.suite.ui.microchart" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m">
-            <m:GenericTile header="Revenue Dynamics"
+            <m:GenericTile id="genTile" header="Revenue Dynamics"
                 frameType="OneByOne" press="press">
                 <m:tileContent>
-                    <m:TileContent footer="With Forecast">
+                    <m:TileContent id="tileCont" unit="CHF" footer="With Forecast">
                         <m:content>
                             <BulletMicroChart scale="M" targetValue="100"
                                 forecastValue="110" showValueMarker="true" size="Responsive">
                                 <actual>
-                                    <BulletMicroChartData value="120" color="Good" />
+                                    <BulletMicroChartData id="actualValue" value="120" color="Good" />
                                 </actual>
                                 <thresholds>
                                     <BulletMicroChartData value="0" color="Error" />
@@ -61,7 +61,7 @@
             if(!oView){
                 return; 
             }
-            oView.byId("tile").setValue(newValue);
+            oView.byId("actualValue").setValue(newValue);
         }
         set unit(newUnit) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
