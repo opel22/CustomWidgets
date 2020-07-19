@@ -74,38 +74,38 @@
         let content = document.createElement('div');
         content.slot = "content";
 
-        that_._BulletMicroChartDataAct = new sap.suite.ui.microchart.BulletMicroChartData({
+        that_._BulletChartDataAct = new sap.suite.ui.microchart.BulletChartData({
             value: 120,
             color: "Good"
         });
 
-        that_._BulletMicroChartDataThr0 = new sap.suite.ui.microchart.BulletMicroChartData({
+        that_._BulletChartDataThr0 = new sap.suite.ui.microchart.BulletChartData({
             value: 0,
             color: "Error"   
         });
 
-        that_._BulletMicroChartDataThr1 = new sap.suite.ui.microchart.BulletMicroChartData({
+        that_._BulletChartDataThr1 = new sap.suite.ui.microchart.BulletChartData({
             value: 50,
             color: "Critical"
         });        
 
-        that_._BulletMicroChartDataThr2 = new sap.suite.ui.microchart.BulletMicroChartData({
+        that_._BulletChartDataThr2 = new sap.suite.ui.microchart.BulletChartData({
             value: 150,
             color: "Critical" 
         });  
 
-        that_._BulletMicroChartDataThr3 = new sap.suite.ui.microchart.BulletMicroChartData({
+        that_._BulletChartDataThr3 = new sap.suite.ui.microchart.BulletChartData({
             value: 200,
             color: "Error"
         });  
 
         that_._BulletMicroChart = new sap.suite.ui.microchart.BulletMicroChart({
-            actual: that_._BulletMicroChartDataAct,
+            actual: that_._BulletChartDataAct,
             thresholds: [
-                that_._BulletMicroChartDataThr0,
-                that_._BulletMicroChartDataThr1,
-                that_._BulletMicroChartDataThr2,
-                that_._BulletMicroChartDataThr3
+                that_._BulletChartDataThr0,
+                that_._BulletChartDataThr1,
+                that_._BulletChartDataThr2,
+                that_._BulletChartDataThr3
             ]
         });
 
