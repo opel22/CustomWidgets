@@ -15,7 +15,7 @@
                 frameType="OneByOne" press="press">
                 <m:tileContent>
                     <m:TileContent id="tileCont" unit="CHF" footer="With Forecast">
-                        <m:content>
+                        <m:content id="cont">
                             <BulletMicroChart scale="M" targetValue="100"
                                 forecastValue="110" showValueMarker="true" size="Responsive">
                                 <actual>
@@ -61,7 +61,7 @@
             if(!oView){
                 return; 
             }
-            oView.byId("genTile").setValue(newValue);
+            oView.byId("tileCont").setValue(newValue);
         }
         set unit(newUnit) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
@@ -95,50 +95,6 @@
       
         let content = document.createElement('div');
         content.slot = "content";
-/*
-        that_._BulletChartDataAct = new sap.suite.ui.microchart.BulletMicroChartData({
-            value: 120,
-            color: "Good"
-        });
-
-        that_._BulletChartDataThr0 = new sap.suite.ui.microchart.BulletMicroChartData({
-            value: 0,
-            color: "Error"   
-        });
-
-        that_._BulletChartDataThr1 = new sap.suite.ui.microchart.BulletMicroChartData({
-            value: 50,
-            color: "Critical"
-        });        
-
-        that_._BulletChartDataThr2 = new sap.suite.ui.microchart.BulletMicroChartData({
-            value: 150,
-            color: "Critical" 
-        });  
-
-        that_._BulletChartDataThr3 = new sap.suite.ui.microchart.BulletMicroChartData({
-            value: 200,
-            color: "Error"
-        });  
-
-        that_._BulletMicroChart = new sap.suite.ui.microchart.BulletMicroChart({
-            actual: that_._BulletChartDataAct,
-            thresholds: [
-                that_._BulletChartDataThr0,
-                that_._BulletChartDataThr1,
-                that_._BulletChartDataThr2,
-                that_._BulletChartDataThr3
-            ]
-        });
-
-        that_._tileContent = new sap.m.TileContent({
-            content: that_._BulletMicroChart
-        })
-
-        that_._GenericTile = new sap.m.GenericTile({
-            tileContent: that_._tileContent
-        });
-*/
 
         that_.appendChild(content);
 
