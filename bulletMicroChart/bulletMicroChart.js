@@ -61,7 +61,7 @@
             if(!oView){
                 return; 
             }
-            oView.byId("tileCont").setValue(newValue);
+            oView.byId("cont").setValue(newValue);
         }
         set unit(newUnit) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
