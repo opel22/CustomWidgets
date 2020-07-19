@@ -10,7 +10,7 @@
         <script
                 src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"        
                 id="sap-ui-bootstrap"
-                data-sap-ui-libs="sap.m,sap.ui.core.mvc,sap.suite.ui.microchart"
+                data-sap-ui-libs="sap.m,sap.ui.core.mvc,sap.suite.ui"
         </script>            
     `;
     class NewBulletMicroChart extends HTMLElement {
