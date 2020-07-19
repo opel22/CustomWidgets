@@ -73,7 +73,7 @@
       
         let content = document.createElement('div');
         content.slot = "content";
-
+/*
         that_._BulletChartDataAct = new sap.suite.ui.microchart.BulletMicroChartData({
             value: 120,
             color: "Good"
@@ -108,7 +108,7 @@
                 that_._BulletChartDataThr3
             ]
         });
-
+*/
         that_._tileContent = new sap.m.TileContent({
             content: that_._BulletMicroChart
         })
