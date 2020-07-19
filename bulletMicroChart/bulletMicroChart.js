@@ -61,7 +61,7 @@
             if(!oView){
                 return; 
             }
-            oView.byId("actualValue").setValue(newValue);
+            oView.byId("genTile").setValue(newValue);
         }
         set unit(newUnit) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
