@@ -7,10 +7,32 @@
         <div id="ui5_content" name="ui5_content">
             <slot name="content"></slot>
         </div>
-        <script   
-                id="sap-ui-bootstrap"
-                src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js" 
-                data-sap-ui-libs="sap.m,sap.ui.core.mvc,sap.suite.ui.microchart"
+        <script id="oView" name="oView" type="ui5_content">        
+        <mvc:View 
+        controllerName="myView.Template"
+            xmlns="sap.suite.ui.microchart" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m">
+            <m:GenericTile header="Revenue Dynamics"
+                frameType="OneByOne" press="press">
+                <m:tileContent>
+                    <m:TileContent footer="With Forecast">
+                        <m:content>
+                            <BulletMicroChart scale="M" targetValue="100"
+                                forecastValue="110" showValueMarker="true" size="Responsive">
+                                <actual>
+                                    <BulletMicroChartData value="120" color="Good" />
+                                </actual>
+                                <thresholds>
+                                    <BulletMicroChartData value="0" color="Error" />
+                                    <BulletMicroChartData value="50" color="Critical" />
+                                    <BulletMicroChartData value="150" color="Critical" />
+                                    <BulletMicroChartData value="200" color="Error" />
+                                </thresholds>
+                            </BulletMicroChart>
+                        </m:content>
+                    </m:TileContent>
+                </m:tileContent>
+            </m:GenericTile>
+        </mvc:View>
         </script>            
     `;
     class NewBulletMicroChart extends HTMLElement {
@@ -108,7 +130,7 @@
                 that_._BulletChartDataThr3
             ]
         });
-*/
+
         that_._tileContent = new sap.m.TileContent({
             content: that_._BulletMicroChart
         })
@@ -116,10 +138,9 @@
         that_._GenericTile = new sap.m.GenericTile({
             tileContent: that_._tileContent
         });
+*/
 
         that_.appendChild(content);
-
-
 
         sap.ui.getCore().attachInit(function() {
             "use strict";
