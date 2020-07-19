@@ -7,32 +7,6 @@
         <div id="ui5_content" name="ui5_content">
             <slot name="content"></slot>
         </div>
-        <script id="oView" name="oView" type="ui5_content">        
-            <mvc:View
-            controllerName="myView.Template"
-            xmlns="sap.m"
-            xmlns:mvc="sap.ui.core.mvc"
-			xmlns:"sap.suite.ui.microchart">
-            <GenericTile id="genTile" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" size="L" header="Country-Specific Profit Margin" subheader="Expenses" press="press">
-                <TileContent id="tileCont" unit="EUR" footer="Current Quarter">
-                    <m:content>
-					<BulletMicroChart scale="M" targetValue="100"
-						forecastValue="110" showValueMarker="true" size="Responsive">
-						<actual>
-							<BulletMicroChartData value="120" color="Good" />
-						</actual>
-						<thresholds>
-							<BulletMicroChartData value="0" color="Error" />
-							<BulletMicroChartData value="50" color="Critical" />
-							<BulletMicroChartData value="150" color="Critical" />
-							<BulletMicroChartData value="200" color="Error" />
-						</thresholds>
-					</BulletMicroChart>
-				</m:content>
-                </TileContent>
-            </GenericTile>
-            </mvc:View>
-        </script>
     `;
     class NewBulletMicroChart extends HTMLElement {
         constructor() {
@@ -94,7 +68,53 @@
       
         let content = document.createElement('div');
         content.slot = "content";
+
+        that_._BulletMicroChartDataAct = new sap.suite.ui.microchart.BulletMicroChartData({
+            value: 120,
+            color: "Good"
+        });
+
+        that_._BulletMicroChartDataThr0 = new sap.suite.ui.microchart.BulletMicroChartData({
+            value: 0,
+            color: "Error"   
+        });
+
+        that_._BulletMicroChartDataThr1 = new sap.suite.ui.microchart.BulletMicroChartData({
+            value: 50,
+            color: "Critical"
+        });        
+
+        that_._BulletMicroChartDataThr2 = new sap.suite.ui.microchart.BulletMicroChartData({
+            value: 150,
+            color: "Critical" 
+        });  
+
+        that_._BulletMicroChartDataThr3 = new sap.suite.ui.microchart.BulletMicroChartData({
+            value: 200,
+            color: "Error"
+        });  
+
+        that_._BulletMicroChart = new sap.suite.ui.microchart.BulletMicroChart({
+            actual: that_._BulletMicroChartDataAct,
+            thresholds: [
+                that_._BulletMicroChartDataThr0,
+                that_._BulletMicroChartDataThr1,
+                that_._BulletMicroChartDataThr2,
+                that_._BulletMicroChartDataThr3
+            ]
+        });
+
+        that_._tileContent = new sap.m.TileContent({
+            content: that_._BulletMicroChart
+        })
+
+        that_._GenericTile = new sap.m.GenericTile({
+            tileContent: that_._tileContent
+        });
+
         that_.appendChild(content);
+
+
 
         sap.ui.getCore().attachInit(function() {
             "use strict";
