@@ -7,9 +7,9 @@
         <div id="ui5_content" name="ui5_content">
             <slot name="content"></slot>
         </div>
-        <script>
-   
+        <script   
                 id="sap-ui-bootstrap"
+                src="resources/sap-ui-core.js" 
                 data-sap-ui-libs="sap.m,sap.ui.core.mvc,sap.suite.ui"
         </script>            
     `;
