@@ -7,8 +7,8 @@
         <div id="ui5_content" name="ui5_content">
             <slot name="content"></slot>
         </div>
-        <script
-                src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"        
+        <script>
+   
                 id="sap-ui-bootstrap"
                 data-sap-ui-libs="sap.m,sap.ui.core.mvc,sap.suite.ui"
         </script>            
@@ -74,27 +74,27 @@
         let content = document.createElement('div');
         content.slot = "content";
 
-        that_._BulletChartDataAct = new sap.suite.ui.microchart.BulletChartData({
+        that_._BulletChartDataAct = new sap.suite.ui.microchart.BulletMicroChartData({
             value: 120,
             color: "Good"
         });
 
-        that_._BulletChartDataThr0 = new sap.suite.ui.microchart.BulletChartData({
+        that_._BulletChartDataThr0 = new sap.suite.ui.microchart.BulletMicroChartData({
             value: 0,
             color: "Error"   
         });
 
-        that_._BulletChartDataThr1 = new sap.suite.ui.microchart.BulletChartData({
+        that_._BulletChartDataThr1 = new sap.suite.ui.microchart.BulletMicroChartData({
             value: 50,
             color: "Critical"
         });        
 
-        that_._BulletChartDataThr2 = new sap.suite.ui.microchart.BulletChartData({
+        that_._BulletChartDataThr2 = new sap.suite.ui.microchart.BulletMicroChartData({
             value: 150,
             color: "Critical" 
         });  
 
-        that_._BulletChartDataThr3 = new sap.suite.ui.microchart.BulletChartData({
+        that_._BulletChartDataThr3 = new sap.suite.ui.microchart.BulletMicroChartData({
             value: 200,
             color: "Error"
         });  
