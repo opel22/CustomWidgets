@@ -9,7 +9,7 @@
         </div>
         <script   
                 id="sap-ui-bootstrap"
-                src="resources/sap-ui-core.js" 
+                src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js" 
                 data-sap-ui-libs="sap.m,sap.ui.core.mvc,sap.suite.ui.microchart"
         </script>            
     `;
