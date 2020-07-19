@@ -34,7 +34,7 @@
             </mvc:View>
         </script>
     `;
-    class NewTile extends HTMLElement {
+    class NewBulletMicroChart extends HTMLElement {
         constructor() {
             super(); 
             _shadowRoot = this.attachShadow({mode: "open"});
@@ -87,7 +87,7 @@
             oView.byId("genTile").setSubheader(newSubheader);
         }
     }
-    customElements.define("com-sap-sample-newtile", NewTile);
+    customElements.define("ch-processpartner-sample-bulletmicrochart", NewBulletMicroChart);
 
     function loadthis(that) {
         var that_ = that;

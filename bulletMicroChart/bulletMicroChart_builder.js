@@ -13,7 +13,7 @@
                     </div>                    
         </form>
 		`;
-    class NewTileBuilderPanel extends HTMLElement {
+    class NewBulletMicroChartPanel extends HTMLElement {
         constructor() {
             super();
             this._shadowRoot = this.attachShadow({mode: "open"});
@@ -44,5 +44,5 @@
             return this._shadowRoot.getElementById("builder_subheader").value;
         }
     }
-        customElements.define("com-sap-sample-newtile-builder", NewTileBuilderPanel);
+        customElements.define("ch-processpartner-sample-bulletmicrochart-builder", NewBulletMicroChartPanel);
     })();
