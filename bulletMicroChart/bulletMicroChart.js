@@ -15,8 +15,8 @@
                 frameType="OneByOne" press="press">
                 <m:tileContent>
                     <m:TileContent id="tileCont" unit="CHF" footer="With Forecast">
-                        <m:content id="cont">
-                            <BulletMicroChart scale="M" targetValue="100"
+                        <m:content>
+                            <BulletMicroChart id="cont" scale="M" targetValue="100"
                                 forecastValue="110" showValueMarker="true" size="Responsive">
                                 <actual>
                                     <BulletMicroChartData value="120" color="Good" />
