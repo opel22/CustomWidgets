@@ -55,13 +55,13 @@
             //
         }
 
-        set value(newValue) {
+        set targetvalue(newTargetValue) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 
             if(!oView){
                 return; 
             }
-            oView.byId("cont").setValue(newValue);
+            oView.byId("cont").setTargetValue(newTargetValue);
         }
         set unit(newUnit) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");

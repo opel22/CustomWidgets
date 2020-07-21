@@ -33,9 +33,9 @@
             "type": "integer",
             "default": 192
         },
-        "value": {
+        "targetValue": {
             "type": "string",
-            "description": "Value",
+            "description": "Target Value",
             "default": "120"
         },
         "unit": {
@@ -55,16 +55,16 @@
         }
     },
     "methods": {
-        "setValue": {
-            "description": "Sets the value.",
+        "setTargetValue": {
+            "description": "Sets the target value.",
             "parameters": [
                 {
-                    "name": "newValue",
+                    "name": "newTargetValue",
                     "type": "string",
-                    "description": "The new Value"
+                    "description": "The new target value"
                 }
             ],
-            "body": "this.value = newValue;"
+            "body": "this.targetvalue = newTargetValue;"
         },
         "setUnit": {
             "description": "Sets the unit.",
