@@ -56,8 +56,7 @@
         }
 
         set value(newValue) {
-            //let sViewId = this.firstChild.getAttribute("sapui5viewid");
-            let sTest = this.element.find('id="cont"');
+            let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 
             if(!oView){
                 return; 
