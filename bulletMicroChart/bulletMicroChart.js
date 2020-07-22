@@ -35,6 +35,7 @@
         </mvc:View>
         </script>            
     `;
+    //Test for github
     class NewBulletMicroChart extends HTMLElement {
         constructor() {
             super(); 
