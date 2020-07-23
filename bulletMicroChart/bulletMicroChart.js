@@ -19,13 +19,13 @@
                             <BulletMicroChart id="cont" scale="M" targetValue="100"
                                 forecastValue="110" showValueMarker="true" size="Responsive">
                                 <actual>
-                                    <BulletMicroChartData id="actual" value="120" color="Good" />
+                                    <BulletMicroChartData value="120" color="Good" />
                                 </actual>
                                 <thresholds>
-                                    <BulletMicroChartData id="scale1" value="0" color="Error" />
-                                    <BulletMicroChartData id="scale2" value="50" color="Critical" />
-                                    <BulletMicroChartData id="scale3" value="150" color="Critical" />
-                                    <BulletMicroChartData id="scale4" value="200" color="Error" />
+                                    <BulletMicroChartData value="0" color="Error" />
+                                    <BulletMicroChartData value="50" color="Critical" />
+                                    <BulletMicroChartData value="150" color="Critical" />
+                                    <BulletMicroChartData value="200" color="Error" />
                                 </thresholds>
                             </BulletMicroChart>
                         </m:content>
@@ -56,6 +56,7 @@
             //
         }
 
+        //oView.byId("cont").mProperties["targetValue"] = 100
         set targetValue(newTargetValue) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 
@@ -64,6 +65,8 @@
             }
             oView.byId("cont").setTargetValue(newTargetValue);
         }
+
+        //oView.byId("cont").mProperties["forecastValue"] = 110
         set forecastvalue(newForecastValue) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 
@@ -73,6 +76,26 @@
             oView.byId("cont").setTargetValue(newForecastValue);
         }
         
+        //Die verschiedenen Werte für die "thresholds":
+        //oView.byId("cont").mAggregations["thresholds"][0]["mProperties"]["value"] => 0
+        //oView.byId("cont").mAggregations["thresholds"][0]["mProperties"]["color"] => Error
+
+        //oView.byId("cont").mAggregations["thresholds"][1]["mProperties"]["value"] => 50
+        //oView.byId("cont").mAggregations["thresholds"][1]["mProperties"]["color"] => Critical
+
+        //oView.byId("cont").mAggregations["thresholds"][2]["mProperties"]["value"] => 150
+        //oView.byId("cont").mAggregations["thresholds"][2]["mProperties"]["color"] => Critical
+
+        //oView.byId("cont").mAggregations["thresholds"][3]["mProperties"]["value"] => 200
+        //oView.byId("cont").mAggregations["thresholds"][3]["mProperties"]["color"] => Error
+
+        //oView.byId("cont").mAggregations["actual"]["mProperties"]["value"] = 120
+
+
+
+
+
+
         set unit(newUnit) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 
