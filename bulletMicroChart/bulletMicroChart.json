@@ -64,7 +64,7 @@
                     "description": "The new target value"
                 }
             ],
-            "body": "this.targetvalue = newTargetValue;"
+            "body": "this.targetValue = newTargetValue;"
         },
         "setUnit": {
             "description": "Sets the unit.",
