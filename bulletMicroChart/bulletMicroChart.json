@@ -34,8 +34,13 @@
             "default": 192
         },
         "targetValue": {
-            "type": "string",
+            "type": "number",
             "description": "Target Value",
+            "default": "120"
+        },
+        "forecastValue": {
+            "type": "number",
+            "description": "Forecast Value",
             "default": "120"
         },
         "unit": {
@@ -60,11 +65,22 @@
             "parameters": [
                 {
                     "name": "newTargetValue",
-                    "type": "string",
+                    "type": "number",
                     "description": "The new target value"
                 }
             ],
             "body": "this.targetValue = newTargetValue;"
+        },
+        "setForecastValue": {
+            "description": "Sets the forecast value.",
+            "parameters": [
+                {
+                    "name": "newForecastValue",
+                    "type": "number",
+                    "description": "The new forecast value"
+                }
+            ],
+            "body": "this.forecastValue = newForecastValue;"
         },
         "setUnit": {
             "description": "Sets the unit.",

@@ -19,13 +19,13 @@
                             <BulletMicroChart id="cont" scale="M" targetValue="100"
                                 forecastValue="110" showValueMarker="true" size="Responsive">
                                 <actual>
-                                    <BulletMicroChartData value="120" color="Good" />
+                                    <BulletMicroChartData id="actual" value="120" color="Good" />
                                 </actual>
                                 <thresholds>
-                                    <BulletMicroChartData value="0" color="Error" />
-                                    <BulletMicroChartData value="50" color="Critical" />
-                                    <BulletMicroChartData value="150" color="Critical" />
-                                    <BulletMicroChartData value="200" color="Error" />
+                                    <BulletMicroChartData id="scale1" value="0" color="Error" />
+                                    <BulletMicroChartData id="scale2" value="50" color="Critical" />
+                                    <BulletMicroChartData id="scale3" value="150" color="Critical" />
+                                    <BulletMicroChartData id="scale4" value="200" color="Error" />
                                 </thresholds>
                             </BulletMicroChart>
                         </m:content>
@@ -64,6 +64,14 @@
             }
             oView.byId("cont").setTargetValue(newTargetValue);
         }
+        set forecastvalue(newForecastValue) {
+            let sViewId = this.firstChild.getAttribute("sapui5viewid");
+            var oView = sap.ui.getCore().byId(sViewId); 
+            if(!oView){
+                return; 
+            }
+            oView.byId("cont").setTargetValue(newForecastValue);
+        }        
         set unit(newUnit) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 
