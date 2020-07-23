@@ -56,7 +56,7 @@
             //
         }
 
-        set targetvalue(newTargetValue) {
+        set targetValue(newTargetValue) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 
             if(!oView){
