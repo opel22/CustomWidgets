@@ -43,9 +43,9 @@
             "description": "Forecast Value",
             "default": 110
         },        
-        "actualValue": {
+        "value": {
             "type": "number",
-            "description": "Actual Value",
+            "description": "Value",
             "default": 110120
         },
         "unit": {
@@ -96,7 +96,7 @@
                     "description": "The new actual value"
                 }
             ],
-            "body": "this.actualValue = newActualValue;"
+            "body": "this.value = newActualValue;"
         },
         "setUnit": {
             "description": "Sets the unit.",
