@@ -43,11 +43,7 @@
             "description": "Forecast Value",
             "default": 110
         },        
-        "value": {
-            "type": "number",
-            "description": "Value",
-            "default": 120
-        },
+
         "unit": {
             "type": "string",
             "description": "Unit",
@@ -87,17 +83,7 @@
             ],
             "body": "this.forecastValue = newForecastValue;"
         },
-        "setValue": {
-            "description": "Sets the actual value.",
-            "parameters": [
-                {
-                    "name": "newValue",
-                    "type": "number",
-                    "description": "The new actual value"
-                }
-            ],
-            "body": "this.value = newValue;"
-        },
+
         "setUnit": {
             "description": "Sets the unit.",
             "parameters": [

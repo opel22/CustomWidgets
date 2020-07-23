@@ -72,14 +72,7 @@
             }
             oView.byId("cont").setTargetValue(newForecastValue);
         }
-        set value(newValue) {
-            let sViewId = this.firstChild.getAttribute("sapui5viewid");
-            var oView = sap.ui.getCore().byId(sViewId); 
-            if(!oView){
-                return; 
-            }
-            oView.byId("actual").setValue(newValue);
-        }         
+        
         set unit(newUnit) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 
