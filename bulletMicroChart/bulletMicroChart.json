@@ -34,9 +34,9 @@
             "default": 192
         },
         "targetValue": {
-            "type": "string",
+            "type": "number",
             "description": "Target Value",
-            "default": "120"
+            "default": 120.5
         },
         "unit": {
             "type": "string",
@@ -60,7 +60,7 @@
             "parameters": [
                 {
                     "name": "newTargetValue",
-                    "type": "string",
+                    "type": "number",
                     "description": "The new target value"
                 }
             ],
