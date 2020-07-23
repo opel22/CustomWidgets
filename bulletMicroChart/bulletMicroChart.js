@@ -19,7 +19,7 @@
                             <BulletMicroChart id="cont" scale="M" targetValue="100"
                                 forecastValue="110" showValueMarker="true" size="Responsive">
                                 <actual>
-                                    <BulletMicroChartData id="actual" value="120" color="Good" />
+                                    <BulletMicroChartData id="actual" actualValue="120" color="Good" />
                                 </actual>
                                 <thresholds>
                                     <BulletMicroChartData id="scale1" value="0" color="Error" />
@@ -71,7 +71,15 @@
                 return; 
             }
             oView.byId("cont").setTargetValue(newForecastValue);
-        }        
+        }
+        set actualvalue(newActualValue) {
+            let sViewId = this.firstChild.getAttribute("sapui5viewid");
+            var oView = sap.ui.getCore().byId(sViewId); 
+            if(!oView){
+                return; 
+            }
+            oView.byId("actual").setActualValue(newActualValue);
+        }         
         set unit(newUnit) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 

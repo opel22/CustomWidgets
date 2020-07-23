@@ -36,12 +36,17 @@
         "targetValue": {
             "type": "number",
             "description": "Target Value",
-            "default": 120.5
+            "default": 100
         },
         "forecastValue": {
             "type": "number",
             "description": "Forecast Value",
-            "default": "120"
+            "default": 110
+        },        
+        "actualValue": {
+            "type": "number",
+            "description": "Actual Value",
+            "default": 110120
         },
         "unit": {
             "type": "string",
@@ -81,6 +86,17 @@
                 }
             ],
             "body": "this.forecastValue = newForecastValue;"
+        },
+        "setActualValue": {
+            "description": "Sets the actual value.",
+            "parameters": [
+                {
+                    "name": "newActualValue",
+                    "type": "number",
+                    "description": "The new actual value"
+                }
+            ],
+            "body": "this.actualValue = newActualValue;"
         },
         "setUnit": {
             "description": "Sets the unit.",
