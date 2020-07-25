@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "name": "newBulletMicroChartJS",
     "description": "A bullet micro chart",
-    "newInstancePrefix": "bmc",
+    "newInstancePrefix": "bmcJS",
     "icon": "https://opel22.github.io/CustomWidgets/bulletMicroChartJS/icon.png",
     "vendor": "Process Partner AG",
     "eula": "",
