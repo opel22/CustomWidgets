@@ -8,7 +8,12 @@
             <slot name="content"></slot>
         </div>
         <script id="oView" name="oView" type="ui5_content">
-        </script>            
+        </script>
+        <script>
+            src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+            data-sap-ui-libs="sap.m,sap.suit.ui"
+            data-sap-ui-theme="sap_bluecrystal"
+        </script>           
     `;
     //Test for github
     class NewBulletMicroChartJS extends HTMLElement {
