@@ -35,71 +35,6 @@
         onCustomWidgetAfterUpdate(changedProperties) {
             //
         }
-
-        //oView.byId("cont").mProperties["targetValue"] = 100
-        set targetValue(newTargetValue) {
-            let sViewId = this.firstChild.getAttribute("sapui5viewid");
-            var oView = sap.ui.getCore().byId(sViewId); 
-            if(!oView){
-                return; 
-            }
-            oView.byId("cont").setTargetValue(newTargetValue);
-        }
-
-        //oView.byId("cont").mProperties["forecastValue"] = 110
-        set forecastvalue(newForecastValue) {
-            let sViewId = this.firstChild.getAttribute("sapui5viewid");
-            var oView = sap.ui.getCore().byId(sViewId); 
-            if(!oView){
-                return; 
-            }
-            oView.byId("cont").setTargetValue(newForecastValue);
-        }
-        
-        //Die verschiedenen Werte für die "thresholds":
-        //oView.byId("cont").mAggregations["thresholds"][0]["mProperties"]["value"] => 0
-        //oView.byId("cont").mAggregations["thresholds"][0]["mProperties"]["color"] => Error
-
-        //oView.byId("cont").mAggregations["thresholds"][1]["mProperties"]["value"] => 50
-        //oView.byId("cont").mAggregations["thresholds"][1]["mProperties"]["color"] => Critical
-
-        //oView.byId("cont").mAggregations["thresholds"][2]["mProperties"]["value"] => 150
-        //oView.byId("cont").mAggregations["thresholds"][2]["mProperties"]["color"] => Critical
-
-        //oView.byId("cont").mAggregations["thresholds"][3]["mProperties"]["value"] => 200
-        //oView.byId("cont").mAggregations["thresholds"][3]["mProperties"]["color"] => Error
-
-        //oView.byId("cont").mAggregations["actual"]["mProperties"]["value"] = 120
-
-
-
-
-
-
-        set unit(newUnit) {
-            let sViewId = this.firstChild.getAttribute("sapui5viewid");
-            var oView = sap.ui.getCore().byId(sViewId); 
-            if(!oView){
-                return; 
-            }
-            oView.byId("tileCont").setUnit(newUnit);
-        }
-        set header(newHeader) {
-            let sViewId = this.firstChild.getAttribute("sapui5viewid");
-            var oView = sap.ui.getCore().byId(sViewId); 
-            if(!oView){
-                return; 
-            }
-            oView.byId("genTile").setHeader(newHeader);
-        }
-        set subheader(newSubheader) {
-            let sViewId = this.firstChild.getAttribute("sapui5viewid");
-            var oView = sap.ui.getCore().byId(sViewId); 
-            if(!oView){
-                return; 
-            }
-            oView.byId("genTile").setSubheader(newSubheader);
-        }
     }
     customElements.define("ch-processpartner-sample-bulletmicrochart", NewBulletMicroChartJS);
 
@@ -156,18 +91,18 @@
 
 
 
-/*
+
             //### Controller ###
             sap.ui.define([
                 "sap/ui/core/mvc/Controller"
             ], function(Controller) {
                 "use strict";
                 
-                return Controller.extend("myView.Template", {
+                return Controller.extend("sap", {
                     //hier kämen die Methoden rein, Bsp. onButtonPress
                 });
             });
-*/
+        
             //### THE APP: place the XMLView somewhere into DOM ###
             
             oGenericTile.placeAt(content);
@@ -175,6 +110,7 @@
             content.setAttribute("sapUi5ViewId",oGenericTile.getId());
 
         });
+
     }
 
 })();

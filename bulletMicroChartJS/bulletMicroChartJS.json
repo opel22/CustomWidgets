@@ -25,91 +25,9 @@
         "height": {
             "type": "integer",
             "default": 192
-        },
-        "targetValue": {
-            "type": "number",
-            "description": "Target Value",
-            "default": 100
-        },
-        "forecastValue": {
-            "type": "number",
-            "description": "Forecast Value",
-            "default": 110
-        },        
-
-        "unit": {
-            "type": "string",
-            "description": "Unit",
-            "default": "CHF"
-        },
-        "header": {
-            "type": "string",
-            "description": "Header",
-            "default": "Header"
-        },
-        "subheader": {
-            "type": "string",
-            "description": "Subheader",
-            "default": "Subheader"
         }
     },
-    "methods": {
-        "setTargetValue": {
-            "description": "Sets the target value.",
-            "parameters": [
-                {
-                    "name": "newTargetValue",
-                    "type": "number",
-                    "description": "The new target value"
-                }
-            ],
-            "body": "this.targetValue = newTargetValue;"
-        },
-        "setForecastValue": {
-            "description": "Sets the forecast value.",
-            "parameters": [
-                {
-                    "name": "newForecastValue",
-                    "type": "number",
-                    "description": "The new forecast value"
-                }
-            ],
-            "body": "this.forecastValue = newForecastValue;"
-        },
-
-        "setUnit": {
-            "description": "Sets the unit.",
-            "parameters": [
-                {
-                    "name": "newUnit",
-                    "type": "string",
-                    "description": "The new unit"
-                }
-            ],
-            "body": "this.unit = newUnit;"
-        },
-        "setHeader": {
-            "description": "Sets the header.",
-            "parameters": [
-                {
-                    "name": "newHeader",
-                    "type": "string",
-                    "description": "The new header"
-                }
-            ],
-            "body": "this.header = newHeader;"
-        },
-        "setSubheader": {
-            "description": "Sets the subheader.",
-            "parameters": [
-                {
-                    "name": "newSubheader",
-                    "type": "string",
-                    "description": "The new subheader"
-                }
-            ],
-            "body": "this.subheader = newSubheader;"
-        }        
+    "methods": {       
     },
     "events": {
     },
