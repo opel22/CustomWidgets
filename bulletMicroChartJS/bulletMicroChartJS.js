@@ -89,9 +89,6 @@
             });
 
 
-
-
-/*
             //### Controller ###
             sap.ui.define([
                 "sap/ui/core/mvc/Controller"
@@ -104,7 +101,7 @@
             });
         
             //### THE APP: place the XMLView somewhere into DOM ###
-*/            
+          
             oGenericTile.placeAt(content);
 
             content.setAttribute("sapUi5ViewId",oGenericTile.getId());
