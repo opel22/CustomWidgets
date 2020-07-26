@@ -1,4 +1,5 @@
-(function() { 
+(function() {
+    let _shadowRoot;
     let _oView;
 
     let template = document.createElement("template");
@@ -18,19 +19,14 @@
     class NewBulletMicroChartJS extends HTMLElement {
         constructor() {
             super(); 
-            let shadowRoot = this.attachShadow({mode: "open"});
-            shadowRoot.appendChild(template.content.cloneNode(true));
+            _shadowRoot = this.attachShadow({mode: "open"});
+            _shadowRoot.appendChild(template.content.cloneNode(true));
             
             this._props = {};
             
             sap.ui.getCore().attachInit(function() {
                 "use strict";
 
-                /*var oActuals = new sap.suite.ui.microchart.BulletMicroChartData({
-                    color: "Good",
-                    value: 120
-                });*/
-                
                 var oThreshold1 = new sap.suite.ui.microchart.BulletMicroChartData({
                     color: "Error",
                     value: 0
@@ -77,11 +73,15 @@
                             content: [oBulletMicroChart]
                         })
                     ]
-                }); 
-                
-                oGenericTile.placeAt(content);
+                });
 
-                content.setAttribute("sapUi5ViewId",oGenericTile.getId());
+                _oView = sap.ui.JSView({
+                    viewContent: jQuery(_shadowRoot.getElementById("oView")).html()
+                })
+                
+                _oView.placeAt(oGenericTile);
+
+                oGenericTile.setAttribute("sapUi5ViewId",_oView.getId());
             });
 
         }
