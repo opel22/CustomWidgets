@@ -95,7 +95,7 @@
             ], function(Controller) {
                 "use strict";
                 
-                return Controller.extend("sap", {
+                return Controller.extend("ch-processpartner-sample-bulletmicrochart", {
                     //hier kämen die Methoden rein, Bsp. onButtonPress
                 });
             });
