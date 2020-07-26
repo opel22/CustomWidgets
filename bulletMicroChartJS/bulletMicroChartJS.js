@@ -22,7 +22,7 @@
             shadowRoot.appendChild(template.content.cloneNode(true));
             
             this._props = {};
-            /*
+            
             sap.ui.getCore().attachInit(function() {
                 "use strict";
 
@@ -66,12 +66,12 @@
                 });
 
           
-            oGenericTile.placeAt(content);
+                oGenericTile.placeAt(content);
 
-            content.setAttribute("sapUi5ViewId",oGenericTile.getId());
+                content.setAttribute("sapUi5ViewId",oGenericTile.getId());
 
-        });
-        */    
+            });
+            
         }
         
 
