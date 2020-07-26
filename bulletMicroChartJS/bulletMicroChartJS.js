@@ -26,7 +26,7 @@
 
 
 
-            var that_ = this;
+      //      var that_ = this;
       //      let content = document.createElement('div');
       //  content.slot = "content";
 
