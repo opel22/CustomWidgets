@@ -59,7 +59,7 @@
                     size: "Responsive",
                     actual: [{
                         value: 130,
-                        coloer: "Good"
+                        color: "Good"
                     }]
                 });
 
