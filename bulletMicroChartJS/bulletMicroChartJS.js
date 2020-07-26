@@ -75,11 +75,11 @@
                     ]
                 });
 
-                _oView = new sap.ui.core.mvc.JSView({
-                    content: jQuery(_shadowRoot.getElementById("oView")).html()
-                })
+                //_oView = new sap.ui.core.mvc.JSView({
+                //    content: jQuery(_shadowRoot.getElementById("oView")).html()
+                //})
                 
-                _oView.placeAt(oGenericTile);
+                oGenericTile.placeAt(content);
 
                 oGenericTile.setAttribute("sapUi5ViewId",_oView.getId());
             });
