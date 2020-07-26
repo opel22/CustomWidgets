@@ -68,15 +68,15 @@
                 oBulletMicroChart.addThreshold(oThreshold3);
                 oBulletMicroChart.addThreshold(oThreshold4);
 
-                /*
+                
                 var oGenericTile = new sap.m.GenericTile({
                     header: "GT Header",
                     subheader: "GT Subheader",
                     frameType: "OneByOne",
                     tileContent: oBulletMicroChart
                 }); 
-                */
-               oBulletMicroChart.placeAt(content);
+                
+                oGenericTile.placeAt(content);
 
                 content.setAttribute("sapUi5ViewId",oGenericTile.getId());
             });
