@@ -69,16 +69,19 @@
                 oBulletMicroChart.addThreshold(oThreshold4);
 
                 var oTileContent = new sap.m.TileConent({
-                    content: oBulletMicroChart
-                })
+                    
+                });
+
+                oTileContent.setContent(oBulletMicroChart);
 
                 var oGenericTile = new sap.m.GenericTile({
                     header: "GT Header",
                     subheader: "GT Subheader",
-                    frameType: "OneByOne",
-                    tileContent: oTileContent
+                    frameType: "OneByOne"
                 }); 
                 
+                oGenericTile.insertTileContent(oTileContent);
+
                 oGenericTile.placeAt(content);
 
                 content.setAttribute("sapUi5ViewId",oGenericTile.getId());
