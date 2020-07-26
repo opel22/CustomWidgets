@@ -1,5 +1,4 @@
 (function() { 
-    let _shadowRoot;
     let _oView;
 
     let template = document.createElement("template");
@@ -19,9 +18,9 @@
     class NewBulletMicroChartJS extends HTMLElement {
         constructor() {
             super(); 
-            _shadowRoot = this.attachShadow({mode: "open"});
+            let shadowRoot = this.attachShadow({mode: "open"});
 
-            _shadowRoot.appendChild(template.content.cloneNode(true));
+            shadowRoot.appendChild(template.content.cloneNode(true));
             
             this._props = {};
             loadthis(this);
