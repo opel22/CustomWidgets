@@ -23,11 +23,14 @@
             shadowRoot.appendChild(template.content.cloneNode(true));
             
             this._props = {};
-            var that_ = this;
-            let content = document.createElement('div');
-        content.slot = "content";
 
-        that_.appendChild(content);
+
+
+            var that_ = this;
+      //      let content = document.createElement('div');
+      //  content.slot = "content";
+
+     //   that_.appendChild(content);
 
         sap.ui.getCore().attachInit(function() {
             "use strict";
