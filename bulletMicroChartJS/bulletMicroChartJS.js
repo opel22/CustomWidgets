@@ -79,8 +79,6 @@
                     ]
                 }); 
                 
-                oGenericTile.insertTileContent(oTileContent);
-
                 oGenericTile.placeAt(content);
 
                 content.setAttribute("sapUi5ViewId",oGenericTile.getId());
