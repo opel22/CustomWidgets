@@ -76,9 +76,10 @@
                 //    content: jQuery(_shadowRoot.getElementById("oView")).html()
                 //})
                 
-                oGenericTile.setAttribute("sapUi5ViewId",_oView.getId());
+                
 
-                _shadowRoot.appendChild(template.content.cloneNode(true));                
+                _shadowRoot.appendChild(template.content.cloneNode(true));  
+                oGenericTile.setAttribute("sapUi5ViewId",_oView.getId());              
                 oGenericTile.placeAt(content);
 
 
