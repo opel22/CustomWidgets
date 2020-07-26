@@ -72,9 +72,7 @@
                     header: "GT Header",
                     subheader: "GT Subheader",
                     frameType: "OneByOne",
-                    tileContent: [
-                        oBulletMicroChart
-                    ]
+                    tileContent: oBulletMicroChart
                 }); 
 
                 oGenericTile.placeAt(content);
