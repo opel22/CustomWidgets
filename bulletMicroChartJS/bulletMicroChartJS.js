@@ -50,11 +50,11 @@
             "use strict";
 
             var oBulletMicroChart = new sap.suite.ui.microchart.BulletMicroChart({
-                scale="M",
-                targetValue="100",
-                forecastValue="110",
-                showValueMarker="true",
-                size="Responsive",
+                scale: "M",
+                targetValue: "100",
+                forecastValue: "110",
+                showValueMarker: "true",
+                size: "Responsive",
                 actuals: [
                     new sap.suite.ui.microchart.BulletMicroChartData({
                         color: "Good",
