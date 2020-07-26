@@ -71,9 +71,11 @@
                 var oGenericTile = new sap.m.GenericTile({
                     header: "GT Header",
                     subheader: "GT Subheader",
-                    frameType: "OneByOne"
-                });   
-                oGenericTile.addContent(oBulletMicroChart);
+                    frameType: "OneByOne",
+                    tileContent: [
+                        oBulletMicroChart
+                    ]
+                }); 
 
                 oGenericTile.placeAt(content);
 
