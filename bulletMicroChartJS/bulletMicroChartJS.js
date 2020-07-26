@@ -75,8 +75,8 @@
                     ]
                 });
 
-                _oView = sap.ui.JSView({
-                    viewContent: jQuery(_shadowRoot.getElementById("oView")).html()
+                _oView = sap.ui.core.mvc.JSView({
+                    content: jQuery(_shadowRoot.getElementById("oView")).html()
                 })
                 
                 _oView.placeAt(oGenericTile);
