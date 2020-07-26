@@ -72,14 +72,11 @@
                     ]
                 });
 
-                _oView = new sap.ui.core.mvc.JSView({
-                    content: jQuery(_shadowRoot.getElementById("oView")).html()
-                });
-                
+               
                 
 
                 _shadowRoot.appendChild(template.content.cloneNode(true));  
-                oGenericTile.setAttribute("sapUi5ViewId",_oView.getId());              
+                //oGenericTile.setAttribute("sapUi5ViewId",_oView.getId());              
                 oGenericTile.placeAt(content);
 
 
