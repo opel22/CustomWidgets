@@ -23,24 +23,8 @@
             shadowRoot.appendChild(template.content.cloneNode(true));
             
             this._props = {};
-            loadthis(this);
-            
-        }
-        onCustomWidgetBeforeUpdate(changedProperties) {
-            if ("designMode" in changedProperties) {
-                this._designMode = changedProperties["designMode"];
-            }
-        }
-        onCustomWidgetAfterUpdate(changedProperties) {
-            //
-        }
-    }
-    customElements.define("ch-processpartner-sample-bulletmicrochart", NewBulletMicroChartJS);
-
-    function loadthis(that) {
-        var that_ = that;
-      
-        let content = document.createElement('div');
+            var that_ = this;
+            let content = document.createElement('div');
         content.slot = "content";
 
         that_.appendChild(content);
@@ -106,7 +90,18 @@
             content.setAttribute("sapUi5ViewId",oGenericTile.getId());
 
         });
-
+            
+        }
+        onCustomWidgetBeforeUpdate(changedProperties) {
+            if ("designMode" in changedProperties) {
+                this._designMode = changedProperties["designMode"];
+            }
+        }
+        onCustomWidgetAfterUpdate(changedProperties) {
+            //
+        }
     }
+    customElements.define("ch-processpartner-sample-bulletmicrochart", NewBulletMicroChartJS);
+
 
 })();
