@@ -30,7 +30,7 @@
                     scale: "M",
                     targetValue: "100",
                     forecastValue: "110",
-                    showValueMarker: "true",
+                    showValueMarker: true,
                     size: "Responsive",
                     actuals: [
                         new sap.suite.ui.microchart.BulletMicroChartData({
