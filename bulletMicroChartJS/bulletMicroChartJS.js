@@ -71,9 +71,9 @@
             content.setAttribute("sapUi5ViewId",oGenericTile.getId());
 
         });
-            
+        */    
         }
-        */
+        
 
         onCustomWidgetBeforeUpdate(changedProperties) {
             if ("designMode" in changedProperties) {
