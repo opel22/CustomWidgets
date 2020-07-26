@@ -36,7 +36,7 @@
                         new sap.suite.ui.microchart.BulletMicroChartData({
                             color: "Good",
                             value: 120
-                        }),
+                        })
                     ],
                     thresholds: [
                         new sap.suite.ui.microchart.BulletMicroChartData({
