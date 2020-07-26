@@ -19,74 +19,52 @@
         constructor() {
             super(); 
             let shadowRoot = this.attachShadow({mode: "open"});
-
             shadowRoot.appendChild(template.content.cloneNode(true));
             
             this._props = {};
-
-
-
-      //      var that_ = this;
-      //      let content = document.createElement('div');
-      //  content.slot = "content";
-
-     //   that_.appendChild(content);
-
-        sap.ui.getCore().attachInit(function() {
-            "use strict";
-
-            var oBulletMicroChart = new sap.suite.ui.microchart.BulletMicroChart({
-                scale: "M",
-                targetValue: "100",
-                forecastValue: "110",
-                showValueMarker: "true",
-                size: "Responsive",
-                actuals: [
-                    new sap.suite.ui.microchart.BulletMicroChartData({
-                        color: "Good",
-                        value: 120
-                    }),
-                ],
-                thresholds: [
-                    new sap.suite.ui.microchart.BulletMicroChartData({
-                        color: "Error",
-                        value: 0
-                    }),
-                    new sap.suite.ui.microchart.BulletMicroChartData({
-                        color: "Critical",
-                        value: 50
-                    }),
-                    new sap.suite.ui.microchart.BulletMicroChartData({
-                        color: "Critical",
-                        value: 150
-                    }),
-                    new sap.suite.ui.microchart.BulletMicroChartData({
-                        color: "Error",
-                        value: 200
-                    })
-                ]
-            });
-
-            var oGenericTile = new sap.m.GenericTile({
-                header: "GT Header",
-                subheader: "GT Subheader",
-                frameType: "OneByOne",
-                tileContent: oBulletMicroChart
-            });
-
-/*
-            //### Controller ###
-            sap.ui.define([
-                "sap/ui/core/mvc/Controller"
-            ], function(Controller) {
+            /*
+            sap.ui.getCore().attachInit(function() {
                 "use strict";
-                
-                return Controller.extend("ch-processpartner-sample-bulletmicrochart", {
-                    //hier kämen die Methoden rein, Bsp. onButtonPress
+
+                var oBulletMicroChart = new sap.suite.ui.microchart.BulletMicroChart({
+                    scale: "M",
+                    targetValue: "100",
+                    forecastValue: "110",
+                    showValueMarker: "true",
+                    size: "Responsive",
+                    actuals: [
+                        new sap.suite.ui.microchart.BulletMicroChartData({
+                            color: "Good",
+                            value: 120
+                        }),
+                    ],
+                    thresholds: [
+                        new sap.suite.ui.microchart.BulletMicroChartData({
+                            color: "Error",
+                            value: 0
+                        }),
+                        new sap.suite.ui.microchart.BulletMicroChartData({
+                            color: "Critical",
+                            value: 50
+                        }),
+                        new sap.suite.ui.microchart.BulletMicroChartData({
+                            color: "Critical",
+                            value: 150
+                        }),
+                        new sap.suite.ui.microchart.BulletMicroChartData({
+                            color: "Error",
+                            value: 200
+                        })
+                    ]
                 });
-            });
-*/        
-            //### THE APP: place the XMLView somewhere into DOM ###
+
+                var oGenericTile = new sap.m.GenericTile({
+                    header: "GT Header",
+                    subheader: "GT Subheader",
+                    frameType: "OneByOne",
+                    tileContent: oBulletMicroChart
+                });
+
           
             oGenericTile.placeAt(content);
 
@@ -95,6 +73,8 @@
         });
             
         }
+        */
+
         onCustomWidgetBeforeUpdate(changedProperties) {
             if ("designMode" in changedProperties) {
                 this._designMode = changedProperties["designMode"];
@@ -105,6 +85,4 @@
         }
     }
     customElements.define("ch-processpartner-sample-bulletmicrochart", NewBulletMicroChartJS);
-
-
 })();
