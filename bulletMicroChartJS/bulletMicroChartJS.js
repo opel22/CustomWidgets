@@ -88,7 +88,7 @@
                 tileContent: oBulletMicroChart
             });
 
-
+/*
             //### Controller ###
             sap.ui.define([
                 "sap/ui/core/mvc/Controller"
@@ -99,7 +99,7 @@
                     //hier kämen die Methoden rein, Bsp. onButtonPress
                 });
             });
-        
+*/        
             //### THE APP: place the XMLView somewhere into DOM ###
           
             oGenericTile.placeAt(content);
