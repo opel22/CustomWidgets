@@ -68,12 +68,15 @@
                 oBulletMicroChart.addThreshold(oThreshold3);
                 oBulletMicroChart.addThreshold(oThreshold4);
 
-                
+                var oTileContent = new sap.m.TileConent({
+                    content: oBulletMicroChart
+                })
+
                 var oGenericTile = new sap.m.GenericTile({
                     header: "GT Header",
                     subheader: "GT Subheader",
                     frameType: "OneByOne",
-                    tileContent: oBulletMicroChart
+                    tileContent: oTileContent
                 }); 
                 
                 oGenericTile.placeAt(content);
