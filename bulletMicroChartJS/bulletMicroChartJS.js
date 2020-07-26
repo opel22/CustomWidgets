@@ -84,5 +84,5 @@
             //
         }
     }
-    customElements.define("ch-processpartner-sample-bulletmicrochart", NewBulletMicroChartJS);
+    customElements.define("ch-processpartner-sample-bulletmicrochartjs", NewBulletMicroChartJS);
 })();
