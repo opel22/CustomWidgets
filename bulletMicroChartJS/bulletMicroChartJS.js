@@ -20,9 +20,6 @@
         constructor() {
             super(); 
             _shadowRoot = this.attachShadow({mode: "open"});
-            _shadowRoot.appendChild(template.content.cloneNode(true));
-            
-            this._props = {};
             
             sap.ui.getCore().attachInit(function() {
                 "use strict";
@@ -79,9 +76,16 @@
                 //    content: jQuery(_shadowRoot.getElementById("oView")).html()
                 //})
                 
+                oGenericTile.setAttribute("sapUi5ViewId",_oView.getId());
+
+                _shadowRoot.appendChild(template.content.cloneNode(true));                
                 oGenericTile.placeAt(content);
 
-                oGenericTile.setAttribute("sapUi5ViewId",_oView.getId());
+
+            
+                this._props = {};
+
+
             });
 
         }
