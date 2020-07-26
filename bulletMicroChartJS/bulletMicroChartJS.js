@@ -72,20 +72,11 @@
                     ]
                 });
 
-               
-                this._props = {};
-
                 _shadowRoot.appendChild(template.content.cloneNode(true));  
                 //oGenericTile.setAttribute("sapUi5ViewId",_oView.getId());              
                 oGenericTile.placeAt(content);
-
-
-            
-                
-
-
             });
-
+            this._props = {};
         }
         
 
