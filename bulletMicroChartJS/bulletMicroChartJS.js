@@ -26,52 +26,60 @@
             sap.ui.getCore().attachInit(function() {
                 "use strict";
 
+                /*var oActuals = new sap.suite.ui.microchart.BulletMicroChartData({
+                    color: "Good",
+                    value: 120
+                });*/
+                
+                var oThreshold1 = new sap.suite.ui.microchart.BulletMicroChartData({
+                    color: "Error",
+                    value: 0
+                });
+
+                var oThreshold2 = new sap.suite.ui.microchart.BulletMicroChartData({
+                    color: "Critical",
+                    value: 50
+                });
+
+                var oThreshold3 = new sap.suite.ui.microchart.BulletMicroChartData({
+                    color: "Critical",
+                    value: 150
+                });
+
+                var oThreshold4 = new sap.suite.ui.microchart.BulletMicroChartData({
+                    color: "Error",
+                    value: 200
+                });
+
                 var oBulletMicroChart = new sap.suite.ui.microchart.BulletMicroChart({
                     scale: "M",
                     targetValue: "100",
                     forecastValue: "110",
                     showValueMarker: true,
                     size: "Responsive",
-                    actuals: [
-                        new sap.suite.ui.microchart.BulletMicroChartData({
-                            color: "Good",
-                            value: 120
-                        })
-                    ],
-                    thresholds: [
-                        new sap.suite.ui.microchart.BulletMicroChartData({
-                            color: "Error",
-                            value: 0
-                        }),
-                        new sap.suite.ui.microchart.BulletMicroChartData({
-                            color: "Critical",
-                            value: 50
-                        }),
-                        new sap.suite.ui.microchart.BulletMicroChartData({
-                            color: "Critical",
-                            value: 150
-                        }),
-                        new sap.suite.ui.microchart.BulletMicroChartData({
-                            color: "Error",
-                            value: 200
-                        })
-                    ]
+                    actual: [{
+                        value: 130,
+                        coloer: "Good"
+                    }]
                 });
+
+                oBulletMicroChart.addThreshold(oThreshold1);
+                oBulletMicroChart.addThreshold(oThreshold2);
+                oBulletMicroChart.addThreshold(oThreshold3);
+                oBulletMicroChart.addThreshold(oThreshold4);
 
                 var oGenericTile = new sap.m.GenericTile({
                     header: "GT Header",
                     subheader: "GT Subheader",
                     frameType: "OneByOne",
                     tileContent: oBulletMicroChart
-                });
-
-          
+                });   
+                
                 oGenericTile.placeAt(content);
 
                 content.setAttribute("sapUi5ViewId",oGenericTile.getId());
-
             });
-            
+
         }
         
 
