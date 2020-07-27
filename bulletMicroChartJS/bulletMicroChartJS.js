@@ -82,10 +82,9 @@
                             content: [oBulletMicroChart]
                         })
                     ]
-                }).placeAt("content");
+                })
 
-                //oGenericTile.setAttribute("sapUi5ViewId",_oView.getId());              
-                //oGenericTile.placeAt(content);
+                oGenericTile.placeAt(document.getElementsById("content"));
             });
         }
         onCustomWidgetBeforeUpdate(changedProperties) {
