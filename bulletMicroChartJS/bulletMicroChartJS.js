@@ -71,7 +71,8 @@
                         })
                     ]
                 });
-
+                let content = document.createElement('div');
+                content.slot = "content";
                 _shadowRoot.appendChild(template.content.cloneNode(true));  
                 //oGenericTile.setAttribute("sapUi5ViewId",_oView.getId());              
                 oGenericTile.placeAt(content);
