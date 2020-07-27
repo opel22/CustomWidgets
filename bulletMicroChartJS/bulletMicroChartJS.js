@@ -83,7 +83,7 @@
                         })
                     ]
                 })
-                content = document.getElementById("content");
+                content = document.getElementById("ui5_content");
                 oGenericTile.placeAt(content);
             });
         }
