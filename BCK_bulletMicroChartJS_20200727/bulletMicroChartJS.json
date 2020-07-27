@@ -1,0 +1,35 @@
+{
+    "id": "ch.processpartner.sample.bulletmicrochartjs",
+    "version": "1.0.0",
+    "name": "newBulletMicroChartJS",
+    "description": "A bullet micro chart",
+    "newInstancePrefix": "bmcJS",
+    "icon": "https://opel22.github.io/CustomWidgets/bulletMicroChartJS/icon.png",
+    "vendor": "Process Partner AG",
+    "eula": "",
+    "license": "",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "ch-processpartner-sample-bulletmicrochartjs",
+            "url": "https://opel22.github.io/CustomWidgets/bulletMicroChartJS/bulletMicroChartJS.js",
+            "integrity": "sha256-/HF47ayRHxc4HpYWVmrNoetT6xaC2u5fwbXgUxrDkI8=",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "width": {
+            "type": "integer",
+            "default": 192
+        },
+        "height": {
+            "type": "integer",
+            "default": 192
+        }
+    },
+    "methods": {       
+    },
+    "events": {
+    },
+    "imports": ["datasource"]
+}            

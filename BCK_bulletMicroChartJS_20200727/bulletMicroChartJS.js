@@ -1,5 +1,4 @@
 (function() {
-    /*
     let _shadowRoot;
     let _oView;
 
@@ -16,22 +15,12 @@
             data-sap-ui-theme="sap_bluecrystal"
         </script>           
     `;
-
-
-   _shadowRoot = this.attachShadow({mode: "open"});
-
-
-
-    */
     //Test for github
-    customElements.define("ch-processpartner-sample-bulletmicrochartjs", class extends HTMLElement {
+    class NewBulletMicroChartJS extends HTMLElement {
         constructor() {
             super(); 
-            this._props = {};
-
+            _shadowRoot = this.attachShadow({mode: "open"});
             this.$this = $(this);
-            this.$contDiv = $("<div>").setAttribut("id", "ui5_content").appendTo(this.$this);
-            this.$contSlot = $("<slot>").setAttribut("id", "content").appendTo(this.$contDiv);
             
             sap.ui.getCore().attachInit(function() {
                 "use strict";
@@ -84,10 +73,23 @@
                     ]
                 }).placeAt("content");
 
+
+                let content = document.createElement('div');
+                content.slot = "content";
+                
+                _shadowRoot.appendChild(template.content.cloneNode(true)); 
+
+              
+
+                
+                 
                 //oGenericTile.setAttribute("sapUi5ViewId",_oView.getId());              
                 //oGenericTile.placeAt(content);
             });
+            this._props = {};
         }
+        
+
         onCustomWidgetBeforeUpdate(changedProperties) {
             if ("designMode" in changedProperties) {
                 this._designMode = changedProperties["designMode"];
@@ -96,5 +98,6 @@
         onCustomWidgetAfterUpdate(changedProperties) {
             //
         }
-    })
+    }
+    customElements.define("ch-processpartner-sample-bulletmicrochartjs", NewBulletMicroChartJS);
 })();
