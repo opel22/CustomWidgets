@@ -74,19 +74,21 @@
 
                 var tileHolder = new sap.m.Page({
                     title: "Tile Holder",
-                    content: oGnericTile
+                    content: oGenericTile
                 });
                 let content = document.createElement('div');
                 content.slot = "content";
+                
+                _shadowRoot.appendChild(template.content.cloneNode(true)); 
 
                 var app = new sap.m.App({
                     pages: [tileHolder]
                 }).placeAt("content");
 
                 
-                _shadowRoot.appendChild(template.content.cloneNode(true));  
+                 
                 //oGenericTile.setAttribute("sapUi5ViewId",_oView.getId());              
-                oGenericTile.placeAt(content);
+                //oGenericTile.placeAt(content);
             });
             this._props = {};
         }
