@@ -71,8 +71,19 @@
                         })
                     ]
                 });
+
+                var tileHolder = new sap.m.Page({
+                    title: "Tile Holder",
+                    content: oGnericTile
+                });
                 let content = document.createElement('div');
                 content.slot = "content";
+
+                var app = new sap.m.App({
+                    pages: [tileHolder]
+                }).placeAt("content");
+
+                
                 _shadowRoot.appendChild(template.content.cloneNode(true));  
                 //oGenericTile.setAttribute("sapUi5ViewId",_oView.getId());              
                 oGenericTile.placeAt(content);
