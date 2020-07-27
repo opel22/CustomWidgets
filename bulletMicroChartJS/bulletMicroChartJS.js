@@ -30,8 +30,8 @@
             this._props = {};
 
             this.$this = $(this);
-            this.$contDiv = $("<div>").Attribut("id", "ui5_content").appendTo(this.$this);
-            this.$contSlot = $("<slot>").Attribut("id", "content").appendTo(this.$contDiv);
+            this.$contDiv = $("<div>").attr("id", "ui5_content").appendTo(this.$this);
+            this.$contSlot = $("<slot>").attr("id", "content").appendTo(this.$contDiv);
             
             sap.ui.getCore().attachInit(function() {
                 "use strict";
