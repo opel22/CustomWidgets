@@ -20,6 +20,7 @@
         constructor() {
             super(); 
             _shadowRoot = this.attachShadow({mode: "open"});
+            this.$this = $(this);
             
             sap.ui.getCore().attachInit(function() {
                 "use strict";
@@ -70,20 +71,15 @@
                             content: [oBulletMicroChart]
                         })
                     ]
-                });
+                }).placeAt("content");
 
-                var tileHolder = new sap.m.Page({
-                    title: "Tile Holder",
-                    content: oGenericTile
-                });
+
                 let content = document.createElement('div');
                 content.slot = "content";
                 
                 _shadowRoot.appendChild(template.content.cloneNode(true)); 
 
-                var app = new sap.m.App({
-                    pages: [tileHolder]
-                }).placeAt("content");
+              
 
                 
                  
