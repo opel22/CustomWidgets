@@ -83,8 +83,8 @@
                         })
                     ]
                 })
-
-                oGenericTile.placeAt(document.getElementsById("content"));
+                content = document.getElementById("content");
+                oGenericTile.placeAt(content);
             });
         }
         onCustomWidgetBeforeUpdate(changedProperties) {
