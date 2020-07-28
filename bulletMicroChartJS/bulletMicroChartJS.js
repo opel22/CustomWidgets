@@ -1,7 +1,9 @@
 (function() {
     let template = document.createElement("template");
     template.innerHTML = `
-      
+    <div id="ui5_content" name="ui5_content">
+        <slot name="content"></slot>
+    </div>      
     `;
 
    
@@ -61,10 +63,12 @@
                         })
                     ]
                 })
-                let content = document.createElement("div");
+                /*
+                let content = shcontent(this);
                 content.slot = "content";
                 this.appendChild(content);
                 oGenericTile.placeAt(content);
+                */
             });
 
         }
