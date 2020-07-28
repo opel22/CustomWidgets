@@ -8,8 +8,8 @@
     class BulletMicroChartJS extends HTMLElement {
         constructor() {
             super(); 
-            this._shadowRoot = this.attachShadow({mode: "open"});
-            this._shadowRoot.appendChild(template.content.cloneNode(true));
+            let shadowRoot = this.attachShadow({mode: "open"});
+            shadowRoot.appendChild(template.content.cloneNode(true));
 
             sap.ui.getCore().attachInit(function() {
                 "use strict";
