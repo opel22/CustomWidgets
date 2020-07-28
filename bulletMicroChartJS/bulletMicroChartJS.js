@@ -4,8 +4,8 @@
       
     `;
 
-    //Test for github
-    customElements.define("ch-processpartner-sample-bulletmicrochartjs", class extends HTMLElement {
+   
+    customElements.define("ch-processpartner-sample-bulletmicrochartjs", class BulletMicroChartJS extends HTMLElement {
         constructor() {
             super(); 
             this._shadowRoot = this.attachShadow({mode: "open"});
