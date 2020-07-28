@@ -1,37 +1,21 @@
 (function() {
-    /*
-    let _shadowRoot;
-    let _oView;
-
     let template = document.createElement("template");
-    template.innerHTML = `
-        <div id="ui5_content" name="ui5_content">
-            <slot name="content"></slot>
-        </div>
-        <script id="oView" name="oView" type="ui5_content">
-        </script>
-        <script>
-            src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
-            data-sap-ui-libs="sap.m,sap.suit.ui"
-            data-sap-ui-theme="sap_bluecrystal"
-        </script>           
+    template.innerHTML = `          
     `;
 
-
-   _shadowRoot = this.attachShadow({mode: "open"});
-
-
-
-    */
     //Test for github
     customElements.define("ch-processpartner-sample-bulletmicrochartjs", class extends HTMLElement {
         constructor() {
-            super(); 
-            this._props = {};
+			super(); 
+			this._shadowRoot = this.attachShadow({mode: "open"});
+            this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 
-            this.$this = $(this);
-            this.$contDiv = $("<div>").attr("id", "ui5_content").appendTo(this.$this);
-            this.$contSlot = $("<slot>").attr("id", "content").appendTo(this.$contDiv);
+            this._props = {};
+            this._tagContainer;
+            this._tagType = "div";
+ 
+            //this.$contDiv = $("<div>").attr("id", "ui5_content").appendTo(this.$this);
+            //this.$contSlot = $("<slot>").attr("id", "content").appendTo(this.$contDiv);
             
             sap.ui.getCore().attachInit(function() {
                 "use strict";
@@ -83,8 +67,11 @@
                         })
                     ]
                 })
-                content = document.getElementById("ui5_content");
-                oGenericTile.placeAt(content);
+
+                var shadow = window.getSelection(this._shadowRoot);
+                this._tagContainer = document.createElement(this._tagType);
+                this._tagContainer =appendChild(oGenericTile);
+                this._shadowRoot.appendChild(this._tagContainer);                
             });
         }
         onCustomWidgetBeforeUpdate(changedProperties) {
