@@ -1,9 +1,7 @@
 (function() {
     let template = document.createElement("template");
     template.innerHTML = `
-    <div id="ui5_content" name="ui5_content">
-        <slot name="content"></slot>
-    </div>      
+ 
     `;
 
    
@@ -12,6 +10,10 @@
             super(); 
             let shadowRoot = this.attachShadow({mode: "open"});
             shadowRoot.appendChild(template.content.cloneNode(true));
+
+            let content = document.createElement('div');
+            content.slot = "content";
+            shadowRoot.appendChild(content);
 
             sap.ui.getCore().attachInit(function() {
                 "use strict";
@@ -63,8 +65,8 @@
                         })
                     ]
                 })
-                shadowRoot.appendChild(oGenericTile);
-//                oGenericTile.placeAt(content);
+                
+                oGenericTile.placeAt(content);
 
             });
 
