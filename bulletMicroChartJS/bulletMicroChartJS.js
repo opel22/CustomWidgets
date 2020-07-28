@@ -1,6 +1,7 @@
 (function() {
     let template = document.createElement("template");
-    template.innerHTML = `          
+    template.innerHTML = `
+      
     `;
 
     //Test for github
@@ -9,17 +10,7 @@
             super(); 
             this._shadowRoot = this.attachShadow({mode: "open"});
             this._shadowRoot.appendChild(template.content.cloneNode(true));
-            this._tagContainer;
-            this._tagType = "h1";
-            this._tagText = "Hello World";
 
-
-            //this._tagContainer;
-            //this._tagType = "div";
- 
-            //this.$contDiv = $("<div>").attr("id", "ui5_content").appendTo(this.$this);
-            //this.$contSlot = $("<slot>").attr("id", "content").appendTo(this.$contDiv);
-            /*
             sap.ui.getCore().attachInit(function() {
                 "use strict";
 
@@ -70,13 +61,12 @@
                         })
                     ]
                 })
-
-                var shadow = window.getSelection(this._shadowRoot);
-                this._tagContainer = document.createElement(this._tagType);
-                this._tagContainer =appendChild(oGenericTile);
-                this._shadowRoot.appendChild(this._tagContainer);                
+                let content = document.createElement("div");
+                content.slot = "content";
+                this.appendChild(content);
+                oGenericTile.placeAt(content);
             });
-            */
+
         }
         onCustomWidgetBeforeUpdate(changedProperties) {
             if ("designMode" in changedProperties) {
