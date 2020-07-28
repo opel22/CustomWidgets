@@ -6,17 +6,20 @@
     //Test for github
     customElements.define("ch-processpartner-sample-bulletmicrochartjs", class extends HTMLElement {
         constructor() {
-			super(); 
-			this._shadowRoot = this.attachShadow({mode: "open"});
+            super(); 
+            this._shadowRoot = this.attachShadow({mode: "open"});
             this._shadowRoot.appendChild(template.content.cloneNode(true));
-
-            this._props = {};
             this._tagContainer;
-            this._tagType = "div";
+            this._tagType = "h1";
+            this._tagText = "Hello World";
+
+
+            //this._tagContainer;
+            //this._tagType = "div";
  
             //this.$contDiv = $("<div>").attr("id", "ui5_content").appendTo(this.$this);
             //this.$contSlot = $("<slot>").attr("id", "content").appendTo(this.$contDiv);
-            
+            /*
             sap.ui.getCore().attachInit(function() {
                 "use strict";
 
@@ -73,6 +76,7 @@
                 this._tagContainer =appendChild(oGenericTile);
                 this._shadowRoot.appendChild(this._tagContainer);                
             });
+            */
         }
         onCustomWidgetBeforeUpdate(changedProperties) {
             if ("designMode" in changedProperties) {
