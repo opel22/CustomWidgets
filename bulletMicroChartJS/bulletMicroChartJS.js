@@ -63,12 +63,9 @@
                         })
                     ]
                 })
-                /*
-                let content = shcontent(this);
-                content.slot = "content";
-                this.appendChild(content);
-                oGenericTile.placeAt(content);
-                */
+                shadowRoot.appendChild(oGenericTile);
+//                oGenericTile.placeAt(content);
+
             });
 
         }
