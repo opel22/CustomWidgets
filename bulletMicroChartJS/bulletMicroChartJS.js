@@ -5,7 +5,7 @@
     `;
 
    
-    customElements.define("ch-processpartner-sample-bulletmicrochartjs", class BulletMicroChartJS extends HTMLElement {
+    class BulletMicroChartJS extends HTMLElement {
         constructor() {
             super(); 
             this._shadowRoot = this.attachShadow({mode: "open"});
@@ -76,5 +76,6 @@
         onCustomWidgetAfterUpdate(changedProperties) {
             //
         }
-    })
+    }
+    customElements.define("ch-processpartner-sample-bulletmicrochartjs", BulletMicroChartJS) ;
 })();
