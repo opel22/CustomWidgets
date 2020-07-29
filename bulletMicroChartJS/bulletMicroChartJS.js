@@ -67,7 +67,7 @@
                 })
                 
                 var oView = new sap.ui.core.mvc.JSView({
-                    content: [oGenericTile]
+                    createContent: oGenericTile
                 });
                 oView.placeAt(content);
 
