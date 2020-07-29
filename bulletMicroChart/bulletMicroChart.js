@@ -10,7 +10,9 @@
         <script id="oView" name="oView" type="ui5_content">        
         <mvc:View 
         controllerName="myView.Template"
-            xmlns="sap.suite.ui.microchart" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m">
+            xmlns="sap.suite.ui.microchart"
+            xmlns:mvc="sap.ui.core.mvc"
+            xmlns:m="sap.m">
             <m:GenericTile id="genTile" header="Revenue Dynamics"
                 frameType="OneByOne" press="press">
                 <m:tileContent>
@@ -65,7 +67,6 @@
             oView.byId("cont").setActual(new sap.suite.ui.microchart.BulletMicroChartData({ color: sap.m.ValueColor.Good, value: newActual }));
         }
 
-        //oView.byId("cont").mProperties["targetValue"] = 100
         set targetValue(newTargetValue) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 
@@ -75,7 +76,6 @@
             oView.byId("cont").setTargetValue(newTargetValue);
         }
 
-        //oView.byId("cont").mProperties["forecastValue"] = 110
         set forecastValue(newForecastValue) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 
@@ -93,27 +93,6 @@
             }
             oView.byId("cont").addThreshold(new sap.suite.ui.microchart.BulletMicroChartData({ color: sap.m.ValueColor.Error, value: newThresholdValue }));
         }
-        //Die verschiedenen Werte für die "thresholds":
-        //oView.byId("cont").mAggregations["thresholds"][0]["mProperties"]["value"] => 0
-        //oView.byId("cont").mAggregations["thresholds"][0]["mProperties"]["color"] => Error
-
-        //oView.byId("cont").mAggregations["thresholds"][1]["mProperties"]["value"] => 50
-        //oView.byId("cont").mAggregations["thresholds"][1]["mProperties"]["color"] => Critical
-
-        //oView.byId("cont").mAggregations["thresholds"][2]["mProperties"]["value"] => 150
-        //oView.byId("cont").mAggregations["thresholds"][2]["mProperties"]["color"] => Critical
-
-        //oView.byId("cont").mAggregations["thresholds"][3]["mProperties"]["value"] => 200
-        //oView.byId("cont").mAggregations["thresholds"][3]["mProperties"]["color"] => Error
-
-        //oView.byId("cont").mAggregations["actual"]["mProperties"]["value"] = 120
-
-
-
-        //oView.byId("cont"). addThreshold(new sap.suite.ui.microchart.BulletMicroChartData({ color: sap.m.ValueColor.Error, value: 150 }));
-        
-
-
 
 
         set unit(newUnit) {
