@@ -13,7 +13,7 @@
             xmlns="sap.suite.ui.microchart"
             xmlns:mvc="sap.ui.core.mvc"
             xmlns:m="sap.m">
-            <m:GenericTile id="genTile" header="Revenue Dynamics"
+            <m:GenericTile id="genTile" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" size="L" header="Revenue Dynamics"
                 frameType="OneByOne" press="press">
                 <m:tileContent>
                     <m:TileContent id="tileCont" unit="CHF" footer="With Forecast">
