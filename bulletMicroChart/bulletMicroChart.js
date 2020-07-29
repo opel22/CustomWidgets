@@ -62,7 +62,7 @@
             if(!oView){
                 return; 
             }
-            oView.byId("cont").setActual(newActual);
+            oView.byId("cont").setActual(new sap.suite.ui.microchart.BulletMicroChartData({ color: sap.m.ValueColor.Good, value: newActual }));
         }
 
         //oView.byId("cont").mProperties["targetValue"] = 100
