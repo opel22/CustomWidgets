@@ -67,7 +67,7 @@
         }
 
         //oView.byId("cont").mProperties["forecastValue"] = 110
-        set forecastvalue(newForecastValue) {
+        set forecastValue(newForecastValue) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 
             if(!oView){
@@ -76,6 +76,14 @@
             oView.byId("cont").setTargetValue(newForecastValue);
         }
         
+        set thresholdValue(newThresholdValue) {
+            let sViewId = this.firstChild.getAttribute("sapui5viewid");
+            var oView = sap.ui.getCore().byId(sViewId); 
+            if(!oView){
+                return; 
+            }
+            oView.byId("cont").addThreshold(new sap.suite.ui.microchart.BulletMicroChartData({ color: sap.m.ValueColor.Error, value: newThresholdValue }));
+        }
         //Die verschiedenen Werte für die "thresholds":
         //oView.byId("cont").mAggregations["thresholds"][0]["mProperties"]["value"] => 0
         //oView.byId("cont").mAggregations["thresholds"][0]["mProperties"]["color"] => Error
@@ -92,6 +100,9 @@
         //oView.byId("cont").mAggregations["actual"]["mProperties"]["value"] = 120
 
 
+
+        //oView.byId("cont"). addThreshold(new sap.suite.ui.microchart.BulletMicroChartData({ color: sap.m.ValueColor.Error, value: 150 }));
+        
 
 
 

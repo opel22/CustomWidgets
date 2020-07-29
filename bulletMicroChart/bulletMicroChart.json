@@ -83,6 +83,17 @@
             ],
             "body": "this.forecastValue = newForecastValue;"
         },
+        "setThresholdValue": {
+            "description": "Sets the threshold value.",
+            "parameters": [
+                {
+                    "name": "newThresholdValue",
+                    "type": "number",
+                    "description": "The new threshold value"
+                }
+            ],
+            "body": "this.thresholdValue = newThresholdValue;"
+        },
 
         "setUnit": {
             "description": "Sets the unit.",
