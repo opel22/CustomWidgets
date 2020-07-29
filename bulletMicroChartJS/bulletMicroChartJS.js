@@ -1,32 +1,7 @@
 (function() {
     let template = document.createElement("template");
     template.innerHTML = `
-    <script id="oView" name="oView" type="ui5_content">        
-    <mvc:View 
-        xmlns="sap.suite.ui.microchart" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m">
-        <m:GenericTile id="genTile" header="Revenue Dynamics"
-            frameType="OneByOne" press="press">
-            <m:tileContent>
-                <m:TileContent id="tileCont" unit="CHF" footer="With Forecast">
-                    <m:content>
-                        <BulletMicroChart id="cont" scale="M" targetValue="100"
-                            forecastValue="110" showValueMarker="true" size="Responsive">
-                            <actual>
-                                <BulletMicroChartData value="120" color="Good" />
-                            </actual>
-                            <thresholds>
-                                <BulletMicroChartData value="0" color="Error" />
-                                <BulletMicroChartData value="50" color="Critical" />
-                                <BulletMicroChartData value="150" color="Critical" />
-                                <BulletMicroChartData value="200" color="Error" />
-                            </thresholds>
-                        </BulletMicroChart>
-                    </m:content>
-                </m:TileContent>
-            </m:tileContent>
-        </m:GenericTile>
-    </mvc:View>
-    </script>    
+  
     `;
 
    
@@ -91,7 +66,10 @@
                     ]
                 })
                 
-                oGenericTile.placeAt(content);
+                var oView = new sap.ui.core.mvc.JSView({
+                    content: [oGenericTile]
+                });
+                oView.placeAt(content);
 
             });
 
