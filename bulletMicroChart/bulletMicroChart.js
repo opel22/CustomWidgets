@@ -73,7 +73,7 @@
             if(!oView){
                 return; 
             }
-            oView.byId("cont").setForcastValue(newForecastValue);
+            oView.byId("cont").setForecastValue(newForecastValue);
         }
         
         set thresholdValue(newThresholdValue) {
