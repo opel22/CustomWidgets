@@ -56,6 +56,15 @@
             //
         }
 
+        set actual(newActual) {
+            let sViewId = this.firstChild.getAttribute("sapui5viewid");
+            var oView = sap.ui.getCore().byId(sViewId); 
+            if(!oView){
+                return; 
+            }
+            oView.byId("cont").setActual(newActual);
+        }
+
         //oView.byId("cont").mProperties["targetValue"] = 100
         set targetValue(newTargetValue) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");

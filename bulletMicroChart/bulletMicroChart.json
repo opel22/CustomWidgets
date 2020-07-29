@@ -33,6 +33,11 @@
             "type": "integer",
             "default": 192
         },
+        "actual": {
+            "type": "number",
+            "description": "Actual Value",
+            "default": 190
+        },
         "targetValue": {
             "type": "number",
             "description": "Target Value",
@@ -61,6 +66,17 @@
         }
     },
     "methods": {
+        "setActual": {
+            "description": "Sets the actual value.",
+            "parameters": [
+                {
+                    "name": "newActual",
+                    "type": "number",
+                    "description": "The new actual value"
+                }
+            ],
+            "body": "this.actual = newActual;"
+        },
         "setTargetValue": {
             "description": "Sets the target value.",
             "parameters": [
