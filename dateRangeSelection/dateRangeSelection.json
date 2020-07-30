@@ -1,0 +1,74 @@
+{
+    "id": "ch.processpartner.sample.daterangeselection",
+    "version": "1.0.0",
+    "name": "newRadialMicroChart",
+    "description": "A radial micro chart",
+    "newInstancePrefix": "rmc",
+    "icon": "https://opel22.github.io/CustomWidgets/dateRangeSelection/icon.png",
+    "vendor": "Process Partner AG",
+    "eula": "",
+    "license": "",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "ch-processpartner-sample-daterangeselection",
+            "url": "https://opel22.github.io/CustomWidgets/dateRangeSelection/dateRangeSelection.js",
+            "integrity": "sha256-/HF47ayRHxc4HpYWVmrNoetT6xaC2u5fwbXgUxrDkI8=",
+            "ignoreIntegrity": true
+        },
+        {
+            "kind": "builder",
+            "tag": "com-sap-sample-newtile-builder",
+            "url": "https://opel22.github.io/CustomWidgets/dateRangeSelection/dateRangeSelection_builder.js",
+            "integrity": "sha256-vkAAfA5e87NR7P0VbFO0VMercCYYgE/LyTi8bN+8vJs=",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "width": {
+            "type": "integer",
+            "default": 100
+        },
+        "height": {
+            "type": "integer",
+            "default": 40
+        },
+        "dateValue": {
+            "type": "string",
+            "description": "Date-From",
+            "default": "Date-From"
+        },
+        "secondDateValue": {
+            "type": "string",
+            "description": "Date-To",
+            "default": "Date-To"
+        }
+    },
+    "methods": {
+        "setDateValue": {
+            "description": "Sets the from-date.",
+            "parameters": [
+                {
+                    "name": "newFromDate",
+                    "type": "string",
+                    "description": "The new from-date"
+                }
+            ],
+            "body": "this.dateValue = newFromDate;"
+        },
+        "setSecondDateValue": {
+            "description": "Sets the to-date.",
+            "parameters": [
+                {
+                    "name": "newToDate",
+                    "type": "string",
+                    "description": "The new to-date"
+                }
+            ],
+            "body": "this.secondDateValue = newToValue;"
+        }      
+    },
+    "events": {
+    },
+    "imports": ["datasource"]
+}            
