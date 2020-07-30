@@ -77,17 +77,6 @@
             ],
             "body": "this.valueColor = newValueColor;"
         },
-        "setUnit": {
-            "description": "Sets the unit.",
-            "parameters": [
-                {
-                    "name": "newUnit",
-                    "type": "string",
-                    "description": "The new unit"
-                }
-            ],
-            "body": "this.unit = newUnit;"
-        },
         "setHeader": {
             "description": "Sets the header.",
             "parameters": [
