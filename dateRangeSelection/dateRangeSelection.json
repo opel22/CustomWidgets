@@ -1,9 +1,9 @@
 {
     "id": "ch.processpartner.sample.daterangeselection",
     "version": "1.0.0",
-    "name": "newRadialMicroChart",
-    "description": "A radial micro chart",
-    "newInstancePrefix": "rmc",
+    "name": "newDateRangeSelection",
+    "description": "A date range selector",
+    "newInstancePrefix": "drs",
     "icon": "https://opel22.github.io/CustomWidgets/dateRangeSelection/icon.png",
     "vendor": "Process Partner AG",
     "eula": "",
@@ -60,12 +60,12 @@
             "description": "Sets the to-date.",
             "parameters": [
                 {
-                    "name": "newToDate",
+                    "name": "newSecondDateValue",
                     "type": "string",
                     "description": "The new to-date"
                 }
             ],
-            "body": "this.secondDateValue = newToValue;"
+            "body": "this.secondDateValue = newSecondDateValue;"
         }      
     },
     "events": {

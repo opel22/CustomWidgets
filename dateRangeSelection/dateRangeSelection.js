@@ -9,7 +9,7 @@
         </div>
         <script id="oView" name="oView" type="ui5_content">        
         <mvc:View
-        controllerName="sap.m.sample.DateRangeSelection.C"
+        controllerName="myView.Template"
         xmlns:mvc="sap.ui.core.mvc"
         xmlns="sap.m" >
             <VBox class="sapUiSmallMargin">
