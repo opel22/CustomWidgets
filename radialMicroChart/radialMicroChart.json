@@ -1,0 +1,117 @@
+{
+    "id": "ch.processpartner.sample.radialmicrochart",
+    "version": "1.0.0",
+    "name": "newRadialMicroChart",
+    "description": "A radial micro chart",
+    "newInstancePrefix": "bmc",
+    "icon": "https://opel22.github.io/CustomWidgets/radialMicroChart/icon.png",
+    "vendor": "Process Partner AG",
+    "eula": "",
+    "license": "",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "ch-processpartner-sample-radialmicrochart",
+            "url": "https://opel22.github.io/CustomWidgets/radialMicroChart/radialMicroChart.js",
+            "integrity": "sha256-/HF47ayRHxc4HpYWVmrNoetT6xaC2u5fwbXgUxrDkI8=",
+            "ignoreIntegrity": true
+        },
+        {
+            "kind": "builder",
+            "tag": "com-sap-sample-newtile-builder",
+            "url": "https://opel22.github.io/CustomWidgets/radialMicroChart/radialMicroChart_builder.js",
+            "integrity": "sha256-vkAAfA5e87NR7P0VbFO0VMercCYYgE/LyTi8bN+8vJs=",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "width": {
+            "type": "integer",
+            "default": 192
+        },
+        "height": {
+            "type": "integer",
+            "default": 192
+        },
+        "percentage": {
+            "type": "number",
+            "description": "Percentage Value",
+            "default": 80.5
+        },
+        "valueColor": {
+            "type": "string",
+            "description": "Value color",
+            "default": "green"
+        },
+        "header": {
+            "type": "string",
+            "description": "Header",
+            "default": "Header"
+        },
+        "subheader": {
+            "type": "string",
+            "description": "Subheader",
+            "default": "Subheader"
+        }
+    },
+    "methods": {
+        "setPercentage": {
+            "description": "Sets the percentage value.",
+            "parameters": [
+                {
+                    "name": "newPercentage",
+                    "type": "number",
+                    "description": "The new percentage value"
+                }
+            ],
+            "body": "this.percentage = newPercentage;"
+        },
+        "setValueColor": {
+            "description": "Sets the value color.",
+            "parameters": [
+                {
+                    "name": "newValueColor",
+                    "type": "string",
+                    "description": "The new value color"
+                }
+            ],
+            "body": "this.valueColor = newValueColor;"
+        },
+        "setUnit": {
+            "description": "Sets the unit.",
+            "parameters": [
+                {
+                    "name": "newUnit",
+                    "type": "string",
+                    "description": "The new unit"
+                }
+            ],
+            "body": "this.unit = newUnit;"
+        },
+        "setHeader": {
+            "description": "Sets the header.",
+            "parameters": [
+                {
+                    "name": "newHeader",
+                    "type": "string",
+                    "description": "The new header"
+                }
+            ],
+            "body": "this.header = newHeader;"
+        },
+        "setSubheader": {
+            "description": "Sets the subheader.",
+            "parameters": [
+                {
+                    "name": "newSubheader",
+                    "type": "string",
+                    "description": "The new subheader"
+                }
+            ],
+            "body": "this.subheader = newSubheader;"
+        }        
+    },
+    "events": {
+    },
+    "imports": ["datasource"]
+}            
