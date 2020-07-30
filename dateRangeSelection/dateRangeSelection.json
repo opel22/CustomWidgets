@@ -45,27 +45,27 @@
         }
     },
     "methods": {
-        "setDateValue": {
-            "description": "Sets the from-date.",
+        "getDateValue": {
+            "description": "Get the from-date.",
             "parameters": [
                 {
-                    "name": "newFromDate",
+                    "name": "getFromDate",
                     "type": "string",
-                    "description": "The new from-date"
+                    "description": "The from-date"
                 }
             ],
-            "body": "this.dateValue = newFromDate;"
+            "body": "return  this.dateValue ;"
         },
-        "setSecondDateValue": {
-            "description": "Sets the to-date.",
+        "getSecondDateValue": {
+            "description": "Get the to-date.",
             "parameters": [
                 {
-                    "name": "newSecondDateValue",
+                    "name": "getSecondDateValue",
                     "type": "string",
-                    "description": "The new to-date"
+                    "description": "The to-date"
                 }
             ],
-            "body": "this.secondDateValue = newSecondDateValue;"
+            "body": "return this.secondDateValue;"
         }      
     },
     "events": {
