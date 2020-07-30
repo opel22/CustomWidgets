@@ -13,12 +13,12 @@
             xmlns="sap.suite.ui.microchart"
             xmlns:mvc="sap.ui.core.mvc"
             xmlns:m="sap.m">
-            <m:GenericTile id="genTile" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" size="L" header="Radial Chart" subheader="SAPUI5"
+            <m:GenericTile id="genTile" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" size="L" header="Radial Chart"
                 frameType="OneByOne" press="press">
                 </m:tileContent>
                     <m:TileContent footer="Some footer">
                         <m:content>
-                            <RadialMicroChart size="Responsive" percentage="99.9" alignContent="Right" valueColor="Neutral"/>
+                            <RadialMicroChart id="cont" size="Responsive" percentage="99.9" alignContent="Right" valueColor="Neutral"/>
                         </m:content>
                     </m:TileContent>
 			    </m:tileContent>
