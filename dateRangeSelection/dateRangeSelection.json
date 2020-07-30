@@ -15,13 +15,6 @@
             "url": "https://opel22.github.io/CustomWidgets/dateRangeSelection/dateRangeSelection.js",
             "integrity": "sha256-/HF47ayRHxc4HpYWVmrNoetT6xaC2u5fwbXgUxrDkI8=",
             "ignoreIntegrity": true
-        },
-        {
-            "kind": "builder",
-            "tag": "com-sap-sample-newtile-builder",
-            "url": "https://opel22.github.io/CustomWidgets/dateRangeSelection/dateRangeSelection_builder.js",
-            "integrity": "sha256-vkAAfA5e87NR7P0VbFO0VMercCYYgE/LyTi8bN+8vJs=",
-            "ignoreIntegrity": true
         }
     ],
     "properties": {
@@ -46,25 +39,13 @@
     },
     "methods": {
         "getDateValue": {
+            "returnType": "string",
             "description": "Get the from-date.",
-            "parameters": [
-                {
-                    "name": "getFromDate",
-                    "type": "string",
-                    "description": "The from-date"
-                }
-            ],
             "body": "return  this.dateValue ;"
         },
         "getSecondDateValue": {
+            "returnType": "string",
             "description": "Get the to-date.",
-            "parameters": [
-                {
-                    "name": "getSecondDateValue",
-                    "type": "string",
-                    "description": "The to-date"
-                }
-            ],
             "body": "return this.secondDateValue;"
         }      
     },

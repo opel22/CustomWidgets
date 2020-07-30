@@ -42,7 +42,7 @@
         onCustomWidgetAfterUpdate(changedProperties) {
             //
         }
-/*
+
         get dateValue() {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 
@@ -59,7 +59,7 @@
             }
             return oView.byId("DRS4").getSecondDateValue();
         }
-*/        
+        
     }
     customElements.define("ch-processpartner-sample-daterangeselection", NewDateRangeSelection);
 
