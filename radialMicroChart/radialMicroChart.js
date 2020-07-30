@@ -15,7 +15,7 @@
             xmlns:m="sap.m">
             <m:GenericTile id="genTile" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" size="L" header="Radial Chart"
                 frameType="OneByOne" press="press">
-                </m:tileContent>
+                <m:tileContent>
                     <m:TileContent footer="Some footer">
                         <m:content>
                             <RadialMicroChart id="cont" size="Responsive" percentage="99.9" alignContent="Right" valueColor="Neutral"/>
