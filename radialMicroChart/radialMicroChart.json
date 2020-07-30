@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "name": "newRadialMicroChart",
     "description": "A radial micro chart",
-    "newInstancePrefix": "bmc",
+    "newInstancePrefix": "rmc",
     "icon": "https://opel22.github.io/CustomWidgets/radialMicroChart/icon.png",
     "vendor": "Process Partner AG",
     "eula": "",
