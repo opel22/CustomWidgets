@@ -48,6 +48,14 @@
             this.dateValue = oView.byId("DRS4").getDateValue();
         }
 
+        set dateValue() {
+            let sViewId = this.firstChild.getAttribute("sapui5viewid");
+            var oView = sap.ui.getCore().byId(sViewId); 
+            if(!oView){
+                return; 
+            }
+            oView.byId("DRS4").setNewDateValue(newDateValue);
+        }
         get dateValue() {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 

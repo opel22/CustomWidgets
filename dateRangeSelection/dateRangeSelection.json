@@ -38,6 +38,17 @@
         }
     },
     "methods": {
+        "setNewDateValue": {
+            "description": "Sets the new date value.",
+            "parameters": [
+                {
+                    "name": "newDateValue",
+                    "type": "number",
+                    "description": "The new date value"
+                }
+            ],
+            "body": "this.dateValue = newDateValue;"
+        },
         "getDateValue": {
             "returnType": "string",
             "description": "Get the from-date.",
