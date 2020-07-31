@@ -11,12 +11,13 @@
         <mvc:View
         controllerName="myView.Template"
         xmlns:mvc="sap.ui.core.mvc"
-        xmlns="sap.m" >
+        xmlns="sap.m">
             <VBox class="sapUiSmallMargin">
                 <Label text="Zeit-Range Selektor (MM/yyyy):" labelFor="DRS4"/>
                 <DateRangeSelection
                     id="DRS4"
                     displayFormat="MM/yyyy"
+                    valueFormat ="MM/yyyy"
                     change="handleChange"/>
             </VBox>
         </mvc:View>

@@ -27,13 +27,11 @@
             "default": 40
         },
         "dateValue": {
-            "type": "date",
-            "default": ""
+            "type": "Date"
         },
         "secondDateValue": {
-            "type": "date",
-            "description": "Date-To",
-            "default": ""
+            "type": "Date",
+            "description": "Date-To"
         }
     },
     "methods": {
@@ -42,19 +40,19 @@
             "parameters": [
                 {
                     "name": "newDateValue",
-                    "type": "date",
+                    "type": "Date",
                     "description": "The new date value"
                 }
             ],
             "body": "this.dateValue = newDateValue;"
         },
         "getDateValue": {
-            "returnType": "date",
+            "returnType": "Date",
             "description": "Get the from-date.",
             "body": "return this.dateValue;"
         },
         "getSecondDateValue": {
-            "returnType": "date",
+            "returnType": "Date",
             "description": "Get the to-date.",
             "body": "return this.secondDateValue;"
         }      
