@@ -43,7 +43,7 @@
             "parameters": [
                 {
                     "name": "newDateValue",
-                    "type": "number",
+                    "type": "string",
                     "description": "The new date value"
                 }
             ],
