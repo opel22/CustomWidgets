@@ -49,7 +49,7 @@
             if(!oView){
                 return; 
             }
-            oView.byId("DRS4").setNewDateValue(newDateValue);
+            oView.byId("DRS4").setDateValue(newDateValue);
         }
         get dateValue() {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
