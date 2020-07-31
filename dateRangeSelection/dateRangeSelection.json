@@ -28,7 +28,6 @@
         },
         "dateValue": {
             "type": "string",
-            "description": "Date-From",
             "default": ""
         },
         "secondDateValue": {
@@ -38,7 +37,7 @@
         }
     },
     "methods": {
-        "setNewDateValue": {
+        "setDateValue": {
             "description": "Sets the new date value.",
             "parameters": [
                 {
