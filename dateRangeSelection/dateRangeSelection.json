@@ -29,19 +29,19 @@
         "dateValue": {
             "type": "string",
             "description": "Date-From",
-            "default": "Date-From"
+            "default": ""
         },
         "secondDateValue": {
             "type": "string",
             "description": "Date-To",
-            "default": "Date-To"
+            "default": ""
         }
     },
     "methods": {
         "getDateValue": {
             "returnType": "string",
             "description": "Get the from-date.",
-            "body": "return  this.dateValue ;"
+            "body": "return this.dateValue;"
         },
         "getSecondDateValue": {
             "returnType": "string",
@@ -51,5 +51,5 @@
     },
     "events": {
     },
-    "imports": ["datasource"]
+    "imports": ["datasource","TimeRange"]
 }            

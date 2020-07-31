@@ -40,7 +40,12 @@
             }
         }
         onCustomWidgetAfterUpdate(changedProperties) {
-            //
+            let sViewId = this.firstChild.getAttribute("sapui5viewid");
+            var oView = sap.ui.getCore().byId(sViewId); 
+            if(!oView){
+                return; 
+            }
+            this.dateValue = oView.byId("DRS4").getDateValue();
         }
 
         get dateValue() {
