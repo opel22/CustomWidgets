@@ -8,8 +8,8 @@
             <slot name="content"></slot>
         </div>
 
-        <script src="https://openui5.hana.ondemand.com/1.80.1/resources/sap-ui-core.js"
-            id="sap-ui-bootstrap"
+        <script id="sap-ui-bootstrap"
+            src="https://openui5.hana.ondemand.com/1.80.1/resources/sap-ui-core.js"
             data-sap-ui-libs="sap.ui.core,sap.m"
             data-sap-ui-theme="sap_fiori_3"
             data-sap-ui-compatVersion="edge"
