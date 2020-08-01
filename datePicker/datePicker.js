@@ -10,11 +10,10 @@
 
         <script src="https://openui5.hana.ondemand.com/1.80.1/resources/sap-ui-core.js"
             id="sap-ui-bootstrap"
-            data-sap-ui-theme="sap_bluecrystal"
             data-sap-ui-libs="sap.m"
             data-sap-ui-compatVersion="edge"
             data-sap-ui-preload="async"></script>
-            
+
         <script id="oView" name="oView" type="ui5_content">             
         <mvc:View
             controllerName="myView.Template"
@@ -22,7 +21,7 @@
             xmlns="sap.m">
             <DatePicker
                 id="DP10"
-                value="2015-11-23"
+                value="2015-11"
                 displayFormat="MM-yyyy"
                 valueFormat="MM-yyyy"
                 change="handleChange"
