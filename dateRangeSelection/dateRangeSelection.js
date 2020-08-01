@@ -16,8 +16,8 @@
                 <Label text="Zeit-Range Selektor (DD/MM/yyyy):" labelFor="DRS4"/>
                 <DateRangeSelection
                     id="DRS4"
-                    displayFormat="DD/MM/yyyy"
-                    valueFormat ="DD/MM/yyyy"
+                    displayFormat="dd/MM/yyyy"
+                    valueFormat ="dd/MM/yyyy"
                     change="handleChange"/>
             </VBox>
         </mvc:View>
