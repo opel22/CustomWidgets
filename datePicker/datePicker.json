@@ -4,7 +4,7 @@
     "name": "newDatePicker",
     "description": "A date picker",
     "newInstancePrefix": "DatePicker",
-    "icon": "https://opel22.github.io/CustomWidgets/datepicker/icon.png",
+    "icon": "https://opel22.github.io/CustomWidgets/datePicker/icon.png",
     "vendor": "Process Partner AG",
     "eula": "",
     "license": "",
