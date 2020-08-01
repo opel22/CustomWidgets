@@ -31,17 +31,6 @@
         }
     },
     "methods": {
-        "setValue": {
-            "description": "Sets the new date value.",
-            "parameters": [
-                {
-                    "name": "newValue",
-                    "type": "Date",
-                    "description": "The new date value"
-                }
-            ],
-            "body": "this.value = newValue;"
-        },
         "getDateValue   ": {
             "returnType": "Date",
             "description": "Get the date.",

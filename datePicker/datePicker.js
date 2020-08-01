@@ -44,25 +44,13 @@
 
         }
 
-        set value(newValue) {
+        get dateValue() {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 
             if(!oView){
                 return; 
             }
-            if(typeof(newValue) === "string") {
-                newValue = Date.now();
-            } else {
-                oView.byId("DRS4").setValue(newValue);
-            }
-        }
-        get value() {
-            let sViewId = this.firstChild.getAttribute("sapui5viewid");
-            var oView = sap.ui.getCore().byId(sViewId); 
-            if(!oView){
-                return; 
-            }
-            return oView.byId("DRS4").getValue();
+            return oView.byId("DRS4").getDateValue();
         }
 
         
