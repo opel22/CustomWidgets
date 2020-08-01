@@ -7,18 +7,17 @@
         <div id="ui5_content" name="ui5_content">
             <slot name="content"></slot>
         </div>
-        <script src="https://sapui5.hana.ondemand.com/1.80.1/resources/sap-ui-core.js"></script>
         <script id="oView" name="oView" type="ui5_content"> 
         <mvc:View
         controllerName="myView.Template"
         xmlns:mvc="sap.ui.core.mvc"
         xmlns="sap.m">
             <VBox class="sapUiSmallMargin">
-                <Label text="Zeit-Range Selektor (MM/yyyy):" labelFor="DRS4"/>
+                <Label text="Zeit-Range Selektor (DD/MM/yyyy):" labelFor="DRS4"/>
                 <DateRangeSelection
                     id="DRS4"
-                    displayFormat="yyyy"
-                    valueFormat ="yyyy"
+                    displayFormat="DD/MM/yyyy"
+                    valueFormat ="DD/MM/yyyy"
                     change="handleChange"/>
             </VBox>
         </mvc:View>
