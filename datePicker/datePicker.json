@@ -42,7 +42,7 @@
             ],
             "body": "this.value = newValue;"
         },
-        "getValue": {
+        "getDateValue   ": {
             "returnType": "Date",
             "description": "Get the date.",
             "body": "return this.value;"
