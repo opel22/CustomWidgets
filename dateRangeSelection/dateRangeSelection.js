@@ -8,8 +8,10 @@
             <slot name="content"></slot>
         </div>
         <script id="oView" name="oView" type="ui5_content"> 
-        <script id="sap-ui-bootstrap"
-            src="https://sapui5.hana.ondemand.com/1.80.1/resources/sap-ui-core.js">
+        <script src="https://sapui5.hana.ondemand.com/1.80.1/resources/sap-ui-core.js"
+            id="sap-ui-bootstrap"
+            data-sap-ui-libs="sap.m"
+            data-sap-ui-compatVersion="edge">
         </script>
         <mvc:View
         controllerName="myView.Template"
