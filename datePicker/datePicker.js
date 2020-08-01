@@ -12,20 +12,12 @@
         <mvc:View
             controllerName="myView.Template"
             xmlns:mvc="sap.ui.core.mvc"
-            xmlns:l="sap.ui.layout"
             xmlns="sap.m">
-            <Label text='DatePicker with display format for months and years' labelFor="DP10"/>
             <DatePicker
                 id="DP10"
                 value="2015-11-23"
-                displayFormat="MM-y"
-                change="handleChange"
-                class="sapUiSmallMarginBottom"/>
-            <Label text="DatePicker with display format for years" labelFor="DP11"/>
-            <DatePicker
-                id="DP11"
-                value="2015-11-23"
-                displayFormat="yyyy"
+                displayFormat="MM-yyyy"
+                valueFormat="MM-yyyy"
                 change="handleChange"
                 class="sapUiSmallMarginBottom"/>
         </mvc:View>        
