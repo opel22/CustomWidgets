@@ -7,8 +7,12 @@
         <div id="ui5_content" name="ui5_content">
             <slot name="content"></slot>
         </div>
-        <script id="sap-ui-bootstrap" src="https://sapui5.hana.ondemand.com/1.80.1/resources/sap-ui-core.js"></script>
-        <script id="oView" name="oView" type="ui5_content">        
+        <script id="oView" name="oView" type="ui5_content"> 
+        <script id="sap-ui-bootstrap"
+            src="https://sapui5.hana.ondemand.com/1.80.1/resources/sap-ui-core.js"
+            data-sap-ui-compatVersion="edge"
+            data-sap-ui-libs="sap.m">
+        </script>
         <mvc:View
         controllerName="myView.Template"
         xmlns:mvc="sap.ui.core.mvc"
