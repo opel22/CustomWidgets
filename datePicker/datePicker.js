@@ -10,7 +10,8 @@
 
         <script src="https://openui5.hana.ondemand.com/1.80.1/resources/sap-ui-core.js"
             id="sap-ui-bootstrap"
-            data-sap-ui-libs="sap.m"
+            data-sap-ui-libs="sap.ui.core,sap.m"
+            data-sap-ui-theme="sap_fiori_3"
             data-sap-ui-compatVersion="edge"
             data-sap-ui-preload="async"></script>
 
