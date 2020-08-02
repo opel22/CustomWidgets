@@ -9,7 +9,7 @@
         </div>
 
         <script id="sap-ui-bootstrap"
-                src="./sap-ui-core.js"
+                src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
                 data-sap-ui-libs="sap.ui.core, sap.m, sap.ui.unified"
                 data-sap-ui-theme="sap_fiori_3"
                 data-sap-ui-async="true"
