@@ -93,7 +93,7 @@
             control.setModel(new JSONModel({
               myYear: new Date().getFullYear(), // current year, e.g. 2019
               maxDate: new Date("2030-12-31") // control awaits a JS date object for maxDate
-            })).placeAt("content");
+            })).placeAt(content);
           }));
         
     }
