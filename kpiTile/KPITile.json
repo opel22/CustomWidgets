@@ -1,0 +1,110 @@
+{
+    "id": "ch.processpartner.widget.kpitile",
+    "version": "1.0.0",
+    "name": "KPI Tile",
+    "description": "A KPI Tile",
+    "newInstancePrefix": "kpiTile",
+    "icon": "https://opel22.github.io/CustomWidgets/KPITile/icon.png",
+    "vendor": "Process Partner AG",
+    "eula": "",
+    "license": "",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "ch-processpartner-widget-kpitile",
+            "url": "https://opel22.github.io/CustomWidgets/KPITile/newTile.js",
+            "integrity": "sha256-/HF47ayRHxc4HpYWVmrNoetT6xaC2u5fwbXgUxrDkI8=",
+            "ignoreIntegrity": true
+        },
+        {
+            "kind": "builder",
+            "tag": "ch-processpartner-widget-kpitile",
+            "url": "https://opel22.github.io/CustomWidgets/KPITile/newTile_builder.js",
+            "integrity": "sha256-vkAAfA5e87NR7P0VbFO0VMercCYYgE/LyTi8bN+8vJs=",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "width": {
+            "type": "integer",
+            "default": 192
+        },
+        "height": {
+            "type": "integer",
+            "default": 192
+        },
+        "value": {
+            "type": "string",
+            "description": "KPI Tile Value",
+            "default": "0.00"
+        },
+        "unit": {
+            "type": "string",
+            "description": "KPI Tile Unit",
+            "default": "CHF"
+        },
+        "header": {
+            "type": "string",
+            "description": "KPI Tile Header",
+            "default": "KPI Tile Header"
+        },
+        "subheader": {
+            "type": "string",
+            "description": "KPI Tile Subheader",
+            "default": "KPI Tile Subheader"
+        },
+        "name": {
+            "type": "string",
+            "description": "KPI Tile name"
+        }
+    },
+    "methods": {
+        "setValue": {
+            "description": "Sets the value.",
+            "parameters": [
+                {
+                    "name": "newValue",
+                    "type": "string",
+                    "description": "Set the Value"
+                }
+            ],
+            "body": "this.value = newValue;"
+        },
+        "setUnit": {
+            "description": "Set the Unit.",
+            "parameters": [
+                {
+                    "name": "newUnit",
+                    "type": "string",
+                    "description": "Set the unit"
+                }
+            ],
+            "body": "this.unit = newUnit;"
+        },
+        "setHeader": {
+            "description": "Sets the header.",
+            "parameters": [
+                {
+                    "name": "newHeader",
+                    "type": "string",
+                    "description": "Set the header"
+                }
+            ],
+            "body": "this.header = newHeader;"
+        },
+        "setSubheader": {
+            "description": "Sets the subheader.",
+            "parameters": [
+                {
+                    "name": "newSubheader",
+                    "type": "string",
+                    "description": "Set the subheader"
+                }
+            ],
+            "body": "this.subheader = newSubheader;"
+        }        
+    },
+    "events": {
+    },
+    "imports": ["datasource"]
+}            
