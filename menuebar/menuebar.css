@@ -41,7 +41,7 @@ html, body {
     text-decoration: none;
 }
 input[type="checkbox"]:checked ~ #sidebarMenu {
-    transform: translateX(0);
+    transform: translateX(100);
 }
 
 input[type=checkbox] {
