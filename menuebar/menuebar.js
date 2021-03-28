@@ -1,7 +1,7 @@
 (function() { 
     let template = document.createElement("template");
     template.innerHTML = `
-        
+     <body>   
         <link rel="stylesheet" href="https://opel22.github.io/CustomWidgets/menuebar/menuebar.css">
         <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
         <label for="openSidebarMenu" class="sidebarIconToggle">
@@ -19,6 +19,7 @@
             <li><a href="https://www.linkedin.com/in/plavookac/" target="_blank">Linkedin</a></li>
         </ul>
         </div>
+    </body>
     `;
     class MenueBar extends HTMLElement {
         constructor() {
