@@ -1,8 +1,8 @@
 (function() { 
     let template = document.createElement("template");
     template.innerHTML = `
-        <link rel="stylesheet" href="https://opel22.github.io/CustomWidgets/menuebar/menuebar.css">
-        <div class="header"></div>
+        
+        <div class="header"><link rel="stylesheet" href="https://opel22.github.io/CustomWidgets/menuebar/menuebar.css"></div>
         <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
         <label for="openSidebarMenu" class="sidebarIconToggle">
         <div class="spinner diagonal part-1"></div>
