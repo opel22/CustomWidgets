@@ -1,0 +1,78 @@
+{
+    "d" : {
+      "results" : [
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_UnitWeightSet('G')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_UnitWeightSet('G')",
+            "type" : "GWSAMPLE_BASIC.VH_UnitWeight"
+          },
+          "Msehi" : "G",
+          "Msehl" : "Gram"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_UnitWeightSet('KG')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_UnitWeightSet('KG')",
+            "type" : "GWSAMPLE_BASIC.VH_UnitWeight"
+          },
+          "Msehi" : "KG",
+          "Msehl" : "Kilogram"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_UnitWeightSet('KT')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_UnitWeightSet('KT')",
+            "type" : "GWSAMPLE_BASIC.VH_UnitWeight"
+          },
+          "Msehi" : "KT",
+          "Msehl" : "Kiloton"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_UnitWeightSet('LB')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_UnitWeightSet('LB')",
+            "type" : "GWSAMPLE_BASIC.VH_UnitWeight"
+          },
+          "Msehi" : "LB",
+          "Msehl" : "Pound"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_UnitWeightSet('MG')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_UnitWeightSet('MG')",
+            "type" : "GWSAMPLE_BASIC.VH_UnitWeight"
+          },
+          "Msehi" : "MG",
+          "Msehl" : "Milligram"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_UnitWeightSet('OZ')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_UnitWeightSet('OZ')",
+            "type" : "GWSAMPLE_BASIC.VH_UnitWeight"
+          },
+          "Msehi" : "OZ",
+          "Msehl" : "Ounce"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_UnitWeightSet('TO')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_UnitWeightSet('TO')",
+            "type" : "GWSAMPLE_BASIC.VH_UnitWeight"
+          },
+          "Msehi" : "TO",
+          "Msehl" : "Ton"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_UnitWeightSet('TON')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_UnitWeightSet('TON')",
+            "type" : "GWSAMPLE_BASIC.VH_UnitWeight"
+          },
+          "Msehi" : "TON",
+          "Msehl" : "US Ton"
+        }
+      ]
+    }
+  }

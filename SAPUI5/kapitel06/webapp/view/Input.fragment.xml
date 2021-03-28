@@ -1,0 +1,10 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Input id="idInputField" width="20rem" 	placeholder="BusinessPartner ID..." suggestionItemSelected="onSuggestionItemSelected" showValueHelp="true" valueHelpRequest="onValueHelpRequest"
+				  showSuggestion="true" suggest="handleSuggest" suggestionItems="{/d/results}">
+            <suggestionItems>
+              <core:Item text="{BusinessPartnerID} {CompanyName}" />
+            </suggestionItems>
+            </Input> 
+</core:FragmentDefinition>

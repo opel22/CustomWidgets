@@ -1,0 +1,420 @@
+{
+    "d" : {
+      "results" : [
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('SR')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('SR')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "SR",
+          "Sptxt" : "Serbian"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('ZH')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('ZH')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "ZH",
+          "Sptxt" : "Chinese"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('TH')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('TH')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "TH",
+          "Sptxt" : "Thai"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('KO')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('KO')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "KO",
+          "Sptxt" : "Korean"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('RO')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('RO')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "RO",
+          "Sptxt" : "Romanian"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('SL')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('SL')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "SL",
+          "Sptxt" : "Slovenian"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('HR')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('HR')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "HR",
+          "Sptxt" : "Croatian"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('MS')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('MS')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "MS",
+          "Sptxt" : "Malay"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('UK')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('UK')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "UK",
+          "Sptxt" : "Ukrainian"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('ET')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('ET')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "ET",
+          "Sptxt" : "Estonian"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('AR')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('AR')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "AR",
+          "Sptxt" : "Arabic"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('HE')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('HE')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "HE",
+          "Sptxt" : "Hebrew"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('CS')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('CS')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "CS",
+          "Sptxt" : "Czech"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('DE')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('DE')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "DE",
+          "Sptxt" : "German"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('EN')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('EN')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "EN",
+          "Sptxt" : "English"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('FR')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('FR')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "FR",
+          "Sptxt" : "French"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('EL')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('EL')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "EL",
+          "Sptxt" : "Greek"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('HU')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('HU')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "HU",
+          "Sptxt" : "Hungarian"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('IT')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('IT')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "IT",
+          "Sptxt" : "Italian"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('JA')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('JA')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "JA",
+          "Sptxt" : "Japanese"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('DA')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('DA')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "DA",
+          "Sptxt" : "Danish"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('PL')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('PL')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "PL",
+          "Sptxt" : "Polish"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('ZF')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('ZF')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "ZF",
+          "Sptxt" : "Chinese trad."
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('NL')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('NL')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "NL",
+          "Sptxt" : "Dutch"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('NO')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('NO')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "NO",
+          "Sptxt" : "Norwegian"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('PT')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('PT')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "PT",
+          "Sptxt" : "Portuguese"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('SK')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('SK')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "SK",
+          "Sptxt" : "Slovak"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('RU')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('RU')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "RU",
+          "Sptxt" : "Russian"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('ES')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('ES')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "ES",
+          "Sptxt" : "Spanish"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('TR')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('TR')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "TR",
+          "Sptxt" : "Turkish"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('FI')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('FI')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "FI",
+          "Sptxt" : "Finnish"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('SV')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('SV')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "SV",
+          "Sptxt" : "Swedish"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('BG')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('BG')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "BG",
+          "Sptxt" : "Bulgarian"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('LT')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('LT')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "LT",
+          "Sptxt" : "Lithuanian"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('LV')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('LV')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "LV",
+          "Sptxt" : "Latvian"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('Z1')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('Z1')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "Z1",
+          "Sptxt" : "Customer reserve"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('AF')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('AF')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "AF",
+          "Sptxt" : "Afrikaans"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('IS')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('IS')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "IS",
+          "Sptxt" : "Icelandic"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('CA')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('CA')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "CA",
+          "Sptxt" : "Catalan"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('SH')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('SH')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "SH",
+          "Sptxt" : "Serbian (Latin)"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('ID')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('ID')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "ID",
+          "Sptxt" : "Indonesian"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('1Q')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('1Q')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "1Q",
+          "Sptxt" : "Technical code 1"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('2Q')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('2Q')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "2Q",
+          "Sptxt" : "Technical code 2"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('HI')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('HI')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "HI",
+          "Sptxt" : "Hindi"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('KK')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('KK')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "KK",
+          "Sptxt" : "Kazakh"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('VI')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_LanguageSet('VI')",
+            "type" : "GWSAMPLE_BASIC.VH_Language"
+          },
+          "Spras" : "VI",
+          "Sptxt" : "Vietnamese"
+        }
+      ]
+    }
+  }

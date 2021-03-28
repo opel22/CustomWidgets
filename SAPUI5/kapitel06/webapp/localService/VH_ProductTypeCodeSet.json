@@ -1,0 +1,24 @@
+{
+    "d" : {
+      "results" : [
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_ProductTypeCodeSet('AD')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_ProductTypeCodeSet('AD')",
+            "type" : "GWSAMPLE_BASIC.VH_ProductTypeCode"
+          },
+          "TypeCode" : "AD",
+          "Shorttext" : "Advertisement"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_ProductTypeCodeSet('PR')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_ProductTypeCodeSet('PR')",
+            "type" : "GWSAMPLE_BASIC.VH_ProductTypeCode"
+          },
+          "TypeCode" : "PR",
+          "Shorttext" : "Product"
+        }
+      ]
+    }
+  }

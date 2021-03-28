@@ -1,0 +1,110 @@
+ <mvc:View controllerName="de.sapui5buch.demo.controller.App"
+  displayBlock="true"
+  xmlns="sap.m" xmlns:layout="sap.ui.layout"
+  xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" 	xmlns:uxap="sap.uxap">
+  <App id="idAppControl" >
+    <pages>
+     <!-- <Page title="Demo-Anwendung">
+        <content>        -->
+     <!--   <layout:VerticalLayout>
+          <Label text="Sag Hallo zu"/>
+          <Input id="idInputField" width="20rem" 	placeholder="BusinessPartner ID..."
+				  showSuggestion="true" suggest="handleSuggest" suggestionItems="{/d/results}">
+            <suggestionItems>
+              <core:Item text="{BusinessPartnerID} {CompanyName}" />
+            </suggestionItems>
+            </Input>          
+          <Button text="Sag Hallo" press="onPress"/>
+        </layout:VerticalLayout>-->
+
+        <uxap:ObjectPageLayout id="ObjectPageLayout" showHeaderContent="false"	toggleHeaderOnTitleClick="false">
+
+		<uxap:headerTitle>
+			<uxap:ObjectPageDynamicHeaderTitle>
+				<uxap:heading>
+				 <!--<Input id="idInputField" width="20rem" 	placeholder="BusinessPartner ID..." suggestionItemSelected="onSuggestionItemSelected" showValueHelp="true" valueHelpRequest="onValueHelpRequest"
+				  showSuggestion="true" suggest="handleSuggest" suggestionItems="{/d/results}">
+            <suggestionItems>
+              <core:Item text="{BusinessPartnerID} {CompanyName}" />
+            </suggestionItems>
+            </Input> -->
+            <core:Fragment fragmentName="de.sapui5buch.demo.view.Input" type="XML"/>
+				</uxap:heading>
+			</uxap:ObjectPageDynamicHeaderTitle>
+		</uxap:headerTitle>
+
+		<uxap:headerContent>
+			<!--	<FlexBox wrap="Wrap" fitContainer="true" id="headerContent">
+          <VBox class="sapUiLargeMarginEnd">
+            <HBox>
+              <Title text="Geschäftspartner Details"/>
+            </HBox>
+            <HBox>
+              <Label class="sapUiTinyMarginEnd" text="Firmenname:" />
+              <Text text="{CompanyName}" />
+            </HBox>
+              <HBox>
+              <Label class="sapUiTinyMarginEnd" text="Partner ID:" />
+              <Text text="{BusinessPartnerID}" />
+            </HBox>
+              <HBox>
+              <Label class="sapUiTinyMarginEnd" text="Legal Form:" />
+              <Text text="{LegalForm}" />
+            </HBox>        
+          </VBox>
+		<VBox>
+			<HBox>
+				<Title text="Kontaktdaten"/>
+			</HBox>
+			<HBox>
+			 <Label class="sapUiTinyMarginEnd" text="URL:" />
+              <Text text="{WebAddress}" />
+			</HBox>
+      	<HBox>
+			 <Label class="sapUiTinyMarginEnd" text="Email-Addresse:" />
+              <Text text="{EmailAddress}" />
+			</HBox>
+      	<HBox>
+			 <Label class="sapUiTinyMarginEnd" text="Telefon:" />
+              <Text text="{PhoneNumber}" />
+			</HBox>
+      <HBox>
+			 <Label class="sapUiTinyMarginEnd" text="Fax:" />
+              <Text text="{FaxNumber}" />
+			</HBox>
+		</VBox>
+	</FlexBox>-->
+  <core:Fragment fragmentName="de.sapui5buch.demo.view.Header" type="XML"/>
+		</uxap:headerContent>
+
+		<uxap:sections>
+		<!--	<core:Fragment fragmentName="sap.m.sample.InitialPagePattern.view.fragments.sections.MessagePage" type="XML"/>
+			<core:Fragment fragmentName="sap.m.sample.InitialPagePattern.view.fragments.sections.ProductsTable" type="XML"/>
+			<core:Fragment fragmentName="sap.m.sample.InitialPagePattern.view.fragments.sections.SupplierDetails" type="XML"/>-->
+    <!--  	<uxap:ObjectPageSection title="Adresse"  visible="false" id="adressSection">
+		<uxap:subSections>
+			<uxap:ObjectPageSubSection>
+			
+      <VBox>
+			<HBox>
+       <Label class="sapUiTinyMarginEnd" text="Strasse:" />
+              <Text text="{Street} {Building}" />
+              </HBox>
+            <HBox>
+            
+					 <Label class="sapUiTinyMarginEnd" text="Land PLZ Ort:" />
+              <Text text="{Country} {PostalCode} {City}" />
+              </HBox>
+			</VBox>      	
+			</uxap:ObjectPageSubSection>
+		</uxap:subSections>
+	</uxap:ObjectPageSection>-->
+  <core:Fragment fragmentName="de.sapui5buch.demo.view.AdressSection" type="XML"/>
+		</uxap:sections>
+
+	</uxap:ObjectPageLayout>
+     <!--   </content>
+      </Page>-->
+    </pages>
+  </App>
+</mvc:View>

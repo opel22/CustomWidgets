@@ -1,0 +1,214 @@
+{
+    "d" : {
+      "results" : [
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Accessories')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Accessories')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Accessories"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Camcorders')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Camcorders')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Camcorders"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Computer%20System%20Accessories')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Computer%20System%20Accessories')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Computer System Accessories"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Flat%20Screen%20Monitors')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Flat%20Screen%20Monitors')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Flat Screen Monitors"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Flat%20Screen%20TVs')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Flat%20Screen%20TVs')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Flat Screen TVs"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Graphic%20Cards')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Graphic%20Cards')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Graphic Cards"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Headsets')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Headsets')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Headsets"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Ink%20Jet%20Printers')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Ink%20Jet%20Printers')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Ink Jet Printers"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Keyboards')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Keyboards')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Keyboards"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Laser%20Printers')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Laser%20Printers')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Laser Printers"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('MP3%20Players')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('MP3%20Players')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "MP3 Players"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Mice')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Mice')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Mice"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Mousepads')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Mousepads')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Mousepads"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Multifunction%20Printers')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Multifunction%20Printers')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Multifunction Printers"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Notebooks')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Notebooks')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Notebooks"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('PCs')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('PCs')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "PCs"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('PDAs%20%26%20Organizers')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('PDAs%20%26%20Organizers')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "PDAs & Organizers"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Portable%20Players')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Portable%20Players')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Portable Players"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Projectors')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Projectors')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Projectors"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Scanners')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Scanners')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Scanners"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Servers')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Servers')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Servers"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Smartphones')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Smartphones')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Smartphones"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Software')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Software')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Software"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Speakers')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Speakers')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Speakers"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Tablets')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Tablets')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Tablets"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Telecommunications')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_CategorySet('Telecommunications')",
+            "type" : "GWSAMPLE_BASIC.VH_Category"
+          },
+          "Category" : "Telecommunications"
+        }
+      ]
+    }
+  }

@@ -1,0 +1,44 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+		<FlexBox wrap="Wrap" fitContainer="true" id="headerContent">
+          <VBox class="sapUiLargeMarginEnd">
+            <HBox>
+              <Title text="Geschäftspartner Details"/>
+            </HBox>
+            <HBox>
+              <Label class="sapUiTinyMarginEnd" text="Firmenname:" />
+              <Text text="{CompanyName}" />
+            </HBox>
+              <HBox>
+              <Label class="sapUiTinyMarginEnd" text="Partner ID:" />
+              <Text text="{BusinessPartnerID}" />
+            </HBox>
+              <HBox>
+              <Label class="sapUiTinyMarginEnd" text="Legal Form:" />
+              <Text text="{LegalForm}" />
+            </HBox>        
+          </VBox>
+		<VBox>
+			<HBox>
+				<Title text="Kontaktdaten"/>
+			</HBox>
+			<HBox>
+			 <Label class="sapUiTinyMarginEnd" text="URL:" />
+              <Text text="{WebAddress}" />
+			</HBox>
+      	<HBox>
+			 <Label class="sapUiTinyMarginEnd" text="Email-Addresse:" />
+              <Text text="{EmailAddress}" />
+			</HBox>
+      	<HBox>
+			 <Label class="sapUiTinyMarginEnd" text="Telefon:" />
+              <Text text="{PhoneNumber}" />
+			</HBox>
+      <HBox>
+			 <Label class="sapUiTinyMarginEnd" text="Fax:" />
+              <Text text="{FaxNumber}" />
+			</HBox>
+		</VBox>
+	</FlexBox>
+</core:FragmentDefinition>

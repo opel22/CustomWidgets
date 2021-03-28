@@ -1,0 +1,24 @@
+{
+    "d" : {
+      "results" : [
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_BPRoleSet('01')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_BPRoleSet('01')",
+            "type" : "GWSAMPLE_BASIC.VH_BPRole"
+          },
+          "BpRole" : "01",
+          "Shorttext" : "Customer"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_BPRoleSet('02')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_BPRoleSet('02')",
+            "type" : "GWSAMPLE_BASIC.VH_BPRole"
+          },
+          "BpRole" : "02",
+          "Shorttext" : "Supplier"
+        }
+      ]
+    }
+  }

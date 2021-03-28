@@ -1,0 +1,24 @@
+{
+    "d" : {
+      "results" : [
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_SexSet('F')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_SexSet('F')",
+            "type" : "GWSAMPLE_BASIC.VH_Sex"
+          },
+          "Sex" : "F",
+          "Shorttext" : "Female"
+        },
+        {
+          "__metadata" : {
+            "id" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_SexSet('M')",
+            "uri" : "http://fsdhost.wdf.sap.corp:8011/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/VH_SexSet('M')",
+            "type" : "GWSAMPLE_BASIC.VH_Sex"
+          },
+          "Sex" : "M",
+          "Shorttext" : "Male"
+        }
+      ]
+    }
+  }
