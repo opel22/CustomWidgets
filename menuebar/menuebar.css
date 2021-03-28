@@ -3,12 +3,6 @@ html, body {
     overflow-x: hidden;
     height: 100%;
 }
-body {
-    background: #fff;
-    padding: 0;
-    margin: 0;
-    font-family: 'Varela Round', sans-serif;
-}
 
 #sidebarMenu {
     height: 100%;
@@ -60,7 +54,7 @@ input[type=checkbox] {
     box-sizing: border-box;
     cursor: pointer;
     position: absolute;
-    z-index: 99;
+    z-index: 1;
     height: 100%;
     width: 100%;
     top: 22px;
