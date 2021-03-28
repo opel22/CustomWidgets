@@ -7,24 +7,31 @@
         <div id="ui5_content" name="ui5_content">
             <slot name="content"></slot>
         </div>
-        <script id="oView" name="oView" type="ui5_content"> 
+
+        <script id="sap-ui-bootstrap"
+                src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs="sap.ui.core, sap.m, sap.ui.unified"
+                data-sap-ui-theme="sap_fiori_3"
+                data-sap-ui-async="true"
+                data-sap-ui-compatversion="edge"
+                data-sap-ui-xx-waitfortheme="init"></script>
+
+        <script id="oView" name="oView" type="ui5_content">                 
         <mvc:View
-        controllerName="myView.Template"
-        xmlns:mvc="sap.ui.core.mvc"
-        xmlns="sap.m">
-            <VBox class="sapUiSmallMargin">
-                <Label text="Zeit-Range Selektor (DD/MM/yyyy):" labelFor="DRS4"/>
-                <DateRangeSelection
-                    id="DRS4"
-                    displayFormat="dd/MM/yyyy"
-                    valueFormat ="dd/MM/yyyy"
-                    change="handleChange"/>
-            </VBox>
+            controllerName="myView.Template"
+            xmlns:mvc="sap.ui.core.mvc"
+            xmlns="sap.m">
+            <DatePicker
+                id="DP10"
+                value="2015-11-23"
+                displayFormat="MM-y"
+                change="handleChange"
+                class="sapUiSmallMarginBottom"/>
         </mvc:View>
-        </script>            
+        </script>  
     `;
     //Test for github
-    class NewDateRangeSelection extends HTMLElement {
+    class NewDatePicker extends HTMLElement {
         constructor() {
             super(); 
             _shadowRoot = this.attachShadow({mode: "open"});
@@ -32,8 +39,7 @@
             _shadowRoot.appendChild(template.content.cloneNode(true));
             
             this._props = {};
-            loadthis(this);
-            
+            loadthis(this);            
         }
         onCustomWidgetBeforeUpdate(changedProperties) {
             if ("designMode" in changedProperties) {
@@ -44,18 +50,6 @@
 
         }
 
-        set dateValue(newDateValue) {
-            let sViewId = this.firstChild.getAttribute("sapui5viewid");
-            var oView = sap.ui.getCore().byId(sViewId); 
-            if(!oView){
-                return; 
-            }
-            if(typeof(newDateValue) === "string") {
-                newDateValue = Date.now();
-            } else {
-                oView.byId("DRS4").setDateValue(newDateValue);
-            }
-        }
         get dateValue() {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 
@@ -64,17 +58,10 @@
             }
             return oView.byId("DRS4").getDateValue();
         }
-        get secondDateValue() {
-            let sViewId = this.firstChild.getAttribute("sapui5viewid");
-            var oView = sap.ui.getCore().byId(sViewId); 
-            if(!oView){
-                return; 
-            }
-            return oView.byId("DRS4").getSecondDateValue();
-        }
+
         
     }
-    customElements.define("ch-processpartner-sample-daterangeselection", NewDateRangeSelection);
+    customElements.define("ch-processpartner-sample-datepicker", NewDatePicker);
 
     function loadthis(that) {
         var that_ = that;

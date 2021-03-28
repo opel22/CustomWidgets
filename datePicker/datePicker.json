@@ -1,0 +1,43 @@
+{
+    "id": "ch.processpartner.sample.datepicker",
+    "version": "1.0.0",
+    "name": "newDatePicker",
+    "description": "A date picker",
+    "newInstancePrefix": "DatePicker",
+    "icon": "https://opel22.github.io/CustomWidgets/datePicker/icon.png",
+    "vendor": "Process Partner AG",
+    "eula": "",
+    "license": "",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "ch-processpartner-sample-datepicker",
+            "url": "https://opel22.github.io/CustomWidgets/datePicker/datePicker.js",
+            "integrity": "sha256-/HF47ayRHxc4HpYWVmrNoetT6xaC2u5fwbXgUxrDkI8=",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "width": {
+            "type": "integer",
+            "default": 100
+        },
+        "height": {
+            "type": "integer",
+            "default": 40
+        },
+        "value": {
+            "type": "Date"
+        }
+    },
+    "methods": {
+        "getDateValue   ": {
+            "returnType": "Date",
+            "description": "Get the date.",
+            "body": "return this.value;"
+        }     
+    },
+    "events": {
+    },
+    "imports": ["datasource"]
+}            

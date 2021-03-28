@@ -7,24 +7,14 @@
         <div id="ui5_content" name="ui5_content">
             <slot name="content"></slot>
         </div>
-        <script id="oView" name="oView" type="ui5_content"> 
-        <mvc:View
-        controllerName="myView.Template"
-        xmlns:mvc="sap.ui.core.mvc"
-        xmlns="sap.m">
-            <VBox class="sapUiSmallMargin">
-                <Label text="Zeit-Range Selektor (DD/MM/yyyy):" labelFor="DRS4"/>
-                <DateRangeSelection
-                    id="DRS4"
-                    displayFormat="dd/MM/yyyy"
-                    valueFormat ="dd/MM/yyyy"
-                    change="handleChange"/>
-            </VBox>
-        </mvc:View>
-        </script>            
+        <script id="oView" name="oView" type="ui5_content">        
+            <mvc:View
+            controllerName="myView.Template"">
+
+            </mvc:View>
+        </script>
     `;
-    //Test for github
-    class NewDateRangeSelection extends HTMLElement {
+    class KPITile extends HTMLElement {
         constructor() {
             super(); 
             _shadowRoot = this.attachShadow({mode: "open"});
@@ -41,47 +31,49 @@
             }
         }
         onCustomWidgetAfterUpdate(changedProperties) {
-
+            //
         }
 
-        set dateValue(newDateValue) {
+        set value(newValue) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 
             if(!oView){
                 return; 
             }
-            if(typeof(newDateValue) === "string") {
-                newDateValue = Date.now();
-            } else {
-                oView.byId("DRS4").setDateValue(newDateValue);
-            }
+            oView.byId("tile").setValue(newValue);
         }
-        get dateValue() {
+        set unit(newUnit) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 
             if(!oView){
                 return; 
             }
-            return oView.byId("DRS4").getDateValue();
+            oView.byId("tileCont").setUnit(newUnit);
         }
-        get secondDateValue() {
+        set header(newHeader) {
             let sViewId = this.firstChild.getAttribute("sapui5viewid");
             var oView = sap.ui.getCore().byId(sViewId); 
             if(!oView){
                 return; 
             }
-            return oView.byId("DRS4").getSecondDateValue();
+            oView.byId("genTile").setHeader(newHeader);
         }
-        
+        set subheader(newSubheader) {
+            let sViewId = this.firstChild.getAttribute("sapui5viewid");
+            var oView = sap.ui.getCore().byId(sViewId); 
+            if(!oView){
+                return; 
+            }
+            oView.byId("genTile").setSubheader(newSubheader);
+        }
     }
-    customElements.define("ch-processpartner-sample-daterangeselection", NewDateRangeSelection);
+    customElements.define("ch-processpartner-widget-kpitile", KPITile);
 
     function loadthis(that) {
         var that_ = that;
       
         let content = document.createElement('div');
         content.slot = "content";
-
         that_.appendChild(content);
 
         sap.ui.getCore().attachInit(function() {
