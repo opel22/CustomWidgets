@@ -1,9 +1,9 @@
 {
     "id": "com.sap.sample.menuebar",
     "version": "1.0.0",
-    "name": "Colored Box",
-    "description": "A colored box",
-    "newInstancePrefix": "ColoredBox",
+    "name": "Menue Bar",
+    "description": "A menue bar",
+    "newInstancePrefix": "MenueBar",
     "icon": "https://opel22.github.io/CustomWidgets/menuebar/icon.png",
     "vendor": "SAP",
     "eula": "",
