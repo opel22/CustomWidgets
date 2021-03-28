@@ -3,6 +3,7 @@
     template.innerHTML = `
         
         <link rel="stylesheet" href="https://opel22.github.io/CustomWidgets/menuebar/menuebar.css">
+        <link rel="stylesheet" href="https://opel22.github.io/SAC/SAP-icons.css">
         <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
         <label for="openSidebarMenu" class="sidebarIconToggle">
         <div class="spinner diagonal part-1"></div>
