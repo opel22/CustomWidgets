@@ -1,6 +1,7 @@
 (function() { 
     let template = document.createElement("template");
     template.innerHTML = `
+        <link rel="stylesheet" href="menuebar.css">
         <div class="header"></div>
         <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
         <label for="openSidebarMenu" class="sidebarIconToggle">
