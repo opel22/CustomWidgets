@@ -72,15 +72,6 @@
     "events": {
         "onClick": {
             "description": "Called when the user clicks the Colored Box."
-        },
-        "onHover": {
-            "description": "Called when the user hovers the Colored Box."
-        },
-        "onEnter": {
-            "description": "Called when the user enters the area of the Colored Box."
-        },
-        "onOut": {
-            "description": "Called wehn the user left the area of the Colored Box."
         }
     },
     "imports": ["datasource"]

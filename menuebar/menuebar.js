@@ -29,18 +29,7 @@
                 var event = new Event("onClick");
                 this.dispatchEvent(event);
             });
-            this.addEventListener("mouseover", event => {
-                var event = new Event("onHover");
-                this.dispatchEvent(event);
-            });
-            this.addEventListener("mouseenter", event => {
-                var event = new Event("onEnter");
-                this.dispatchEvent(event);
-            })
-            this.addEventListener("mouseleave", event => {
-                var event = new Event("onOut");
-                this.dispatchEvent(event);
-            })
+
             this._props = {};
         }
         onCustomWidgetBeforeUpdate(changedProperties) {
@@ -52,6 +41,9 @@
             }
             if ("opacity" in changedProperties) {
                 this.style["opacity"] = changedProperties["opacity"];
+            }
+            if("width" in changedProperties) {
+                this.style["width"] = changedProperties["width"];
             }
         }
     }
