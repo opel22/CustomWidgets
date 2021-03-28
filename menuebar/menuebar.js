@@ -2,7 +2,7 @@
     let template = document.createElement("template");
     template.innerHTML = `
         
-        <div class="header"><link rel="stylesheet" href="https://opel22.github.io/CustomWidgets/menuebar/menuebar.css"></div>
+        <link rel="stylesheet" href="https://opel22.github.io/CustomWidgets/menuebar/menuebar.css">
         <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
         <label for="openSidebarMenu" class="sidebarIconToggle">
         <div class="spinner diagonal part-1"></div>
