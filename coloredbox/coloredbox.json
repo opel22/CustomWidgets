@@ -44,11 +44,11 @@
         },
         "width": {
             "type": "integer",
-            "default": 100
+            "default": 200
         },
         "height": {
             "type": "integer",
-            "default": 100
+            "default": 200
         }
     },
     "methods": {
@@ -73,7 +73,7 @@
             "parameters": [
                 {
                     "name": "newWidth",
-                    "type": "integer",
+                    "type": "string",
                     "description": "The new width of the box"
                 }
             ]
