@@ -69,14 +69,15 @@
             "body": "return this.color;"
         },
         "setWidth": {
-            "description": "Set width of box",
+            "description": "Sets the width.",
             "parameters": [
                 {
                     "name": "newWidth",
                     "type": "integer",
-                    "description": "The new width of the box"
+                    "description": "The new width"
                 }
-            ]
+            ],
+            "body": "this.width = newWidth;"
         }
     },
     "events": {
