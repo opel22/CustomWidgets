@@ -9,6 +9,10 @@
                         <td>Color</td>
                         <td><input id="styling_color" type="text" size="40" maxlength="40"></td>
                     </tr>
+                    <tr>
+                        <td>Width</td>
+                        <td><input id="styling_width" type="text" size="40" maxlength="40"></td>
+                    </tr>                    
                 </table>
                 <input type="submit" style="display:none;">
             </fieldset>
@@ -26,7 +30,8 @@
             this.dispatchEvent(new CustomEvent("propertiesChanged", {
                     detail: {
                         properties: {
-                            color: this.color
+                            color: this.color,
+                            width: this.width
                         }
                     }
             }));
@@ -37,6 +42,12 @@
         get color() {
             return this._shadowRoot.getElementById("styling_color").value;
         }
+        set width(newWidth) {
+            this._shadowRoot.getElementById("styling_width").value = newWidth;
+        }
+        get width() {
+            return this._shadowRoot.getElementById("styling_width").value;
+        }        
     }
     customElements.define("com-sap-sample-coloredbox-styling", ColoredBoxStylingPanel);
    })();
