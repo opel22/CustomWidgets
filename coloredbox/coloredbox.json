@@ -73,7 +73,7 @@
             "parameters": [
                 {
                     "name": "newWidth",
-                    "type": "string",
+                    "type": "integer",
                     "description": "The new width of the box"
                 }
             ]

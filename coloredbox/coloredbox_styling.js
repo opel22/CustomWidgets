@@ -43,7 +43,7 @@
             return this._shadowRoot.getElementById("styling_color").value;
         }
         set width(newWidth) {
-            this._shadowRoot.getElementById("styling_width").value = newWidth;
+            this._shadowRoot.getElementById("styling_width").value = newWidth + 'px';
         }
         get width() {
             return this._shadowRoot.getElementById("styling_width").value;
