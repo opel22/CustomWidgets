@@ -67,6 +67,16 @@
             "returnType": "string",
             "description": "Returns the background color.",
             "body": "return this.color;"
+        },
+        "setWidth": {
+            "description": "Set width of box",
+            "parameters": [
+                {
+                    "name": "newWidth",
+                    "type": "integer",
+                    "description": "The new width of the box"
+                }
+            ]
         }
     },
     "events": {
